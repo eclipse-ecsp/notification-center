@@ -87,7 +87,7 @@ Add details
   </dependency>
 ```
 
-*ignite transformer
+* ignite transformer
 
 ```xml
   <dependency>
@@ -96,9 +96,9 @@ Add details
   </dependency>
 ```
 
-*sp/pom:
+* sp/pom:
 
-*services-commons
+* services-commons
 
 ```xml
   <dependency>
@@ -107,9 +107,9 @@ Add details
   </dependency>
 ```
 
-*api/pom:
+* api/pom:
 
-*services-commons
+* services-commons
 
 ```xml
   <dependency>
@@ -117,9 +117,9 @@ Add details
     <artifactId>api-common</artifactId>
   </dependency>
 ```
-*common/pom:
+* common/pom:
 
-*ignite-security
+* ignite-security
 
 ```xml
   <dependency>
