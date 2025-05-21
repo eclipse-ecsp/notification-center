@@ -1,32 +1,24 @@
-[<img src="./images/logo.png" width="400" height="200"/>](./images/logo.png)
+# Contributing
 
-[![Build Status](replace with badge.svg)]( add url)
-[![Artifactory](replace with badge.svg)](add url)
-[![GitHub contributors](replace with badge.svg)](add url)
-[![Coverage](replace with badge.svg)](add url)
-[![License](replace with badge.svg)](#license)
+Thanks for your interest in contributing! Please take a moment to review this document **before submitting a pull request**.
 
-# Notification Center
-Notification Center is an independently deployable component(microservice) intended for sending various types of notifications.It provides a common abstraction layer on top of the various notification types and tracks the status of the notifications.
+## Feature Request
 
-# Table of Contents
-* [Getting Started](#getting-started)
-* [Usage](#usage)
-* [How to contribute](#how-to-contribute)
-* [Built with Dependencies](#built-with-dependencies)
-* [Code of Conduct](#code-of-conduct)
-* [Authors](#authors)
-* [Security Contact Information](#security-contact-information)
-* [Support](#support)
-* [Troubleshooting](#troubleshooting)
-* [License](#license)
-* [Announcements](#announcements)
-* [Acknowledgments](#acknowledgments)
+**we request that contributors create a feature request[add_url] to first discuss any new ideas. Your ideas and suggestions are welcome!**
+
+## Where do I go from here?
+
+For any questions, support, or ideas, etc. [please create a GitHub discussion](add_url). 
+If you've noticed a bug, [please submit an issue][add_new_issue_link].
+
+### Fork and create a branch
+
+If this is something you think you can fix, then [add_repo_url] and create
+a branch with a descriptive name. 
 
 
-## Getting Started
+###  Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 Add details
 
 ### Prerequisites
@@ -40,12 +32,13 @@ Add details
 * parent pom:
   version of other modules and 3rd-party library used in notification center
 
-* stream-base jar
+* streambase jar
 
 ```xml
  <dependency>
     <groupId>org.eclipse.ecsp</groupId>
     <artifactId>streambase</artifactId>
+    <scope>test</scope>
  </dependency>
 ```
 
@@ -64,9 +57,18 @@ Add details
 
 ```xml
  <dependency>
-    <groupId>org.eclipse.ecsp</groupId>
-    <artifactId>cache-enabler</artifactId>
+    <groupId>org.eclipse.ecsp.platform</groupId>
+    <artifactId>redis-cache</artifactId>
  </dependency>
+```
+
+* ignite redis
+
+```xml
+ <dependency>
+    <groupId>org.eclipse.ecsp.platform</groupId>
+    <artifactId>redis-jar</artifactId>
+  </dependency>
 ```
 
 * ignite dao
@@ -92,7 +94,7 @@ Add details
 ```xml
   <dependency>
     <groupId>org.eclipse.ecsp</groupId>
-    <artifactId>transformers</artifactId>
+    <artifactId>ignite-transformers</artifactId>
   </dependency>
 ```
 
@@ -102,7 +104,7 @@ Add details
 
 ```xml
   <dependency>
-   	<groupId>org.eclipse.ecsp</groupId>
+   	<groupId>org.eclipse.ecsp.platform.services</groupId>
   	<artifactId>services-common</artifactId>
   </dependency>
 ```
@@ -177,6 +179,7 @@ cause a build failure when the rules defined in the checkstyle.xml are violated.
     <checkstyle.config.location>${project.basedir}/checkstyle.xml</checkstyle.config.location>
 </properties>
 
+Plugin:
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-checkstyle-plugin</artifactId>
@@ -235,84 +238,25 @@ Steps for manual Deployment:
 helm install . -n notification -f values.yaml 
 ```
 
-## Usage
+## Test Guidelines
 
-	- As Service, I want to provision notification templates	
-	- As Service or Core Enabler, I want to send notification (mobile push) to the user	
-	- As Service or Core Enabler, I want to send email and sms notification to the user	
-	- As Service or Core Enabler, I want to send a notification to the vehicle	
-	- Create notification for campaign	
-	- Notification History - List of notifications	
-	- Notification History - Detail	
-	- Notification Group Preferences	
-	- Notification User Preferences		
-	- As Service, I want to provision notification grouping/entitlement.	
-	- Call Center Integration	
-	- As Service I want to provision templates for notification	
-	- Email attachments	
-	- Quiet time	
-	- Notification User Profile Using Webhook 2.0	
-	- Send notification using model/any vehicle attribute specific templates	
-	- Send notification using custom placeholders	
-	- SM : Date Format in Notification	
+Apart from unit test we can run the system tests to ensure none of the flows are broken.
 
+## Create a Pull Request
 
-## Built With Dependencies
+A PR must be created with a clear title and description against the `master` branch. 
+All tests must be passing before we will review the PR.
 
-* [Spring Boot](https://spring.io/projects/spring-boot/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Java jdk 11+](https://jdk.java.net/archive/)
+## Merging a PR and Shipping a release (maintainers only)
 
-## How to contribute
+* A PR can only be merged into master by a maintainer if: CI is passing, approved by another maintainer and is up-to-date with the default branch.
+* Any maintainer is allowed to merge a PR if all of these conditions are met.
+* The generated changelog in the PR should include all user visible changes you intend to ship.
 
-Please read [CONTRIBUTING.md](https://github.com/your/project/CONTRIBUTING.md) for details on our contribution guidelines, and the process for submitting pull requests to us.
+## Code Reviews
+If you can, please look at open PRs and review them. Give feedback and help us merge these PRs much faster! 
+If you don't know how, GitHub has some <a href="https://help.github.com/articles/about-pull-request-reviews/">great information on how to review a Pull Request.</a>
 
-## Code of Conduct
-
-Please read [CODE_OF_CONDUCT.md](https://github.com/your/project/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
-## Authors
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-	  <td align="center" valign="top" width="14.28%"><a href="https://github.com/Pankaj-Behere_harman"><img src="https://github.com/pbehe-harman.png" width="100px;" alt="Pankaj Behere"/><br /><sub><b>Pankaj Behere</b></sub></a><br /><a href="https://github.com/all-contributors/all-contributors/commits?author=Pankaj-Behere_harman" title="Code and Documentation">📖</a> <a href="https://github.com/all-contributors/all-contributors/pulls?q=is%3Apr+reviewed-by%3APankaj-Behere_harman" title="Reviewed Pull Requests">👀</a></td>
-    </tr>
-	<tr>
-	  <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lavin-Motwani_harman"><img src="https://github.com/LavinMotwani.png" width="100px;" alt="Lavin Motwani"/><br /><sub><b>Lavin Motwani</b></sub></a><br /><a href="https://github.com/all-contributors/all-contributors/commits?author=Lavin-Motwani_harman" title="Code and Documentation">📖</a> <a href="https://github.com/all-contributors/all-contributors/pulls?q=is%3Apr+reviewed-by%3ALavin-Motwani_harman" title="Reviewed Pull Requests">👀</a></td>
-    </tr>
-  </tbody>
-</table>
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## Security Contact Information
-
-Add details on where to report a security vulnerability
-
-## Support
-Add support group details
-
-## Troubleshooting
-
-* Add link to any troubleshooting guideline
-* Details on where to open issues or raise ticket for support
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/your/project/LICENSE.md) file for details
-
-## Announcements
-
-All updates to this library are documented in our [CHANGELOG.md](https://github.com/your/project/CHANGELOG.md) and [releases](https://github.com/your/project/releases).
-For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Acknowledgments
-
-* Acknowledgement 1
-* Acknowledgement 2
-
+## Community
+Add details for any other channels created to discuss contributions,
+List the author, maintainers, and/or contributors here, or set expectations for response time.
