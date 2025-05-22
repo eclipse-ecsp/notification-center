@@ -735,6 +735,7 @@
     </dependencies>
 
     <build>
+        <finalName>notification-sp</finalName>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
