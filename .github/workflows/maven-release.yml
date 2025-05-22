@@ -53,7 +53,7 @@ jobs:
     uses: eclipse-ecsp/.github/.github/workflows/workflow-docker-push.yml@main
     secrets: inherit
     with:
-      context_path: ./notification-center-api
+      context_path: ./api
       image_tag: ${{ needs.extract_version.outputs.release_version }}
       maven_args: 'clean package -P release'
   
@@ -62,6 +62,6 @@ jobs:
     uses: eclipse-ecsp/.github/.github/workflows/workflow-docker-push.yml@main
     secrets: inherit
     with:
-      context_path: ./notification-center-sp
+      context_path: ./sp
       image_tag: ${{ needs.extract_version.outputs.release_version }}
       maven_args: 'clean package -P release'
