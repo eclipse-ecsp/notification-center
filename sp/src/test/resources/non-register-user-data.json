@@ -1,0 +1,42 @@
+{
+  "notificationId": "LowFuel",
+  "version": "1.0",
+  "recipients": [
+    {
+      "sms": "+972525705515",
+      "push": {
+        "token": "djfkghdjfkghjks",
+        "client": "web"
+      },
+      "brand": "default",
+      "locale": "fr_FR",
+      "data": {
+        "name": "moshe",
+        "age": 43,
+        "attachments": [
+          {
+            "fileName": "file1.pdf",
+            "mimeType": "application/pdf",
+            "content": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sms": "+972525705515",
+      "brand": "deep",
+      "locale": "en_US"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "channelType": "BROWSER",
+  "alertEventData": {
+    "_id": "pppp_browser",
+    "user": "testID",
+    "enabled": true
+  },
+  "userID": "testID",
+  "processedTime": "1507113492880",
+  "eventData": {
+    "EventID": "NotificationSettings",
+    "Data": {
+      "notificationConfig": [
+        {
+          "pdids": [
+            "HUES2X5FIX6746"
+          ],
+          "channels": [
+            {
+              "type": "push",
+              "enabled": true,
+              "alertTypes": [
+                "all"
+              ],
+              "token": "dJ_LaAupV1E:APA91bGhwkpi6dpU9zVUjB3T1GYC74aFvdS_vOcDPSDujjpmnwXmYFOB3hQUkOEWpBUd5Bea8VbQvMGayLrQEbLutS425n-g6m0_OrmnPQNcEPruQaQH_E8agsbf0ACrGEHRmiFPBPUM",
+              "service": "apns"
+            },
+            {
+              "type": "sms",
+              "enabled": true,
+              "alertTypes": [
+                "accident"
+              ],
+              "ph": [
+                "+919689783749"
+              ]
+            },
+            {
+              "type": "email",
+              "enabled": true,
+              "alertTypes": [
+                "all"
+              ],
+              "email": [
+                "p@pom.com"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

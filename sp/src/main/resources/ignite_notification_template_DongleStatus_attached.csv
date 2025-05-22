@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+DongleStatus_attached,DongleStatus_attached Notification,DongleStatus_attached Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,The dongle has been reattached to your vehicle.
+default,apiPush,subtitle,DongleStatus_attached Notification
+default,apiPush,title,DongleStatus_attached Notification
+default,email,body,The dongle has been reattached to your vehicle.
+default,email,from,no-reply@ahanet.net
+default,email,subject,DongleStatus_attached Notification
+default,ivm,body,The dongle has been reattached to your vehicle.
+default,ivm,title,DongleStatus_attached Notification
+default,portal,body,The dongle has been reattached to your vehicle.
+default,push,body,The dongle has been reattached to your vehicle.
+default,push,subtitle,DongleStatus_attached Notification
+default,push,title,DongleStatus_attached Notification
+default,sms,body,The dongle has been reattached to your vehicle.

@@ -1,0 +1,33 @@
+[
+  {
+    "EventID": "GeoFence",
+    "Version": "1.1",
+    "BenchMode": 1,
+    "Timestamp": 1478769898,
+    "Timezone": -5,
+    "Data": {
+      "position": "out",
+      "latitude": "12.9716N",
+      "longitude": "77.5946E",
+      "id": "b49b776c-fa25-11e6-bc64-92361f002672",
+      "name": "myhome",
+      "type": "privatelocation"
+    }
+  },
+  {
+    "EventID": "GeoFence",
+    "Version": "1.1",
+    "BenchMode": 1,
+    "Timestamp": 1478769900,
+    "Timezone": -5,
+    "Data": {
+      "position": "in",
+      "latitude": "12.9716N",
+      "longitude": "77.5946E",
+      "id": "b49b776c-fa25-11e6-bc64-92361f002673",
+      "name": "myhome",
+      "type": "privatelocation"
+    }
+  }
+]
+

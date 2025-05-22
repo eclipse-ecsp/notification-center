@@ -1,0 +1,51 @@
+[
+  {
+    "EventID": "GenericNotificationEvent",
+    "Data": {
+      "userProfile": {
+        "userId": "HUXOIDDN4HUN18",
+        "locale": "en_US",
+        "consent": false,
+        "nickNames": [
+        ],
+        "timeZone": "UTC",
+        "lastModifiedTime": 0
+      },
+      "vehicleProfile": {
+        "vehicleId": "prasad3048"
+      },
+      "notificationId": "DTCStored_set",
+      "marketingName": "null null",
+      "customExtension": null,
+      "reason": "changed",
+      "set": [
+        "12",
+        "34"
+      ],
+      "campaignId": null,
+      "currentState": {
+        "P008A": {
+          "odometer": 0,
+          "ts": 1479198975514,
+          "tz": 330
+        },
+        "P0318": {
+          "odometer": 0,
+          "ts": 1479198976069,
+          "tz": 330
+        },
+        "P0598": {
+          "odometer": 0,
+          "ts": 1479198974873,
+          "tz": 330
+        }
+      },
+      "userId": "HUXOIDDN4HUN18"
+    },
+    "Version": "1.0",
+    "BenchMode": 0,
+    "Timestamp": 1528977275388,
+    "Timezone": 330,
+    "pdid": "prasad3048"
+  }
+]

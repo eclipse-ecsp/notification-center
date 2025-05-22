@@ -1,0 +1,14 @@
+[
+  {
+    "EventID": "MMY",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1535376303820,
+    "Timezone": 330,
+    "Data": {
+      "dummy": true,
+      "value": "NA"
+    }
+  }
+]
+

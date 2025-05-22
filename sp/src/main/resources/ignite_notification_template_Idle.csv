@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+Idle,Idle Notification,Idle Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle has been idling for [$.Data.duration] minutes.
+default,apiPush,subtitle,Idle Notification
+default,apiPush,title,Idle Notification
+default,email,body,Your vehicle has been idling for [$.Data.duration] minutes.
+default,email,from,no-reply@ahanet.net
+default,email,subject,Idle Notification
+default,ivm,body,Your vehicle has been idling for [$.Data.duration] minutes.
+default,ivm,title,Idle Notification
+default,portal,body,Your vehicle has been idling for [$.Data.duration] minutes.
+default,push,body,Your vehicle has been idling for [$.Data.duration] minutes.
+default,push,subtitle,Idle Notification
+default,push,title,Idle Notification
+default,sms,body,Your vehicle has been idling for [$.Data.duration] minutes.

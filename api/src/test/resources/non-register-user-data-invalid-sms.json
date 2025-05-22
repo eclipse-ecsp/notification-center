@@ -1,0 +1,25 @@
+{
+  "notificationId": "LowFuel",
+  "version": "1.0",
+  "recipients": [
+    {
+      "email": "shai.tanchuma@harman.com",
+      "sms": "+972523333",
+      "push": {
+        "token": "djfkghdjfkghjks",
+        "client": "web"
+      },
+      "brand": "default",
+      "locale": "en_US",
+      "data": {
+        "name": "moshe",
+        "age": 43
+      }
+    },
+    {
+      "email": "Vered.Arvili@harman.com",
+      "brand": "default",
+      "locale": "en_US"
+    }
+  ]
+}

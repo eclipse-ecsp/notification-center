@@ -1,0 +1,38 @@
+{
+  "_id": "test11",
+  "alertType": "EngineMILIndicator",
+  "payload": {
+    "alertsData": {
+      "alertDataProperties": {
+        "value": "true"
+      }
+    },
+    "EventID": "EngineMILIndicator",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503062,
+    "Timezone": 330,
+    "pdid": "HU0SCIUKMYXFG9"
+  },
+  "pdid": "HU0SCIUKMYXFG9",
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSNSPushResponse",
+      "provider": "AWS_SNS_SMS",
+      "channelType": "MOBILE_APP_PUSH",
+      "topics": [
+        {
+          "topicARN": "arn:aws:sns:us-east-1:4:application_11",
+          "creationTrackingID": null,
+          "publishTrackingID": "793a6a45-434d-5073-8225-3b4b41be3ddc",
+          "deleteTrackingID": null,
+          "subscriptions": []
+        }
+      ],
+      "alertEventData": {
+        "default": "Engine MIL indicator status."
+      }
+    }
+  ],
+  "timestamp": 1486094503062
+}

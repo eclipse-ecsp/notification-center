@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+Collision,Collision Notification,Collision Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+default,apiPush,subtitle,Collision Notification
+default,apiPush,title,Collision Notification
+default,email,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+default,email,from,no-reply@ahanet.net
+default,email,subject,Collision Notification
+default,ivm,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+default,ivm,title,Collision Notification
+default,portal,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+default,push,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+default,push,subtitle,Collision Notification
+default,push,title,Collision Notification
+default,sms,body,"Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."

@@ -1,0 +1,29 @@
+{
+  "services": [
+    "notification"
+  ],
+  "priority": "high",
+  "events": [
+    "APIPushNotification"
+  ],
+  "name": "notification",
+  "status": "running",
+  "endpoints": [
+    {
+      "className": "org.eclipse.ecsp.entities.dff.HttpsEndpoint",
+      "contentType": "application/json; charset=utf-8",
+      "type": "https",
+      "converter": "org.eclipse.ecsp.notification.dff.APIPushDFFConverterImpl",
+      "methodType": "post",
+      "url": "http://mock-api-int-svc:8080/mock-api/v1/accounts/{userId}/vehicles/{vehicleId}/notification",
+      "oAuthParams": {
+        "oAuthUrl": "url",
+        "clientId": "key",
+        "clientSecret": "password",
+        "scopes": [
+          "notificationScope"
+        ]
+      }
+    }
+  ]
+}

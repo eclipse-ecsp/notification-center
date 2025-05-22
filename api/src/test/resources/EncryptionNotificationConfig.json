@@ -1,0 +1,29 @@
+{
+  "userId": "HUXOIDDN4HUN18",
+  "vehicleId": "HUXOIDDN4HUN18",
+  "group": "all",
+  "enabled": "true",
+  "contactId": "self",
+  "channels": [
+    {
+      "type": "apiPush",
+      "enabled": "true"
+    },
+    {
+      "type": "email",
+      "enabled": true,
+      "emails": [
+        "test@harman.com",
+        "test@harman.com"
+      ]
+    },
+    {
+      "type": "sms",
+      "enabled": true,
+      "phones": [
+        "123456789",
+        "123456789"
+      ]
+    }
+  ]
+}

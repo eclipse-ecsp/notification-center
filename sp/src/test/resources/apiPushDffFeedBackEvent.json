@@ -1,0 +1,18 @@
+{
+  "EventID": "DffFeedBackEvent",
+  "BizTransactionId": "biz123",
+  "RequestId": "req123",
+  "VehicleId": "HUXOIDDN4HUN18",
+  "Version": "1.0",
+  "BenchMode": 1,
+  "Timestamp": 14890806555,
+  "Timezone": 330,
+  "Data": {
+    "notificationId": "GeoFence_in",
+    "feedbackTopic": "DffFeedBackTopic",
+    "userId": "HUXOIDDN4HUN18",
+    "position": "out",
+    "latitude": "12.9716N",
+    "longitude": "77.5946E"
+  }
+}

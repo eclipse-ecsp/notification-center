@@ -1,0 +1,95 @@
+@startuml
+
+title General Notification Processing Flow, from API -> Kafka -> SP -> Processors Chain -> ChannelNotifier
+
+=== Notification-API, messages received from REST API ==
+    actor user
+
+    user -> Notification_Api:create notification
+    activate Notification_Api
+    Notification_Api -> Notification_Api: validate
+    Notification_Api -> Kafka:send notification event
+    return 202 OK
+=== Notification-SP, messages consumed form Kafka ==
+    Kafka_StreamBase <-> Kafka: consume message
+    create AlertsInfo
+    Kafka_StreamBase -> AlertsInfo: deserialize event
+    Kafka_StreamBase -> VehicleInfoNotification: process()
+
+    VehicleInfoNotification -> VehicleInfoNotification: resolve event type
+    alt scheduled event
+        VehicleInfoNotification -> VehicleInfoNotification:handleScheduleNotificationEvents()
+    else normal event
+        VehicleInfoNotification -> VehicleInfoNotification:handleNormalAlertEvents()
+    end
+
+
+    VehicleInfoNotification -> VehicleInfoNotification:processAlertInfo(AlertsInfoList)
+    loop foreach AlertsInfo in AlertsInfo list
+        VehicleInfoNotification ->     AlertProcessorChain: process(AlertsInfo)
+
+        loop foreach AlertsProcessor in AlertProcessorChain
+
+            AlertProcessorChain -> VehicleProfileEnricher:process(AlertsInfo)
+                VehicleProfileEnricher <-> VehicleProfilesService: retrieve VehicleProfile
+                VehicleProfileEnricher -> AlertProcessorChain: AlertsInfo
+
+            AlertProcessorChain -> UserProfileEnricher:process(AlertsInfo)
+                database UserProfiles
+                UserProfileEnricher <-> UserProfiles: retrieve UserProfile
+                UserProfileEnricher -> AlertProcessorChain: AlertsInfo
+
+            AlertProcessorChain -> NotificationTemplateFinder:process(AlertsInfo)
+                            database NotificationTemplates
+                            NotificationTemplateFinder <-> NotificationTemplates: retrieve NotificationTemplate
+                            NotificationTemplateFinder -> AlertProcessorChain: AlertsInfo
+
+            AlertProcessorChain -> NotificationConfigFinder:process(AlertsInfo)
+                            database NotificationConfigs
+                            NotificationConfigFinder <-> NotificationConfigs: retrieve NotificationConfig
+                            NotificationConfigFinder -> AlertProcessorChain: AlertsInfo
+
+            ... other processors ...
+
+
+            AlertProcessorChain -> NotificationMsgGenerator:process(AlertsInfo)
+                            NotificationMsgGenerator <-> NotificationMsgGenerator: render all message text
+                            NotificationMsgGenerator -> AlertProcessorChain: AlertsInfo
+
+
+            AlertProcessorChain -> ContentTransformerManagerProcessor:process(AlertsInfo)
+            ContentTransformerManagerProcessor -> ContentTransformerManagerProcessor:run content plugins
+            AlertProcessorChain <- ContentTransformerManagerProcessor:AlertsInfo
+
+
+
+	    end
+	    AlertProcessorChain -> VehicleInfoNotification: fully enriched AlertsInfo
+
+        create AlertHistoryInfo
+        activate AlertHistoryInfo
+        VehicleInfoNotification -> AlertHistoryInfo: setAlertHistory(alert)
+
+	    VehicleInfoNotification -> AlertsInfo:getNotificationConfigs()
+	    return notificationConfigs
+	    loop foreach notificationConfig in AlertsInfo
+	        loop foreach enabledChannel
+	            VehicleInfoNotification -> VehicleInfoNotification: getChannelNotifier()
+	            alt suppressed time period
+	                VehicleInfoNotification -> ScheduleNotificationAssistant:snoozeAlert(alertsInfo-)
+	            else not suppressed
+	                group sendAlert
+                        VehicleInfoNotification -> ChannelNotifier:publish(alertsInfo)
+                        return ChannelResponse
+                        VehicleInfoNotification -> AlertHistoryInfo:setChannelResponse(channelResponse)
+	                end
+	            end
+	        end
+	    end
+	    database NotificationAlertHistory
+	    VehicleInfoNotification -> NotificationAlertHistory: save AlertHistoryInfo
+	    destroy AlertHistoryInfo
+    end
+
+
+@enduml

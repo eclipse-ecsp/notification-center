@@ -1,0 +1,28 @@
+{
+  "notificationId": "S12_RO_DOOR_LOCK_SUCCESS",
+  "apiPush": {
+    "android": {
+      "ttl": "86400s",
+      "notification": {
+        "click_action": "OPEN_ACTIVITY_1"
+      },
+      "priority": "normal"
+    },
+    "apns": {
+      "headers": {
+        "apns-priority": "5"
+      },
+      "payload": {
+        "aps": {
+          "category": "NEW_MESSAGE_CATEGORY"
+        }
+      }
+    }
+  },
+  "email": {
+    "contentType": "text/html"
+  },
+  "sms": {
+    "smsType": "transactional/promotional"
+  }
+}

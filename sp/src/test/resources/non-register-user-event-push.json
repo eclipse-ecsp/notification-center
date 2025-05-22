@@ -1,0 +1,23 @@
+{
+  "EventID": "NON_REGISTERED_USER_NOTIFICATION_EVENT",
+  "Version": "1.0",
+  "Timestamp": 1536963886613,
+  "Data": {
+    "notificationId": "LowFuel",
+    "version": "1.0",
+    "recipients": [
+      {
+        "brand": "default",
+        "push": {
+          "token": "cbXINnRK5g4:APA91bHmXHMSA7osp53zVUbHh5eUW1ziJD0I3VECw_DwUGsnmMAUQaAod0mgge4rhKlGJbay4gLS7BjBaqFh7qvKuo-ppNAmJa25yKxl0tyDh_5HunQ8cXIVvlJ6uJFFkNr8GZO4a0EQ",
+          "client": "web"
+        },
+        "locale": "fr_FR",
+        "data": {
+          "name": "moshe",
+          "age": 43
+        }
+      }
+    ]
+  }
+}

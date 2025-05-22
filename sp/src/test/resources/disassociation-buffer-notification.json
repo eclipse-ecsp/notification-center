@@ -1,0 +1,26 @@
+{
+  "alertsInfo": [
+    {
+      "EventID": "GenericNotificationEvent",
+      "Data": {
+        "alertDataProperties": {
+          "customExtension": null,
+          "campaignId": null,
+          "name": "akshay",
+          "userId": "disUser3"
+        }
+      },
+      "Version": "1.0",
+      "BenchMode": 0,
+      "Timestamp": 1479970890268,
+      "Timezone": 330,
+      "pdid": "disVehicle3"
+    }
+  ],
+  "channelType": "PORTAL",
+  "schedulerId": "d281757f-1a72-4a77-bd36-1ccf52b6120e",
+  "userId": "disUser3",
+  "group": "all",
+  "vehicleId": "disVehicle3",
+  "id": "disUser3_disVehicle3"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "EventID": "Disturbance",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503055,
+    "Timezone": 330,
+    "Data": {
+      "latitude": 12.54,
+      "longitude": 67.44
+    }
+  }
+]
+

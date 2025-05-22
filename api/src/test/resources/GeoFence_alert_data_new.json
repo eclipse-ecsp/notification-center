@@ -1,0 +1,55 @@
+{
+  "_id": "test7",
+  "alertType": "GeoFence",
+  "alertMessage": "Your vehicle is back inside the set boundary.",
+  "payload": {
+    "EventID": "GeoFence",
+    "alertsData": {
+      "alertDataProperties": {
+        "latitude": 13.3205075,
+        "position": "in",
+        "longitude": 77.5070581
+      }
+    },
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503010,
+    "Timezone": 330,
+    "pdid": "HU4U7AVVDI4P14"
+  },
+  "pdid": "HU4U7AVVDI4P14",
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSNSPushResponse",
+      "provider": "AWS_SNS_SMS",
+      "channelType": "MOBILE_APP_PUSH",
+      "topics": [
+        {
+          "topicARN": "arn:aws:sns:us-east-1:3:application_8",
+          "creationTrackingID": null,
+          "publishTrackingID": "793a6a45-434d-5073-8225-3b4b41be3ddc",
+          "deleteTrackingID": null,
+          "subscriptions": []
+        }
+      ],
+      "alertEventData": {
+        "default": "Your vehicle is back inside the set boundary.",
+        "APNS": "{\"aps\":{\"alert\":\"Your vehicle is back inside the set boundary.\",\"sound\":\"default\"},\"payload\":{\"EventID\":\"GeoFence\",\"Data\":{\"latitude\":13.3205075,\"position\":\"in\",\"longitude\":77.5070581},\"Version\":\"1.0\",\"BenchMode\":1,\"Timestamp\":1486094503010,\"Timezone\":330,\"pdid\":\"HU4U7AVVDI4P14\"}}"
+      },
+      "alertsObject": {
+        "EventID": "GeoFence",
+        "Data": {
+          "latitude": 13.3205075,
+          "position": "in",
+          "longitude": 77.5070581
+        },
+        "Version": "1.0",
+        "BenchMode": 1,
+        "Timestamp": 1486094503010,
+        "Timezone": 330,
+        "pdid": "HU4U7AVVDI4P14"
+      }
+    }
+  ],
+  "timestamp": 1486094503010
+}

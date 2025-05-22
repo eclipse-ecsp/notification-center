@@ -1,0 +1,68 @@
+{
+  "message": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:15.92458,79.852421. Your emergency contacts have been notified.",
+  "payload": {
+    "notificationTemplate": {
+      "id": "",
+      "notificationId": "Collision",
+      "notificationShortName": "Collision Notification",
+      "notificationLongName": "Collision Notification",
+      "locale": "en_US",
+      "brand": "default",
+      "channelTemplates": {
+        "push": {
+          "title": "Collision Notification",
+          "subtitle": "Collision Notification",
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+        },
+        "apiPush": {
+          "title": "Collision Notification",
+          "subtitle": "Collision Notification",
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+        },
+        "email": {
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified.",
+          "from": "no-reply@ahanet.net",
+          "subject": "Collision Notification"
+        },
+        "sms": {
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+        },
+        "ivm": {
+          "title": "Collision Notification",
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+        },
+        "portal": {
+          "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:15.92458,79.852421. Your emergency contacts have been notified."
+        }
+      }
+    },
+    "EventID": "Collision",
+    "Data": {
+      "alertDataProperties": {
+        "latitude": 15.92458,
+        "speed": 44.0,
+        "longitude": 79.852421
+      },
+      "userProfile": {
+        "userId": "User123",
+        "locale": "en_US",
+        "consent": false,
+        "nickNames": [],
+        "timeZone": "UTC",
+        "lastModifiedTime": 0
+      },
+      "vehicleProfile": {
+        "vehicleId": "Vehicle123",
+        "make": "default"
+      },
+      "notificationId": "Collision",
+      "latitude": 15.92458,
+      "speed": 44.0,
+      "longitude": 79.852421
+    },
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1481724868055,
+    "Timezone": 330
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "notificationId": "LowFuel",
+  "notificationShortName": "LowFuel Notification",
+  "notificationLongName": "LowFuel Notification",
+  "locale": "$locale",
+  "brand": "$brand",
+  "customPlaceholders": [
+    "key1"
+  ],
+  "channelTemplates": {
+    "ivm": {
+      "title": "fita LowFuel Notification",
+      "body": "$locale $brand [$.Data.customPlaceholders.key1] Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    }
+  }
+}

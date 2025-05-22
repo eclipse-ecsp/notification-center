@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+Disturbance,Disturbance Notification,Disturbance Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,apiPush,subtitle,Disturbance Notification
+default,apiPush,title,Disturbance Notification
+default,email,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,email,from,no-reply@ahanet.net
+default,email,subject,Disturbance Notification
+default,ivm,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,ivm,title,Disturbance Notification
+default,portal,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,push,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,push,subtitle,Disturbance Notification
+default,push,title,Disturbance Notification
+default,sms,body,"Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."

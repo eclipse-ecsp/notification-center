@@ -1,0 +1,14 @@
+{
+  "EventID": "DffFeedBackEvent",
+  "Version": "1.0",
+  "Timestamp": 14890806555,
+  "Data": {
+    "responseCode": 200
+  },
+  "RequestId": "req123",
+  "VehicleId": "HUXOIDDN4HUN18",
+  "Timezone": 330,
+  "BizTransactionId": "biz123",
+  "BenchMode": "1",
+  "DeviceDeliveryCutoff": -1
+}

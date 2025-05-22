@@ -1,0 +1,122 @@
+[
+  {
+    "notificationId": "GeoFence_in",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_out",
+    "group": "all"
+  },
+  {
+    "notificationId": "LowFuel",
+    "group": "all"
+  },
+  {
+    "notificationId": "Collision",
+    "group": "all"
+  },
+  {
+    "notificationId": "DTCStored_set",
+    "group": "all"
+  },
+  {
+    "notificationId": "DTCStored_cleared",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_valet_in",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_valet_out",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_generic_in",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_generic_out",
+    "group": "all"
+  },
+  {
+    "notificationId": "CurfewViolation",
+    "group": "all"
+  },
+  {
+    "notificationId": "CurfewViolation_time",
+    "group": "all"
+  },
+  {
+    "notificationId": "Idle",
+    "group": "all"
+  },
+  {
+    "notificationId": "NonIdle",
+    "group": "all"
+  },
+  {
+    "notificationId": "Tow",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_out",
+    "group": "all"
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_in",
+    "group": "all"
+  },
+  {
+    "notificationId": "DongleStatus_attached",
+    "group": "all"
+  },
+  {
+    "notificationId": "DongleStatus_detached",
+    "group": "all"
+  },
+  {
+    "notificationId": "DongleDetached",
+    "group": "all"
+  },
+  {
+    "notificationId": "DocumentExpiry",
+    "group": "all"
+  },
+  {
+    "notificationId": "ServiceReminder_ReminderEngine",
+    "group": "all"
+  },
+  {
+    "notificationId": "ServiceReminder_OdometerReading",
+    "group": "all"
+  },
+  {
+    "notificationId": "PinGenerated",
+    "group": "all"
+  },
+  {
+    "notificationId": "Disturbance",
+    "group": "all"
+  },
+  {
+    "notificationId": "Activation",
+    "group": "all"
+  },
+  {
+    "notificationId": "FirmwareDownloaded",
+    "group": "all"
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDED_NOTIF",
+    "group": "all"
+  },
+  {
+    "notificationId": "MMY",
+    "group": "all"
+  },
+  {
+    "notificationId": "AirbagDeployed",
+    "group": "all"
+  }
+]

@@ -1,0 +1,6 @@
+﻿Key1,Brand,Prop.vehicleProfile.model,Prop.vehicleProfile.year,en_US,fr_FR
+emergencyPhone,default,,,"alert: +9721700432321" ,"alerte: +97219001111111"
+emergencyPhone,ford,mondeo|focus,2000|2001|2002,"alert Dina: +9721700432322" ,"alerte Philippe: +972190011111122"
+emergencyPhone,ford,mondeo|focus,2003|2004|2005,"alert Dana: +9721700432322" ,"alerte Jann: +972190011111122"
+emergencyPhone,ford,mondeo|focus,,"alert Bob: +9721700432322" ,"alerte Philippe: +972190011111122"
+emergencyPhone,ford,fiesta,,"alert Call center: +9723456789" ,"alert Centre d'appels: +972190011111122"

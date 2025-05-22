@@ -1,0 +1,1140 @@
+[
+  {
+    "notificationId": "LowFuel",
+    "notificationShortName": "LowFuel Notification",
+    "notificationLongName": "LowFuel Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "LowFuel Notification",
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+        "subtitle": "LowFuel Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "LowFuel Notification",
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+      },
+      "sms": {
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+      },
+      "ivm": {
+        "title": "LowFuel Notification",
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+      },
+      "portal": {
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+      },
+      "apiPush": {
+        "title": "LowFuel Notification",
+        "body": "Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+        "subtitle": "LowFuel Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "Collision",
+    "notificationShortName": "Collision Notification",
+    "notificationLongName": "Collision Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Collision Notification",
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified.",
+        "subtitle": "Collision Notification",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1KH8NrfKcijizPeKbGmA3xFsU4gGMyx5VLg&usqp=CAU.png"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Collision Notification",
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+      },
+      "sms": {
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+      },
+      "ivm": {
+        "title": "Collision Notification",
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+      },
+      "portal": {
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified."
+      },
+      "apiPush": {
+        "title": "Collision Notification",
+        "body": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]. Your emergency contacts have been notified.",
+        "subtitle": "Collision Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DTCStored_set",
+    "notificationShortName": "DTCStored_set Notification",
+    "notificationLongName": "DTCStored_set Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DTCStored_set Notification",
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST].",
+        "subtitle": "DTCStored_set Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DTCStored_set Notification",
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+      },
+      "sms": {
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+      },
+      "ivm": {
+        "title": "DTCStored_set Notification",
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+      },
+      "portal": {
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+      },
+      "apiPush": {
+        "title": "DTCStored_set Notification",
+        "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST].",
+        "subtitle": "DTCStored_set Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DTCStored_cleared",
+    "notificationShortName": "DTCStored_cleared Notification",
+    "notificationLongName": "DTCStored_cleared Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DTCStored_cleared Notification",
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed.",
+        "subtitle": "DTCStored_cleared Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DTCStored_cleared Notification",
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+      },
+      "sms": {
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+      },
+      "ivm": {
+        "title": "DTCStored_cleared Notification",
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+      },
+      "portal": {
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+      },
+      "apiPush": {
+        "title": "DTCStored_cleared Notification",
+        "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed.",
+        "subtitle": "DTCStored_cleared Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "OverSpeeding",
+    "notificationShortName": "OverSpeeding Notification",
+    "notificationLongName": "OverSpeeding Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "OverSpeeding Notification",
+        "body": "Your vehicle has gone over the speed limit.",
+        "subtitle": "OverSpeeding Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "OverSpeeding Notification",
+        "body": "Your vehicle has gone over the speed limit."
+      },
+      "sms": {
+        "body": "Your vehicle has gone over the speed limit."
+      },
+      "ivm": {
+        "title": "OverSpeeding Notification",
+        "body": "Your vehicle has gone over the speed limit."
+      },
+      "portal": {
+        "body": "Your vehicle has gone over the speed limit."
+      },
+      "apiPush": {
+        "title": "OverSpeeding Notification",
+        "body": "Your vehicle has gone over the speed limit.",
+        "subtitle": "OverSpeeding Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_in",
+    "notificationShortName": "Geofence Notification",
+    "notificationLongName": "Geofence Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is back inside the set boundary.",
+        "subtitle": "Geofence Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Geofence Notification",
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "ivm": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "apiPush": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is back inside the set boundary.",
+        "subtitle": "Geofence Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_out",
+    "notificationShortName": "Geofence Notification",
+    "notificationLongName": "Geofence Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is outside of the set boundary.",
+        "subtitle": "Geofence Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Geofence Notification",
+        "body": "Your vehicle is outside of the set boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is outside of the set boundary."
+      },
+      "ivm": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is outside of the set boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is outside of the set boundary."
+      },
+      "apiPush": {
+        "title": "Geofence Notification",
+        "body": "Your vehicle is outside of the set boundary.",
+        "subtitle": "Geofence Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_valet_in",
+    "notificationShortName": "GeoFence_valet_in Notification",
+    "notificationLongName": "GeoFence_valet_in Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_valet_in Notification",
+        "body": "Your vehicle is back inside the valet boundary.",
+        "subtitle": "GeoFence_valet_in Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_valet_in Notification",
+        "body": "Your vehicle is back inside the valet boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is back inside the valet boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_valet_in Notification",
+        "body": "Your vehicle is back inside the valet boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is back inside the valet boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_valet_in Notification",
+        "body": "Your vehicle is back inside the valet boundary.",
+        "subtitle": "GeoFence_valet_in Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_valet_out",
+    "notificationShortName": "GeoFence_valet_out Notification",
+    "notificationLongName": "GeoFence_valet_out Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_valet_out Notification",
+        "body": "Your vehicle has gone outside of the valet boundary.",
+        "subtitle": "GeoFence_valet_out Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_valet_out Notification",
+        "body": "Your vehicle has gone outside of the valet boundary."
+      },
+      "sms": {
+        "body": "Your vehicle has gone outside of the valet boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_valet_out Notification",
+        "body": "Your vehicle has gone outside of the valet boundary."
+      },
+      "portal": {
+        "body": "Your vehicle has gone outside of the valet boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_valet_out Notification",
+        "body": "Your vehicle has gone outside of the valet boundary.",
+        "subtitle": "GeoFence_valet_out Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_generic_in",
+    "notificationShortName": "GeoFence_generic_in Notification",
+    "notificationLongName": "GeoFence_generic_in Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_generic_in Notification",
+        "body": "Your vehicle is back inside the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_generic_in Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_generic_in Notification",
+        "body": "Your vehicle is back inside the [$.Data.name] boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is back inside the [$.Data.name] boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_generic_in Notification",
+        "body": "Your vehicle is back inside the [$.Data.name] boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is back inside the [$.Data.name] boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_generic_in Notification",
+        "body": "Your vehicle is back inside the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_generic_in Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_generic_out",
+    "notificationShortName": "GeoFence_generic_out Notification",
+    "notificationLongName": "GeoFence_generic_out Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_generic_out Notification",
+        "body": "Your vehicle is outside of the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_generic_out Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_generic_out Notification",
+        "body": "Your vehicle is outside of the [$.Data.name] boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is outside of the [$.Data.name] boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_generic_out Notification",
+        "body": "Your vehicle is outside of the [$.Data.name] boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is outside of the [$.Data.name] boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_generic_out Notification",
+        "body": "Your vehicle is outside of the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_generic_out Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "CurfewViolation",
+    "notificationShortName": "CurfewViolation Notification",
+    "notificationLongName": "CurfewViolation Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "CurfewViolation Notification",
+        "body": "Your vehicle is being used past curfew.",
+        "subtitle": "CurfewViolation Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "CurfewViolation Notification",
+        "body": "Your vehicle is being used past curfew."
+      },
+      "sms": {
+        "body": "Your vehicle is being used past curfew."
+      },
+      "ivm": {
+        "title": "CurfewViolation Notification",
+        "body": "Your vehicle is being used past curfew."
+      },
+      "portal": {
+        "body": "Your vehicle is being used past curfew."
+      },
+      "apiPush": {
+        "title": "CurfewViolation Notification",
+        "body": "Your vehicle is being used past curfew.",
+        "subtitle": "CurfewViolation Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "CurfewViolation_time",
+    "notificationShortName": "CurfewViolation_time Notification",
+    "notificationLongName": "CurfewViolation_time Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "CurfewViolation_time Notification",
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew.",
+        "subtitle": "CurfewViolation_time Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "CurfewViolation_time Notification",
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew."
+      },
+      "sms": {
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew."
+      },
+      "ivm": {
+        "title": "CurfewViolation_time Notification",
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew."
+      },
+      "portal": {
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew."
+      },
+      "apiPush": {
+        "title": "CurfewViolation_time Notification",
+        "body": "Your vehicle is being used past [$.Data.curfewStartTime] curfew.",
+        "subtitle": "CurfewViolation_time Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "Idle",
+    "notificationShortName": "Idle Notification",
+    "notificationLongName": "Idle Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Idle Notification",
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes.",
+        "subtitle": "Idle Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Idle Notification",
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes."
+      },
+      "sms": {
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes."
+      },
+      "ivm": {
+        "title": "Idle Notification",
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes."
+      },
+      "portal": {
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes."
+      },
+      "apiPush": {
+        "title": "Idle Notification",
+        "body": "Your vehicle has been idling for [$.Data.duration] minutes.",
+        "subtitle": "Idle Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "NonIdle",
+    "notificationShortName": "NonIdle Notification",
+    "notificationLongName": "NonIdle Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "NonIdle Notification",
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes.",
+        "subtitle": "NonIdle Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "NonIdle Notification",
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes."
+      },
+      "sms": {
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes."
+      },
+      "ivm": {
+        "title": "NonIdle Notification",
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes."
+      },
+      "portal": {
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes."
+      },
+      "apiPush": {
+        "title": "NonIdle Notification",
+        "body": "Your vehicle has started to move after idling for [$.Data.duration] minutes.",
+        "subtitle": "NonIdle Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "Tow",
+    "notificationShortName": "Tow Notification",
+    "notificationLongName": "Tow Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Tow Notification",
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude].",
+        "subtitle": "Tow Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Tow Notification",
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "sms": {
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "ivm": {
+        "title": "Tow Notification",
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "portal": {
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "apiPush": {
+        "title": "Tow Notification",
+        "body": "Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude].",
+        "subtitle": "Tow Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_out",
+    "notificationShortName": "GeoFence_privatelocation_out Notification",
+    "notificationLongName": "GeoFence_privatelocation_out Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_privatelocation_out Notification",
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_privatelocation_out Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_privatelocation_out Notification",
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary."
+      },
+      "sms": {
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_privatelocation_out Notification",
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary."
+      },
+      "portal": {
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_privatelocation_out Notification",
+        "body": "Your vehicle is back outside of the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_privatelocation_out Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_in",
+    "notificationShortName": "GeoFence_privatelocation_in Notification",
+    "notificationLongName": "GeoFence_privatelocation_in Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "GeoFence_privatelocation_in Notification",
+        "body": "Your vehicle has entered the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_privatelocation_in Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "GeoFence_privatelocation_in Notification",
+        "body": "Your vehicle has entered the [$.Data.name] boundary."
+      },
+      "sms": {
+        "body": "Your vehicle has entered the [$.Data.name] boundary."
+      },
+      "ivm": {
+        "title": "GeoFence_privatelocation_in Notification",
+        "body": "Your vehicle has entered the [$.Data.name] boundary."
+      },
+      "portal": {
+        "body": "Your vehicle has entered the [$.Data.name] boundary."
+      },
+      "apiPush": {
+        "title": "GeoFence_privatelocation_in Notification",
+        "body": "Your vehicle has entered the [$.Data.name] boundary.",
+        "subtitle": "GeoFence_privatelocation_in Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DongleStatus_attached",
+    "notificationShortName": "DongleStatus_attached Notification",
+    "notificationLongName": "DongleStatus_attached Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DongleStatus_attached Notification",
+        "body": "The dongle has been reattached to your vehicle.",
+        "subtitle": "DongleStatus_attached Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DongleStatus_attached Notification",
+        "body": "The dongle has been reattached to your vehicle."
+      },
+      "sms": {
+        "body": "The dongle has been reattached to your vehicle."
+      },
+      "ivm": {
+        "title": "DongleStatus_attached Notification",
+        "body": "The dongle has been reattached to your vehicle."
+      },
+      "portal": {
+        "body": "The dongle has been reattached to your vehicle."
+      },
+      "apiPush": {
+        "title": "DongleStatus_attached Notification",
+        "body": "The dongle has been reattached to your vehicle.",
+        "subtitle": "DongleStatus_attached Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DongleStatus_detached",
+    "notificationShortName": "DongleStatus_detached Notification",
+    "notificationLongName": "DongleStatus_detached Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DongleStatus_detached Notification",
+        "body": "The dongle has been disconnected from your vehicle.",
+        "subtitle": "DongleStatus_detached Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DongleStatus_detached Notification",
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "sms": {
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "ivm": {
+        "title": "DongleStatus_detached Notification",
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "portal": {
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "apiPush": {
+        "title": "DongleStatus_detached Notification",
+        "body": "The dongle has been disconnected from your vehicle.",
+        "subtitle": "DongleStatus_detached Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DongleDetached",
+    "notificationShortName": "DongleDetached Notification",
+    "notificationLongName": "DongleDetached Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DongleDetached Notification",
+        "body": "The dongle has been disconnected from your vehicle.",
+        "subtitle": "DongleDetached Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DongleDetached Notification",
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "sms": {
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "ivm": {
+        "title": "DongleDetached Notification",
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "portal": {
+        "body": "The dongle has been disconnected from your vehicle."
+      },
+      "apiPush": {
+        "title": "DongleDetached Notification",
+        "body": "The dongle has been disconnected from your vehicle.",
+        "subtitle": "DongleDetached Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "DocumentExpiry",
+    "notificationShortName": "DocumentExpiry Notification",
+    "notificationLongName": "DocumentExpiry Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "DocumentExpiry Notification",
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).",
+        "subtitle": "DocumentExpiry Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "DocumentExpiry Notification",
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s)."
+      },
+      "sms": {
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s)."
+      },
+      "ivm": {
+        "title": "DocumentExpiry Notification",
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s)."
+      },
+      "portal": {
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s)."
+      },
+      "apiPush": {
+        "title": "DocumentExpiry Notification",
+        "body": "Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).",
+        "subtitle": "DocumentExpiry Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "ServiceReminder_ReminderEngine",
+    "notificationShortName": "ServiceReminder_ReminderEngine Notification",
+    "notificationLongName": "ServiceReminder_ReminderEngine Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "ServiceReminder_ReminderEngine Notification",
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station.",
+        "subtitle": "ServiceReminder_ReminderEngine Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "ServiceReminder_ReminderEngine Notification",
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station."
+      },
+      "sms": {
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station."
+      },
+      "ivm": {
+        "title": "ServiceReminder_ReminderEngine Notification",
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station."
+      },
+      "portal": {
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station."
+      },
+      "apiPush": {
+        "title": "ServiceReminder_ReminderEngine Notification",
+        "body": "Your service is due on [$.Data.reminderDate]. Please visit a service station.",
+        "subtitle": "ServiceReminder_ReminderEngine Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "ServiceReminder_OdometerReading",
+    "notificationShortName": "ServiceReminder_OdometerReading Notification",
+    "notificationLongName": "ServiceReminder_OdometerReading Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "ServiceReminder_OdometerReading Notification",
+        "body": "Your service is due based on odometer reading. Please visit a service station.",
+        "subtitle": "ServiceReminder_OdometerReading Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "ServiceReminder_OdometerReading Notification",
+        "body": "Your service is due based on odometer reading. Please visit a service station."
+      },
+      "sms": {
+        "body": "Your service is due based on odometer reading. Please visit a service station."
+      },
+      "ivm": {
+        "title": "ServiceReminder_OdometerReading Notification",
+        "body": "Your service is due based on odometer reading. Please visit a service station."
+      },
+      "portal": {
+        "body": "Your service is due based on odometer reading. Please visit a service station."
+      },
+      "apiPush": {
+        "title": "ServiceReminder_OdometerReading Notification",
+        "body": "Your service is due based on odometer reading. Please visit a service station.",
+        "subtitle": "ServiceReminder_OdometerReading Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "PinGenerated",
+    "notificationShortName": "PinGenerated Notification",
+    "notificationLongName": "PinGenerated Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "PinGenerated Notification",
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].",
+        "subtitle": "PinGenerated Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "PinGenerated Notification",
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration]."
+      },
+      "sms": {
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration]."
+      },
+      "ivm": {
+        "title": "PinGenerated Notification",
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration]."
+      },
+      "portal": {
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration]."
+      },
+      "apiPush": {
+        "title": "PinGenerated Notification",
+        "body": "Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].",
+        "subtitle": "PinGenerated Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "Disturbance",
+    "notificationShortName": "Disturbance Notification",
+    "notificationLongName": "Disturbance Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Disturbance Notification",
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude].",
+        "subtitle": "Disturbance Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Disturbance Notification",
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "sms": {
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "ivm": {
+        "title": "Disturbance Notification",
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "portal": {
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+      },
+      "apiPush": {
+        "title": "Disturbance Notification",
+        "body": "Disturbance detected at location http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude].",
+        "subtitle": "Disturbance Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "Activation",
+    "notificationShortName": "Activation Notification",
+    "notificationLongName": "Activation Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Activation Notification",
+        "body": "Congratulations!  Your device is activated and ready to use!",
+        "subtitle": "Activation Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Activation Notification",
+        "body": "Congratulations!  Your device is activated and ready to use!"
+      },
+      "sms": {
+        "body": "Congratulations!  Your device is activated and ready to use!"
+      },
+      "ivm": {
+        "title": "Activation Notification",
+        "body": "Congratulations!  Your device is activated and ready to use!"
+      },
+      "portal": {
+        "body": "Congratulations!  Your device is activated and ready to use!"
+      },
+      "apiPush": {
+        "title": "Activation Notification",
+        "body": "Congratulations!  Your device is activated and ready to use!",
+        "subtitle": "Activation Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "FirmwareDownloaded",
+    "notificationShortName": "FirmwareDownloaded Notification",
+    "notificationLongName": "FirmwareDownloaded Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "FirmwareDownloaded Notification",
+        "body": "Your device software is updating.",
+        "subtitle": "FirmwareDownloaded Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "FirmwareDownloaded Notification",
+        "body": "Your device software is updating."
+      },
+      "sms": {
+        "body": "Your device software is updating."
+      },
+      "ivm": {
+        "title": "FirmwareDownloaded Notification",
+        "body": "Your device software is updating."
+      },
+      "portal": {
+        "body": "Your device software is updating."
+      },
+      "apiPush": {
+        "title": "FirmwareDownloaded Notification",
+        "body": "Your device software is updating.",
+        "subtitle": "FirmwareDownloaded Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "FirmwareUpgraded",
+    "notificationShortName": "FirmwareUpgraded Notification",
+    "notificationLongName": "FirmwareUpgraded Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "FirmwareUpgraded Notification",
+        "body": "Software update for your device is complete.",
+        "subtitle": "FirmwareUpgraded Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "FirmwareUpgraded Notification",
+        "body": "Software update for your device is complete."
+      },
+      "sms": {
+        "body": "Software update for your device is complete."
+      },
+      "ivm": {
+        "title": "FirmwareUpgraded Notification",
+        "body": "Software update for your device is complete."
+      },
+      "portal": {
+        "body": "Software update for your device is complete."
+      },
+      "apiPush": {
+        "title": "FirmwareUpgraded Notification",
+        "body": "Software update for your device is complete.",
+        "subtitle": "FirmwareUpgraded Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "MMY",
+    "notificationShortName": "MMY Notification",
+    "notificationLongName": "MMY Notification",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "MMY Notification",
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now.",
+        "subtitle": "MMY Notification"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "MMY Notification",
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+      },
+      "sms": {
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+      },
+      "ivm": {
+        "title": "MMY Notification",
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+      },
+      "portal": {
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+      },
+      "apiPush": {
+        "title": "MMY Notification",
+        "body": "Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now.",
+        "subtitle": "MMY Notification"
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_RECALL_NOTIFICATION",
+    "notificationShortName": "Recall Message sent to the vehicle's HU.",
+    "notificationLongName": "Recall Message sent to the vehicle's HU.",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_OIL_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Oil",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Oil",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_TPM_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Tire-Pressure",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Tire-Pressure",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_BRAKE_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Brake",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Brake",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_BATTERY_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Battery",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Battery",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_SOON_NOTIF",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_TODAY",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDED_NOTIF",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENROLL_REMINDER",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": " ",
+        "body": " "
+      }
+    }
+  }
+]

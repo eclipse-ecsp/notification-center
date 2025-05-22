@@ -1,0 +1,101 @@
+{
+  "className": "org.eclipse.ecsp.domain.notification.AlertsHistoryInfo",
+  "_id": "test1",
+  "pdid": "HUBIIDLFQAC476",
+  "alertType": "DTCStored",
+  "timestamp": 1486100143502,
+  "payload": {
+    "EventID": "DTCStored",
+    "alertsData": {
+      "alertDataProperties": {
+        "reason": "changed",
+        "set": [
+          "P0598",
+          "P008A"
+        ],
+        "cleared": [
+          "P0310"
+        ],
+        "currentState": {
+          "P0598": {
+            "odometer": 172.64300155639648,
+            "tz": 150,
+            "ts": 1486100143502
+          },
+          "P0599": {
+            "odometer": 172.64300155639648,
+            "tz": 150,
+            "ts": 1486100143502
+          }
+        }
+      }
+    },
+    "Version": "1.1",
+    "BenchMode": 1,
+    "Timestamp": 1486100143502,
+    "Timezone": 330,
+    "pdid": "HUBIIDLFQAC476"
+  },
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSNSSMSResponse",
+      "provider": "AWS_SNS_SMS",
+      "channelType": "SMS",
+      "alertEventData": {
+        "default": "Your vehicle is back inside the set boundary."
+      },
+      "userID": "prasad",
+      "alertsObject": {
+        "EventID": "GenericNotificationEvent",
+        "Data": {
+          "userProfile": {
+            "userId": "prasad",
+            "firstName": "prasad",
+            "locale": "en_US",
+            "defaultEmail": "Prasad.Aduthiruthy@harman.com",
+            "consent": true,
+            "nickNames": [
+              {
+                "nickName": "prasad",
+                "vehicleId": "prasad3049"
+              },
+              {
+                "nickName": "prasad1",
+                "vehicleId": "prasad3048"
+              }
+            ]
+          },
+          "vehicleProfile": {
+            "vehicleId": "prasad3048",
+            "modelYear": "2019",
+            "model": "Punto",
+            "userId": "prasad",
+            "make": "fita"
+          },
+          "notificationId": "GeoFence_in",
+          "marketingName": "fita Punto",
+          "customExtension": null,
+          "latitude": "12.9716N",
+          "position": "out",
+          "userId": "prasad",
+          "longitude": "77.5946E"
+        },
+        "Version": "1.0",
+        "BenchMode": 0,
+        "Timestamp": "1547746854691",
+        "Timezone": 0,
+        "pdid": "prasad3048"
+      },
+      "pdid": "prasad3048",
+      "processedTime": "1547746855054",
+      "topics": [
+        {
+          "topicARN": "arn:aws:sns:us-east-1:381706862408:prasad_all_sms",
+          "publishTrackingID": "e56f81d2-787a-51cc-8300-d568b81d9879",
+          "subscriptions": [
+          ]
+        }
+      ]
+    }
+  ]
+}

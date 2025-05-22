@@ -1,0 +1,15 @@
+[
+  {
+    "EventID": "NonIdle",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503060,
+    "Timezone": 330,
+    "Data": {
+      "duration": 50,
+      "user": "for test-user",
+      "vehicle": "for test-vehicle"
+    }
+  }
+]
+

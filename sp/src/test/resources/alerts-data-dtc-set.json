@@ -1,0 +1,34 @@
+[
+  {
+    "BenchMode": 1,
+    "Data": {
+      "currentState": {
+        "P008A": {
+          "odometer": 0,
+          "ts": 1479198975514,
+          "tz": 330
+        },
+        "P0318": {
+          "odometer": 0,
+          "ts": 1479198976069,
+          "tz": 330
+        },
+        "P0598": {
+          "odometer": 0,
+          "ts": 1479198974873,
+          "tz": 330
+        }
+      },
+      "reason": "changed",
+      "set": [
+        "P0310",
+        "P0598"
+      ]
+    },
+    "EventID": "DTCStored",
+    "Timestamp": 1479198976094,
+    "Timezone": 0,
+    "Version": "1.1"
+  }
+]
+

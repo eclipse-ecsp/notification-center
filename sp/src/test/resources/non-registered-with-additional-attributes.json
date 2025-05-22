@@ -1,0 +1,37 @@
+{
+  "notificationId": "ne_model_no_user",
+  "version": "1.0",
+  "recipients": [
+    {
+      "sms": "+972508845656",
+      "brand": "ford",
+      "locale": "en_US",
+      "data": {
+        "vehicleProfile": {
+          "model": "focus"
+        },
+        "userProfile": {
+          "firstName": "userFirst"
+        },
+        "attachments": [
+          {
+            "fileName": "file1.pdf",
+            "mimeType": "application/pdf",
+            "content": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

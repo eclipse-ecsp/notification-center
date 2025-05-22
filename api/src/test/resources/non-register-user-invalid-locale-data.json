@@ -1,0 +1,46 @@
+{
+  "notificationId": "LowFuel",
+  "version": "1.0",
+  "recipients": [
+    {
+      "email": "moshe@harman.com",
+      "sms": "+9725233333",
+      "push": {
+        "token": "djfkghdjfkghjks",
+        "client": "web"
+      },
+      "brand": "default",
+      "locale": "en_US",
+      "data": {
+        "name": "moshe",
+        "age": 43
+      }
+    },
+    {
+      "push": {
+        "token": "djfkghdjfkghjks",
+        "client": "web"
+      },
+      "brand": "default"
+    },
+    {
+      "email": "shimon@harman.com",
+      "brand": "default",
+      "locale": ""
+    },
+    {
+      "sms": "+9725233335",
+      "brand": "default",
+      "locale": "xx_YY",
+      "data": {
+        "name": "moshe",
+        "age": 43
+      }
+    },
+    {
+      "sms": "+9725233334",
+      "brand": "default",
+      "locale": "en_US"
+    }
+  ]
+}

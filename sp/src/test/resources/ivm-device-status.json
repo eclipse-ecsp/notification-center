@@ -1,0 +1,11 @@
+{
+  "EventID": "DeviceConnStatus",
+  "Version": "1.0",
+  "Data": {
+    "connStatus": "ACTIVE",
+    "serviceName": "notification"
+  },
+  "MessageId": "1234",
+  "VehicleId": "HUXOIDDN4HUN18",
+  "SourceDeviceId": "DEVICE123"
+}

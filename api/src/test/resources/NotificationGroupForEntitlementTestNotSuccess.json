@@ -1,0 +1,6 @@
+{
+  "notificationId": "S16_ICNNCT_ENROLLMENT",
+  "group": "all",
+  "mandatory": true,
+  "service": "RO11111"
+}

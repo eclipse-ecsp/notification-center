@@ -1,0 +1,23 @@
+[
+  {
+    "EventID": "PinGenerated",
+    "Version": "1.0",
+    "Timestamp": 1528194382326,
+    "Data": {
+      "emails": [
+        "test@harman.com",
+        "test2@harman.com"
+      ],
+      "phones": [
+        "911234",
+        "23344"
+      ],
+      "pin": "12345",
+      "imei": "4444",
+      "duration": "5 minutes",
+      "productName": "Slow Drive"
+    },
+    "Timezone": 330,
+    "BenchMode": "1"
+  }
+]

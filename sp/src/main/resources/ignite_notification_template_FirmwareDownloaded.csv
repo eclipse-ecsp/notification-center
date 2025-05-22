@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+FirmwareDownloaded,FirmwareDownloaded Notification,FirmwareDownloaded Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your device software is updating.
+default,apiPush,subtitle,FirmwareDownloaded Notification
+default,apiPush,title,FirmwareDownloaded Notification
+default,email,body,Your device software is updating.
+default,email,from,no-reply@ahanet.net
+default,email,subject,FirmwareDownloaded Notification
+default,ivm,body,Your device software is updating.
+default,ivm,title,FirmwareDownloaded Notification
+default,portal,body,Your device software is updating.
+default,push,body,Your device software is updating.
+default,push,subtitle,FirmwareDownloaded Notification
+default,push,title,FirmwareDownloaded Notification
+default,sms,body,Your device software is updating.

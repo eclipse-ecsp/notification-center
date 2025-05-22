@@ -1,0 +1,16 @@
+[
+  {
+    "EventID": "DocumentExpiry",
+    "Timestamp": 1504779000026,
+    "Timezone": 0,
+    "Data": {
+      "DocumentType": 3,
+      "DocumentName": "Driving license",
+      "ExpiryDate": 3,
+      "DocumentId": "597ef26d638a95626ab52697",
+      "Title": "Vehicle license",
+      "Description": "Document expiring"
+    }
+  }
+]
+

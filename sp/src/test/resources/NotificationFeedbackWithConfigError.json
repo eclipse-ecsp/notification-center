@@ -1,0 +1,1 @@
+{"EventID":"NotificationFeedback","Version":"1.0","Timestamp":14890806555,"Data":{"notificationStatus":"FAILURE","notificationErrorDetail":"No notification config found for userId HUXOIDDN4HUN18 vehicleId HUXOIDDN4HUN18 serviceName all"},"RequestId":"req123","VehicleId":"HUXOIDDN4HUN18","Timezone":330,"BizTransactionId":"biz123","DeviceDeliveryCutoff":-1}

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+FirmwareUpgraded,FirmwareUpgraded Notification,FirmwareUpgraded Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Software update for your device is complete.
+default,apiPush,subtitle,FirmwareUpgraded Notification
+default,apiPush,title,FirmwareUpgraded Notification
+default,email,body,Software update for your device is complete.
+default,email,from,no-reply@ahanet.net
+default,email,subject,FirmwareUpgraded Notification
+default,ivm,body,Software update for your device is complete.
+default,ivm,title,FirmwareUpgraded Notification
+default,portal,body,Software update for your device is complete.
+default,push,body,Software update for your device is complete.
+default,push,subtitle,FirmwareUpgraded Notification
+default,push,title,FirmwareUpgraded Notification
+default,sms,body,Software update for your device is complete.

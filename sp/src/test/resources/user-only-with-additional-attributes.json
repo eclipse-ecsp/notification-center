@@ -1,0 +1,17 @@
+{
+  "NotificationId": "ne_model_user_only",
+  "Version": "1.0",
+  "Timestamp": "1554374607697",
+  "Timezone": "0",
+  "Brand": "ford",
+  "Data": {
+    "channelType": "sms",
+    "OTP": "+972508815262",
+    "vehicleProfile": {
+      "model": "mondeo"
+    },
+    "userProfile": {
+      "firstName": "adam"
+    }
+  }
+}

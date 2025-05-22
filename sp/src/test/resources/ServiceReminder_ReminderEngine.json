@@ -1,0 +1,14 @@
+[
+  {
+    "EventID": "ServiceReminder",
+    "Version": "1.1",
+    "BenchMode": 1,
+    "Timezone": 180,
+    "Timestamp": 1507786200004,
+    "Data": {
+      "source": "ReminderEngine",
+      "reminderDate": 1507786125000,
+      "reminderOdometerReading": 1
+    }
+  }
+]

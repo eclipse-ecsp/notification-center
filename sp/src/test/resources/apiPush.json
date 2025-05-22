@@ -1,0 +1,38 @@
+{
+  "EventID": "GenericNotificationEvent",
+  "BizTransactionId": "biz123",
+  "RequestId": "req123",
+  "VehicleId": "HUXOIDDN4HUN18",
+  "Version": "1.0",
+  "BenchMode": 1,
+  "Timestamp": 14890806555,
+  "Timezone": 330,
+  "Data": {
+    "notificationId": "GeoFence_in",
+    "feedbackTopic": "DffFeedBackTopic",
+    "UserNotification": false,
+    "userId": "HUXOIDDN4HUN18",
+    "position": "out",
+    "latitude": "12.9716N",
+    "longitude": "77.5946E",
+    "campaignId": null,
+    "attachments": [
+      {
+        "fileName": "myFileCosta.pdf",
+        "mimeType": "application/pdf",
+        "content": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  }
+}

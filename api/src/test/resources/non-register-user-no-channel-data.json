@@ -1,0 +1,14 @@
+{
+  "notificationId": "LowFuel",
+  "version": "1.0",
+  "recipients": [
+    {
+      "brand": "default",
+      "locale": "en_US",
+      "data": {
+        "name": "moshe",
+        "age": 43
+      }
+    }
+  ]
+}

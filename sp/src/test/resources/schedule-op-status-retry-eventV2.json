@@ -1,0 +1,40 @@
+{
+  "EventID": "ScheduleOpStatusEvent",
+  "Version": "1.0",
+  "Timestamp": 1602492509723,
+  "Data": {
+    "scheduleId": "9c1ea6fc-e0b5-4a01-ab41-cb16233d4410",
+    "status": "CREATE",
+    "igniteEvent": {
+      "EventID": "CreateScheduleEvent",
+      "Version": "1.0",
+      "Timestamp": 1602491851146,
+      "Data": {
+        "initialDelayMs": 6000,
+        "recurrenceType": "CUSTOM_MS",
+        "recurrenceDelayMs": 0,
+        "firingCount": 1,
+        "notificationPayload": "eyJFdmVudElEIjoiUmV0cnlOb3RpZmljYXRpb25FdmVudCIsIlZlcnNpb24iOiIyLjAiLCJUaW1lc3RhbXAiOjAsIkRhdGEiOnsicmV0cnlSZWNvcmQiOnsicmV0cnlFeGNlcHRpb24iOiJqYXZhLmxhbmcuUnVudGltZUV4Y2VwdGlvbiIsIm1heFJldHJ5TGltaXQiOjIsInJldHJ5Q291bnQiOjAsInJldHJ5SW50ZXJ2YWxNcyI6MTAwMDB9LCJvcmlnaW5hbEV2ZW50Ijp7IkV2ZW50SUQiOiJHZW5lcmljTm90aWZpY2F0aW9uRXZlbnQiLCJWZXJzaW9uIjoiMS4wIiwiVGltZXN0YW1wIjowLCJEYXRhIjpudWxsLCJSZXF1ZXN0SWQiOiJyZXF1ZXN0SWQwMSIsIlNvdXJjZURldmljZUlkIjpudWxsLCJWZWhpY2xlSWQiOiJ2ZWhpY2xlSWQiLCJ0cmNDdHgiOm51bGwsIlRpbWV6b25lIjowLCJERkZRdWFsaWZpZXIiOm51bGwsIk1lc3NhZ2VJZCI6bnVsbCwiQ29ycmVsYXRpb25JZCI6bnVsbCwiQml6VHJhbnNhY3Rpb25JZCI6bnVsbCwiQmVuY2hNb2RlIjpudWxsLCJVc2VyQ29udGV4dCI6bnVsbCwiRGV2aWNlRGVsaXZlcnlDdXRvZmYiOi0xLCJEdXBsaWNhdGVNZXNzYWdlIjpudWxsfSwib3JpZ2luYWxFdmVudFRvcGljIjoibm90aWZpY2F0aW9uIiwiY3VzdG9tRXh0ZW5zaW9uIjpudWxsfSwiUmVxdWVzdElkIjoicmVxdWVzdElkIiwiU291cmNlRGV2aWNlSWQiOm51bGwsIlZlaGljbGVJZCI6bnVsbCwidHJjQ3R4IjpudWxsLCJUaW1lem9uZSI6MCwiREZGUXVhbGlmaWVyIjpudWxsLCJNZXNzYWdlSWQiOm51bGwsIkNvcnJlbGF0aW9uSWQiOm51bGwsIkJpelRyYW5zYWN0aW9uSWQiOm51bGwsIkJlbmNoTW9kZSI6bnVsbCwiVXNlckNvbnRleHQiOm51bGwsIkRldmljZURlbGl2ZXJ5Q3V0b2ZmIjotMSwiRHVwbGljYXRlTWVzc2FnZSI6bnVsbH0=",
+        "notificationKey": {
+          "key": "HU4COSTA2217012187778492"
+        },
+        "notificationTopic": "scheduler-callback",
+        "serviceName": "my-notification"
+      },
+      "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+      "SourceDeviceId": "HU4COSTA2217012187778492",
+      "VehicleId": "HU4COSTA2217012187778492",
+      "Timezone": 0,
+      "MessageId": "5001",
+      "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+      "DeviceDeliveryCutoff": -1
+    },
+    "valid": true
+  },
+  "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 0,
+  "MessageId": "91351",
+  "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+  "DeviceDeliveryCutoff": -1
+}

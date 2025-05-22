@@ -1,0 +1,12 @@
+[
+  {
+    "Version": "1.0",
+    "EventID": "VehicleAssociation",
+    "Timezone": 0,
+    "Timestamp": 1479970890268,
+    "Data": {
+      "userId": "12345",
+      "PDID": "HU2WKMILIGT550"
+    }
+  }
+]

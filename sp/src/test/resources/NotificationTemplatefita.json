@@ -1,0 +1,34 @@
+{
+  "notificationId": "LowFuel",
+  "notificationShortName": "LowFuel Notification",
+  "notificationLongName": "LowFuel Notification",
+  "locale": "en_US",
+  "brand": "fita",
+  "channelTemplates": {
+    "push": {
+      "title": "fita LowFuel Notification",
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+      "subtitle": "fita LowFuel Notification"
+    },
+    "email": {
+      "from": "no-reply@ahanet.net",
+      "subject": "fita LowFuel Notification",
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "sms": {
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "ivm": {
+      "title": "fita LowFuel Notification",
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "portal": {
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "apiPush": {
+      "title": "fita LowFuel Notification",
+      "body": "fita Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+      "subtitle": "fita LowFuel Notification"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "notificationId": "LowFuel",
+  "notificationShortName": "LowFuel Notification",
+  "notificationLongName": "LowFuel Notification",
+  "locale": "fr_FR",
+  "brand": "default",
+  "channelTemplates": {
+    "push": {
+      "title": "FR LowFuel Notification",
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+      "subtitle": "FR LowFuel Notification"
+    },
+    "email": {
+      "from": "no-reply@ahanet.net",
+      "subject": "FR LowFuel Notification",
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "sms": {
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "ivm": {
+      "title": "FR LowFuel Notification",
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "portal": {
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel]."
+    },
+    "apiPush": {
+      "title": "FR LowFuel Notification",
+      "body": "FR Low fuel detected. Current fuel level is [$.Data.fuelLevel].",
+      "subtitle": "FR LowFuel Notification"
+    }
+  }
+}

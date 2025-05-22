@@ -1,0 +1,38 @@
+{
+  "EventID": "NotificationSettings",
+  "Version": "1.0",
+  "Data": {
+    "notificationConfigs": [
+      {
+        "group": "all",
+        "enabled": true,
+        "channels": [
+          {
+            "type": "push",
+            "enabled": true,
+            "deviceTokens": [
+              "1a13055e69d4e916fc43fa9b18f6931e5bcbf8a82b1ffe698a24f3e8e253ade9"
+            ],
+            "service": "apns",
+            "appPlatform": "ANDROID"
+          },
+          {
+            "type": "email",
+            "enabled": false,
+            "emails": [
+              "jd@jd.com"
+            ]
+          },
+          {
+            "type": "sms",
+            "enabled": true,
+            "phones": [
+              "478347387",
+              "123434535"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

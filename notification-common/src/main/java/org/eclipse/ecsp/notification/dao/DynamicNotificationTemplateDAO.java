@@ -1,0 +1,97 @@
+/*
+ *
+ *  *
+ *  * ******************************************************************************
+ *  *
+ *  *  Copyright (c) 2023-24 Harman International
+ *  *
+ *  *
+ *  *
+ *  *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  *
+ *  *  you may not use this file except in compliance with the License.
+ *  *
+ *  *  You may obtain a copy of the License at
+ *  *
+ *  *
+ *  *
+ *  *  http://www.apache.org/licenses/LICENSE-2.0
+ *  *
+ *  **
+ *  *  Unless required by applicable law or agreed to in writing, software
+ *  *
+ *  *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  *
+ *  *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  *
+ *  *  See the License for the specific language governing permissions and
+ *  *
+ *  *  limitations under the License.
+ *  *
+ *  *
+ *  *
+ *  *  SPDX-License-Identifier: Apache-2.0
+ *  *
+ *  *  *******************************************************************************
+ *  *
+ *
+ */
+
+package org.eclipse.ecsp.notification.dao;
+
+import org.eclipse.ecsp.nosqldao.IgniteBaseDAO;
+import org.eclipse.ecsp.notification.entities.DynamicNotificationTemplate;
+
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+
+/**
+ * DynamicNotificationTemplateDAO interface.
+ */
+@SuppressWarnings("checkstyle:AbbreviationAsWordInName")
+public interface DynamicNotificationTemplateDAO extends IgniteBaseDAO<String, DynamicNotificationTemplate> {
+    /**
+     * Find by notification ids.
+     *
+     * @param notificationIds notification ids
+     * @return list of DynamicNotificationTemplate
+     */
+    List<DynamicNotificationTemplate> findByNotificationIds(List<String> notificationIds);
+
+    /**
+     * findByNotificationIdsBrandsLocalesNoAddAttrs.
+     *
+     * @param notificationId notificationId
+     * @param brands brands
+     * @param locales locales
+     * @return list of DynamicNotificationTemplate
+     */
+    List<DynamicNotificationTemplate> findByNotificationIdsBrandsLocalesNoAddAttrs(String notificationId,
+                                                                                   Set<String> brands,
+                                                                                   Set<Locale> locales);
+
+    /**
+     * findByNotificationIdsBrandsLocalesAddAttrs.
+     *
+     * @param notificationId notificationId
+     * @param brands brands
+     * @param locales locales
+     * @param propertyName propertyName
+     * @param propertyValues propertyValues
+     * @return list of DynamicNotificationTemplate
+     */
+    List<DynamicNotificationTemplate> findByNotificationIdsBrandsLocalesAddAttrs(String notificationId,
+                                                                                 Set<String> brands,
+                                                                                 Set<Locale> locales,
+                                                                                 String propertyName,
+                                                                                 Set<String> propertyValues);
+
+    /**
+     * Find by notification id.
+     *
+     * @param notificationId notification id
+     * @return DynamicNotificationTemplate
+     */
+    boolean isNotificationIdExist(String notificationId);
+}

@@ -1,0 +1,4 @@
+Notification ID,Notification short name,Notification long name,,
+ayush1,ayush,ayush,,
+Brand,Channel,Attribute,EN_US,fr_FR
+,,,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"

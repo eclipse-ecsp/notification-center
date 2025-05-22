@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+GeoFence_out,Geofence Notification,Geofence Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle is outside of the set boundary.
+default,apiPush,subtitle,Geofence Notification
+default,apiPush,title,Geofence Notification
+default,email,body,Your vehicle is outside of the set boundary.
+default,email,from,no-reply@ahanet.net
+default,email,subject,Geofence Notification
+default,ivm,body,Your vehicle is outside of the set boundary.
+default,ivm,title,Geofence Notification
+default,portal,body,Your vehicle is outside of the set boundary.
+default,push,body,Your vehicle is outside of the set boundary.
+default,push,subtitle,Geofence Notification
+default,push,title,Geofence Notification
+default,sms,body,Your vehicle is outside of the set boundary.

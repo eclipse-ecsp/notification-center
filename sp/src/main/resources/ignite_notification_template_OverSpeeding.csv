@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+OverSpeeding,OverSpeeding Notification,OverSpeeding Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle has gone over the speed limit.
+default,apiPush,subtitle,OverSpeeding Notification
+default,apiPush,title,OverSpeeding Notification
+default,email,body,Your vehicle has gone over the speed limit.
+default,email,from,no-reply@ahanet.net
+default,email,subject,OverSpeeding Notification
+default,ivm,body,Your vehicle has gone over the speed limit.
+default,ivm,title,OverSpeeding Notification
+default,portal,body,Your vehicle has gone over the speed limit.
+default,push,body,Your vehicle has gone over the speed limit.
+default,push,subtitle,OverSpeeding Notification
+default,push,title,OverSpeeding Notification
+default,sms,body,Your vehicle has gone over the speed limit.

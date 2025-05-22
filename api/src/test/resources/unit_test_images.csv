@@ -1,0 +1,11 @@
+Notification ID,,,
+UNIT_TEST_RICH_IMAGES,,,
+Brand,Attribute,en-us,fr-ca
+Giat,Reference-HTML,htmls/generic.html,htmls/generic.html
+Giat,body-paragraph1-text,English Notification,French Notification
+Giat,body-paragraph2-text,Drive Alert,Drive Alert
+Giat,Image-hdr_brand,"images/logo_deep.png","images/logo_deep.png"
+Beta,Reference-HTML,htmls/generic2.html,htmls/generic2.html
+Beta,body-paragraph1-text,English Notification,French Notification
+Beta,body-paragraph2-text,Drive Alert,Drive Alert
+Beta,Image-hdr_brand,"images/logo_deep.png","images/logo_deep.png"

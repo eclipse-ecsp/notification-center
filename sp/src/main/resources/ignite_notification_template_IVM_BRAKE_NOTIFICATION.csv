@@ -1,0 +1,5 @@
+﻿Notification ID,Notification short name,Notification long name
+IVM_BRAKE_NOTIFICATION,Display messages to Customer in the HU for Service Message - Brake,Display messages to Customer in the HU for Service Message - Brake
+Brand,Channel,Attribute,en_US
+default,ivm,body," "
+default,ivm,title," "

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+PinGenerated,PinGenerated Notification,PinGenerated Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].
+default,apiPush,subtitle,PinGenerated Notification
+default,apiPush,title,PinGenerated Notification
+default,email,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].
+default,email,from,no-reply@ahanet.net
+default,email,subject,PinGenerated Notification
+default,ivm,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].
+default,ivm,title,PinGenerated Notification
+default,portal,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].
+default,push,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].
+default,push,subtitle,PinGenerated Notification
+default,push,title,PinGenerated Notification
+default,sms,body,Verification Code for registering your device with IMEI [$.Data.imei] is [$.Data.pin]. This Code is valid for [$.Data.duration].

@@ -1,0 +1,29 @@
+﻿{
+  "notificationId": "DTCStored_cleared",
+  "notificationShortName": "DTCStored_cleared Notification",
+  "notificationLongName": "DTCStored_cleared Notification",
+  "locale": "en_US",
+  "brand": "default",
+  "channelTemplates": {
+    "push": {
+      "title": "DTCStored_cleared Notification",
+      "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed.",
+      "subtitle": "DTCStored_cleared Notification"
+    },
+    "email": {
+      "from": "no-reply@ahanet.net",
+      "subject": "DTCStored_cleared Notification",
+      "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+    },
+    "sms": {
+      "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+    },
+    "ivm": {
+      "title": "DTCStored_cleared Notification",
+      "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+    },
+    "portal": {
+      "body": "One or more problems  ([$.Data.DTC_LIST]) have been fixed."
+    }
+  }
+}

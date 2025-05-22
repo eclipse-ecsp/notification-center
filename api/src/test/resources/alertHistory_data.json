@@ -1,0 +1,114 @@
+{
+  "_id": "k5tfV4RdAXjnSVNVFjxy6hKsrACmtHaW",
+  "className": "org.eclipse.ecsp.domain.notification.AlertsHistoryInfo",
+  "pdid": "jyotirmaya3660",
+  "userId": "jdehury",
+  "alertType": "GenericNotificationEvent",
+  "timestamp": 1548869490477,
+  "payload": {
+    "EventID": "GenericNotificationEvent",
+    "alertsData": {
+      "alertDataProperties": {
+        "customExtension": null,
+        "messageType": "SUBSCRIPTION_NOTICE",
+        "campaignId": null,
+        "vin": "jyotirmaya3660",
+        "message": [
+          {
+            "language": "ENG",
+            "messageText": "ABCD"
+          }
+        ],
+        "userId": "jdehury"
+      }
+    },
+    "Version": "1.0",
+    "BenchMode": 0,
+    "Timestamp": 1548869490477,
+    "Timezone": 0,
+    "pdid": "jyotirmaya3660"
+  },
+  "createDts": "2019-01-30T17:31:31.062Z",
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.MQTTBrowserResponse",
+      "alertEventData": {
+        "default": "Your vehicle is back inside the set boundary."
+      },
+      "userID": "jdehury",
+      "alertObject": {
+        "EventID": "GenericNotificationEvent",
+        "alertsData": {
+          "alertDataProperties": {
+            "customExtension": null,
+            "messageType": "SUBSCRIPTION_NOTICE",
+            "campaignId": null,
+            "vin": "jyotirmaya3660",
+            "message": [
+              {
+                "language": "ENG",
+                "messageText": "ABCD"
+              }
+            ],
+            "userId": "jdehury"
+          }
+        },
+        "Version": "1.0",
+        "BenchMode": 0,
+        "Timestamp": 1548869490477,
+        "Timezone": 0,
+        "pdid": "jyotirmaya3660"
+      },
+      "processedTime": "1548869491063",
+      "status": "Success",
+      "channelType": "PORTAL"
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSESResponse",
+      "messageId": "010001689fd101d1-fff0f9a6-dd8b-43cd-80f2-05a417e11021-000000",
+      "alertEventData": {
+        "default": "Your vehicle is back inside the set boundary."
+      },
+      "userID": "jdehury",
+      "processedTime": "1548869501356",
+      "status": "Success",
+      "template": {
+        "className": "org.eclipse.ecsp.notification.entities.EmailTemplate",
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "channelType": "EMAIL"
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.FCMChannelResponse",
+      "userID": "jdehury",
+      "processedTime": "1548869501548",
+      "channelType": "MOBILE_APP_PUSH"
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSNSSMSResponse",
+      "topics": [
+        {
+          "topicArn": "arn:aws:sns:us-east-1:381706862408:jdehury_all_sms",
+          "pubishTrackingID": "092d10b3-02b3-5697-b5dd-4478e30ecb13"
+        }
+      ],
+      "alertEventData": {
+        "default": "Your vehicle is back inside the set boundary."
+      },
+      "userID": "jdehury",
+      "pdid": "jyotirmaya3660",
+      "processedTime": "1548869501560",
+      "status": "Success",
+      "template": {
+        "className": "org.eclipse.ecsp.notification.entities.SMSTemplate",
+        "body": "Your vehicle is back inside the set boundary."
+      },
+      "channelType": "SMS"
+    }
+  ],
+  "alertMessage": "Your vehicle is back inside the set boundary.",
+  "read": false,
+  "group": "all",
+  "notificationLongName": "Geofence Notification",
+  "notificationId": "Geofence_Notification_id"
+}

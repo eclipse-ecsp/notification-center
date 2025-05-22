@@ -1,0 +1,36 @@
+[
+  {
+    "group": "PARENT",
+    "brand": "default",
+    "enabled": true,
+    "channels": [
+      {
+        "type": "apiPush",
+        "enabled": true
+      },
+      {
+        "type": "sms",
+        "enabled": true
+      },
+      {
+        "type": "email",
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "group": "SM_3P3_PROMO",
+    "brand": "default",
+    "enabled": true,
+    "channels": [
+      {
+        "type": "email",
+        "enabled": true
+      },
+      {
+        "type": "apiPush",
+        "enabled": true
+      }
+    ]
+  }
+]

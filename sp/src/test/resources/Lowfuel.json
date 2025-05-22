@@ -1,0 +1,12 @@
+[
+  {
+    "EventID": "LowFuel",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1478769898,
+    "Timezone": -5,
+    "Data": {
+      "fuelLevel": "10"
+    }
+  }
+]

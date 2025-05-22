@@ -1,0 +1,12 @@
+{
+  "NotificationId": "S16_ICNNCT_ENROLLMENT",
+  "Version": "1.0",
+  "Timestamp": 1539179391201,
+  "Timezone": 330,
+  "Data": {
+    "attributeFromNotificationMatrixA": 18.58483868,
+    "attributeFromNotificationMatrixB": "Boundary 9 Oct",
+    "attributeFromNotificationMatrixC": "3bca9be2-fb5d-430a-9bb7-4ce6c7f9a474",
+    "attributeFromNotificationMatrixD": 73.73466107
+  }
+}

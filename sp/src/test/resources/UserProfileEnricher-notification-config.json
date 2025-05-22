@@ -1,0 +1,100 @@
+{
+  "_id": "5c9c7a1fdde2c6000889a97f",
+  "userId": "AWh_YZbs3JWC8U6WROnj",
+  "vehicleId": "HUR902N3KHU7U7",
+  "contactId": "self",
+  "group": "all",
+  "enabled": true,
+  "channels": [
+    {
+      "emails": [
+        "akshay.kalra@harman.com"
+      ],
+      "type": "email",
+      "enabled": true,
+      "suppressionConfigs": [
+        {
+          "suppressionType": "RECURRING",
+          "days": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ],
+          "startTime": "00:00",
+          "endTime": "23:59"
+        }
+      ]
+    },
+    {
+      "phones": [
+        "8699566750"
+      ],
+      "type": "sms",
+      "enabled": true,
+      "suppressionConfigs": [
+        {
+          "suppressionType": "RECURRING",
+          "days": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ],
+          "startTime": "06:00",
+          "endTime": "23:00"
+        }
+      ]
+    },
+    {
+      "type": "apiPush",
+      "enabled": true,
+      "suppressionConfigs": [
+        {
+          "suppressionType": "RECURRING",
+          "days": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ],
+          "startTime": "00:01",
+          "endTime": "23:59"
+        }
+      ]
+    },
+    {
+      "type": "portal",
+      "enabled": true,
+      "suppressionConfigs": [
+        {
+          "suppressionType": "RECURRING",
+          "days": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ],
+          "startTime": "06:00",
+          "endTime": "22:00"
+        }
+      ]
+    },
+    {
+      "type": "ivm",
+      "enabled": true
+    }
+  ]
+}
