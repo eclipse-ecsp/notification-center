@@ -48,7 +48,7 @@ jobs:
     with:
       release_version: ${{ needs.extract_version.outputs.release_version }}
 
-  docker_push_vehicle_profile_api:
+  docker_push_notification_center_api:
     needs: extract_version
     uses: eclipse-ecsp/.github/.github/workflows/workflow-docker-push.yml@main
     secrets: inherit
@@ -57,7 +57,7 @@ jobs:
       image_tag: ${{ needs.extract_version.outputs.release_version }}
       maven_args: 'clean package -P release'
   
-  docker_push_vehicle_profile_sp:
+  docker_push_notification_center_sp:
     needs: extract_version
     uses: eclipse-ecsp/.github/.github/workflows/workflow-docker-push.yml@main
     secrets: inherit
