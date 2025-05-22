@@ -92,39 +92,19 @@ Sequence diagram of Notification Center:
 
 Notification Center component will be responsible for the below features,
 
-1. As Service, I want to provision notification templates.
-
-2. As Service or Core Enabler, I want to send notification (mobile push) to the user.
-
-3. As Service or Core Enabler, I want to send email and sms notification to the user.
-
-4. As Service or Core Enabler, I want to send a notification to the vehicle.
-
-5. Create notification for campaign 
-
-6. Notification History - List of notifications.
-
-7. Notification History - Detail.
-
-8. Notification Group Preferences
-
-9. Notification User Preferences
-
-10. As Service, I want to provision notification grouping/entitlement.
-
-11. Call Center Integration.
-
-12. As Service, I want to provision templates for notification.
-
-13. Email attachments.
-
-14. Quiet time.
-
-15. Notification User Profile Using Webhook 2.0.Send notification using model/any vehicle attribute specific templates.
-
-16. Send notification using custom placeholders.
-
-17. SM : Date Format in Notification	
+1. Provision notification templates.
+2. Send notification to the user via mobile PUSH, Email, SMS channels. user.
+3. Send notification to the vehicle (In Vehicle Messaging)
+4. Create notification for campaign
+5. Notification History - List of notifications.
+6. Notification History - Detail.
+7. Notification Group Preferences
+8. Notification User Preferences
+9. Provision notification grouping/entitlement.
+10. Call Center Integration.
+11. Support for Quiet time.
+12. Notification User Profile Using Webhook 2.0. Send notification using model/any vehicle attribute specific templates.
+13. Send notification using custom placeholders.
 
 
 ## Built With Dependencies
