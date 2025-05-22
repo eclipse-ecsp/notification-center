@@ -761,7 +761,7 @@
                             <minimizeJar>false</minimizeJar>
                             <excludeScope>system</excludeScope>
                             <excludeGroupIds>junit,org.mockito,org.hamcrest</excludeGroupIds>
-                            <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                            <outputFile>${project.build.directory}/${project.build.finalName}-shaded.jar</outputFile>
                             <artifactSet/>
                             <filters>
                                 <filter>
