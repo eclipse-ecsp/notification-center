@@ -1,0 +1,13 @@
+{
+  "userId": "GENERAL",
+  "vehicleId": "GENERAL",
+  "group": "all",
+  "contactId": "self",
+  "enabled": "true",
+  "channels": [
+    {
+      "type": "apiPush",
+      "enabled": "true"
+    }
+  ]
+}

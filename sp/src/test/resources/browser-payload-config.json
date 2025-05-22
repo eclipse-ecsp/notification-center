@@ -1,0 +1,13 @@
+{
+  "userId": "User123",
+  "vehicleId": "Vehicle123",
+  "contactId": "self",
+  "group": "all",
+  "enabled": "true",
+  "channels": [
+    {
+      "type": "portal",
+      "enabled": "true"
+    }
+  ]
+}

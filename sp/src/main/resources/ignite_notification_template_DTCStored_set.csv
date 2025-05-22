@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+DTCStored_set,DTCStored_set Notification,DTCStored_set Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].
+default,apiPush,subtitle,DTCStored_set Notification
+default,apiPush,title,DTCStored_set Notification
+default,email,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].
+default,email,from,no-reply@ahanet.net
+default,email,subject,DTCStored_set Notification
+default,ivm,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].
+default,ivm,title,DTCStored_set Notification
+default,portal,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].
+default,push,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].
+default,push,subtitle,DTCStored_set Notification
+default,push,title,DTCStored_set Notification
+default,sms,body,A problem has been detected with your vehicle. Identified as: [[dtc-content-transformer| [$.Data.set] ]].

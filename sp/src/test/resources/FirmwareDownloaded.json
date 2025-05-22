@@ -1,0 +1,13 @@
+[
+  {
+    "EventID": "FirmwareDownloaded",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503060,
+    "Timezone": 330,
+    "Data": {
+      "default": "Data download completed for firmware upgrade."
+    }
+  }
+]
+

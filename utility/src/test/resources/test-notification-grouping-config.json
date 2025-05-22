@@ -1,0 +1,4307 @@
+[
+  {
+    "notificationId": "C04_EN_ACTIVATESERVICES_EMAIL",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_VEH_ENH_ACC_RES",
+    "group": "E_S_L2DATALOG",
+    "service": "L2DATALOG",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_LITE_INVITE",
+    "group": "LITE_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_LITE_INVITE_REMINDER",
+    "group": "S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACTIVATESERVICES_REMINDEREMAIL",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_LITE_INVITE_EMAILONLY",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_COMPLETEACCOUNT_EMAIL",
+    "group": "ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_COMPLETEACCOUNT_REMINDEREMAIL",
+    "group": "ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_CONFIRMATION_EMAIL",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RTN",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACCOUNT_DEACTIVATE",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACCOUNT_REACTIVATE",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_ACCOUNT_LOCKED",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_QA_UPDATED",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_ACCOUNT_UPDATED",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_OTP_MANAGEMENT",
+    "group": "OTP",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_USER_EMAIL_UPDATE",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_USER_PROFILE_UPDATE",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_VEHICLE_PROFILE_UPDATE",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_VALETBREACH",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CURFEWBREACH",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_SPEEDBREACH",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEENTRY",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEEXIT",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CONFIG_SUCCESS",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CONFIG_FAILURE",
+    "group": "PARENT",
+    "service": "PARENT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_RECALL_NOTIFICATION",
+    "group": "IVM_RECALL",
+    "service": "IVM",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_OIL_NOTIFICATION",
+    "group": "IVM_SERVICE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_TPM_NOTIFICATION",
+    "group": "IVM_SERVICE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_BRAKE_NOTIFICATION",
+    "group": "IVM_SERVICE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_BATTERY_NOTIFICATION",
+    "group": "IVM_SERVICE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDING_SOON_NOTIF",
+    "group": "IVM_SUBSCRIPTION",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDING_TODAY",
+    "group": "IVM_SUBSCRIPTION",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDED_NOTIF",
+    "group": "IVM_SUBSCRIPTION",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENROLL_REMINDER",
+    "group": "IVM_SUBSCRIPTION",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S07_LMN_DESTINATION",
+    "group": "LMN",
+    "service": "LMN",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S11_VEHICLE_HEALTH_REPORT_LOW",
+    "group": "VRC",
+    "service": "VRC",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_SUCCESS",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_SUCCESS",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_SUCCESS",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_GBOX_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RBOX_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_WINDOW_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_TRUNK_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_FOTA_OTA_ONGOING",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RUN_MODE",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_CUSTOMER_ACCESS",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_DR_DOOR_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_PASS_DOOR_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LR_DOOR_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RR_DOOR_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_START_COUNTER_EXCEEDED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_COUNTER_EXCEEDED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOW_RPM",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_KEY_IGN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BREAK_PRESSED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_HAZARD_LIGHTS_ON",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_GEAR_ENGAGED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_HOOD_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LIFTGATE_OPEN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_VTA_ALARM",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BATTERY_HIGH",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BATTERY_LOW",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_POWER_LOSS",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_MIL_LIGHT_ON",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_OIL_PRESSURE_LOW",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_COOLANT_TEMP_HIGH",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_CRANK_NO_START",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_OFF_REQUESTED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_DISABLED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NOT_CONFIGURED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NO_HOOD_SWITCH",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NO_AUTO_TRANS",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NOT_ENABLED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_IGN_STS_UNKNOWN",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_IGN_NOT_LOCK",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOW_FUEL",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_ETC_LAMP_ON",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOGISTIC_MODE",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_ESL_NOT_UNLOCKED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RF_HUB_HS_FAILED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_PSA_NOT_ACTIVE",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_FOTA_INSTALL_OR_FAIL",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STOP_SUCCESS",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_RELOCK_OVERLAP",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROLIGHTS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROLIGHTS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROLIGHTS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_SUCCESS",
+    "group": "RO",
+    "service": "ROLIGHTS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S13_SEND_DES_TO_VEHICLE_SUCCESS",
+    "group": "SDV",
+    "service": "SDV",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S13_SEND_DES_TO_VEHICLE_FAILED",
+    "group": "SDV",
+    "service": "SDV",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_SERVICES_INITIATED",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_EXPIRATION_REMINDER",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_CONFIRMATION",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_CUSTOMER_CANCELLATION",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_NO_ACK_RECIEVED",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_SYSTEM_CANCEL_ORIGINAL",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BCM_MODE_TRIGGERED",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_ACCELERATION_TRIGGERED",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BATTERY_DISCONNECT_TRIGGERED",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "Notifications for EMEA would be handled by third party (UBI/Insurance Provider).",
+    "group": "UBI",
+    "service": "UBI",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_LOCATION_UPDATE",
+    "group": "VF",
+    "service": "VF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED",
+    "group": "VF",
+    "service": "VF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED_SPEED_LOCKOUT",
+    "group": "VF",
+    "service": "VF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED_PRIVACY_ON",
+    "group": "VF",
+    "service": "VF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_ON",
+    "group": "PRIVACY",
+    "service": "PRIVACY",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_OFF",
+    "group": "PRIVACY",
+    "service": "PRIVACY",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_STARTED",
+    "group": "PHEV",
+    "service": "EVNOT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAULTED",
+    "group": "PHEV",
+    "service": "EVNOT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_INTERRUPTED",
+    "group": "PHEV",
+    "service": "EVNOT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_COMPLETED",
+    "group": "PHEV",
+    "service": "DEEPREFRESH",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_FAILED",
+    "group": "PHEV",
+    "service": "DEEPREFRESH",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_COMPLETED",
+    "group": "PHEV",
+    "service": "EVNOT",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED",
+    "group": "RO",
+    "service": "ROLIGHTS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_TC",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_UPDATE_BILLING_ADDRESS",
+    "group": "SM",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_UPDATE_PAYMENT_INFO",
+    "group": "SM",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_ELIGIBLE",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_EXPIRY_WO_PURCHASE",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_EXTNSN_PURCHASE",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_PERIOD_ON_PAID_CANCEL",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_EXPIRY",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_TO_PAID_BEFORE_7D",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_3P3_EXTNSN_PAID_INVOICE",
+    "group": "SM_3P3_PROMO",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_UPDATE_PAYMENT_INFO_FLEET",
+    "group": "SM",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_UPDATE_VATID_FISCALID",
+    "group": "SM",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_ORDER_CONF_MAIL",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_ORDER_CONF_MAIL_FLEET",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_PAYMENT_KO",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_PAYMENT_KO_FLEET",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_PAYMENT_KO_SEPA_FLEET",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_MOPEXP_15D",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_MOPEXP_15D_FLEET",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_MOPEXP_30D",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_MOPEXP_30D_FLEET",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_EXP_RENEW_30D",
+    "group": "SM_EXPIRY",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_EXP_RENEW_30D_FLEET",
+    "group": "SM_EXPIRY",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_EXP_DAY",
+    "group": "SM_EXPIRY",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_EXP_DAY_FLEET",
+    "group": "SM_EXPIRY",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_SCHED_RENEW_30D",
+    "group": "SM_RENEWAL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_SCHED_RENEW_30D_FLEET",
+    "group": "SM_RENEWAL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_RENEW_CONFIRM",
+    "group": "SM_RENEWAL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_RENEW_CONFIRM_FLEET",
+    "group": "SM_RENEWAL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_CONFIRM_CUST",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_CONFIRM_CUST_FLEET",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_CONFIRM_SYST",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_CONFIRM_SYST_FLEET",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_WITHDRAWL",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CANCEL_WITHDRAWL_FLEET",
+    "group": "SM_CANCEL",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CREDIT_MEMO",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_SERVICE_REACTIVATION",
+    "group": "SM_PURCHASE",
+    "service": " ",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_USER_PROFILE_OLD_EMAIL",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_COMPLETED",
+    "group": "PHEV",
+    "service": "CP",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_FAILED",
+    "group": "PHEV",
+    "service": "CP",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAILED",
+    "group": "PHEV",
+    "service": "CNOW",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_SUCCESS",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CLIMATE_REMINDER",
+    "group": "PHEV",
+    "service": "CPPLUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CABIN_CLIMATE_START",
+    "group": "PHEV",
+    "service": "CCSEV",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_PROFILE_COMPLETED",
+    "group": "PHEV",
+    "service": "CPPLUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_PROFILE_FAILED",
+    "group": "PHEV",
+    "service": "CPPLUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SETTING_COMPLETED",
+    "group": "PHEV",
+    "service": "CHRGSETTING",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SETTING_FAILED",
+    "group": "PHEV",
+    "service": "CHRGSETTING",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_UNPLUGGED_FAILURE",
+    "group": "PHEV",
+    "service": "CNOW",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_UNPLUGGED_FAILURE",
+    "group": "PHEV",
+    "service": "DEEPREFRESH",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_VEHICLE_DATA_NOT_AVAILABLE_FAILURE",
+    "group": "PHEV",
+    "service": "DEEPREFRESH",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SUCCESS",
+    "group": "PHEV",
+    "service": "CNOW",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S16_MARKETPLACE_SUCCESS",
+    "group": "UBI",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_REQUEST",
+    "group": "L2DATALOG",
+    "service": "L2DATALOG",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_AVAILABILITY",
+    "group": "L2DATALOG",
+    "service": "L2DATALOG",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_DISCONNECT_SUCCESS",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_DISCONNECT_FAILED",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_DELETE_SUCCESS",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_DELETE_FAILED",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S34_RECALL_IS_AVAILABLE",
+    "group": "RECALL",
+    "service": "RECALL",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C25_GPS_CRNS_SERVER_DOWN",
+    "group": "L2GPSCORRECTION",
+    "service": "L2GPSCORRECTION",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_SUPPRESS_SUCCESS",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_SUPPRESS_FAIL",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_NOTSUPPRESS_SUCCESS",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_NOTSUPPRESS_FAIL",
+    "group": "TA",
+    "service": "TA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_PIN",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_SECURITY_Q_N_A",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_PIN_MASARETI",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_SECURITY_Q_N_A_MASARETI",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "SR20_SERVICE_COUPONS_AVAILABLE",
+    "group": "SERVICE_COUPONS",
+    "service": "SERVICE_COUPONS",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_EXPIRED",
+    "group": "SVLA",
+    "service": "SVLA",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROTRUNKLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROTRUNKLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "ROTRUNKLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED",
+    "group": "RO",
+    "service": "ROTRUNKLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROTRUNKLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROTRUNKUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROTRUNKUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "ROTRUNKUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED",
+    "group": "RO",
+    "service": "ROTRUNKUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROTRUNKUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROGLOVEBOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_FAILED",
+    "group": "RO",
+    "service": "ROGLOVEBOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROGLOVEBOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROGLOVEBOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_FAILED",
+    "group": "RO",
+    "service": "ROGLOVEBOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROGLOVEBOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_SUCCESS",
+    "group": "RO",
+    "service": "RORMABOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "RORMABOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "RORMABOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED",
+    "group": "RO",
+    "service": "RORMABOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "RORMABOXLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_SUCCESS",
+    "group": "RO",
+    "service": "RORMABOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "RORMABOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED",
+    "group": "RO",
+    "service": "RORMABOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "RORMABOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "RORMABOXUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_SUCCESS",
+    "group": "RO",
+    "service": "ROHVACON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROHVACON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED",
+    "group": "RO",
+    "service": "ROHVACON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROHVACON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_SUCCESS",
+    "group": "RO",
+    "service": "ROHVACOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROHVACOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED",
+    "group": "RO",
+    "service": "ROHVACOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROHVACOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_SUCCESS",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_IGNITION_ON",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_TIMEOUT",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_SUCCESS",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_IGNITION_ON",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_TIMEOUT",
+    "group": "RO",
+    "mandatory": true,
+    "service": "ROHVACTMP",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_SUCCESS",
+    "group": "RO",
+    "service": "ROCOMFORTON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROCOMFORTON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED",
+    "group": "RO",
+    "service": "ROCOMFORTON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROCOMFORTON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_SUCCESS",
+    "group": "RO",
+    "service": "ROCOMFORTOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROCOMFORTOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED",
+    "group": "RO",
+    "service": "ROCOMFORTOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROCOMFORTOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_SUCCESS",
+    "group": "RO",
+    "service": "ROCLRPERSDATA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED_VEHICLE_IN_MOTION",
+    "group": "RO",
+    "service": "ROCLRPERSDATA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED",
+    "group": "RO",
+    "service": "ROCLRPERSDATA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED_TIME_OUT",
+    "group": "RO",
+    "service": "ROCLRPERSDATA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROLIFTGATELOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROLIFTGATELOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "ROLIFTGATELOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED",
+    "group": "RO",
+    "service": "ROLIFTGATELOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROLIFTGATELOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_SUCCESS",
+    "group": "RO",
+    "service": "ROLIFTGATEUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROLIFTGATEUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED",
+    "group": "RO",
+    "service": "ROLIFTGATEUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROLIFTGATEUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_DOOR_OPEN",
+    "group": "RO",
+    "service": "ROLIFTGATEUNLOCK",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_SIXDAY_ELAPSED",
+    "group": "RO",
+    "service": "ROCLRPERSDATA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_SUCCESS",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_GENERIC",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_IGNITION",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_ONGOING",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_SOC",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_TIME_EXPIRED",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_SOC",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_HVAC",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_REMOTE_OP",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_KFOB_OP",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_ERR_GENERIC",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_SCHEDULE_SUCCESS",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_ACV_SCHEDULE_FAILED",
+    "group": "RO",
+    "service": "ACV",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_STARTED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAULTED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_INTERRUPTED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_COMPLETED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_FAILED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_COMPLETED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_COMPLETED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_FAILED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAILED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CLIMATE_REMINDER",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_UNPLUGGED_FAILURE",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_VEHICLE_DATA_NOT_AVAILABLE_FAILURE",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SUCCESS",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_UNPLUGGED_FAILURE",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "PHEV",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_VALETBREACH_FLEET",
+    "mandatory": false,
+    "group": "PARENT",
+    "checkEntitlement": true,
+    "service": "PARENT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CURFEWBREACH_FLEET",
+    "mandatory": false,
+    "group": "PARENT",
+    "checkEntitlement": true,
+    "service": "PARENT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_SPEEDBREACH_FLEET",
+    "mandatory": false,
+    "group": "PARENT",
+    "checkEntitlement": true,
+    "service": "PARENT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEENTRY_FLEET",
+    "mandatory": false,
+    "group": "PARENT",
+    "checkEntitlement": true,
+    "service": "PARENT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEEXIT_FLEET",
+    "mandatory": false,
+    "group": "PARENT",
+    "checkEntitlement": true,
+    "service": "PARENT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_SERVICES_INITIATED_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_EXPIRATION_REMINDER_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_CONFIRMATION_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_CUSTOMER_CANCELLATION_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_NO_ACK_RECIEVED_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S14_SVLA_SYSTEM_CANCEL_ORIGINAL_FLEET",
+    "mandatory": false,
+    "group": "SVLA",
+    "checkEntitlement": true,
+    "service": "SVLA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BCM_MODE_TRIGGERED_FLEET",
+    "mandatory": true,
+    "group": "TA",
+    "checkEntitlement": true,
+    "service": "TA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_ACCELERATION_TRIGGERED_FLEET",
+    "mandatory": true,
+    "group": "TA",
+    "checkEntitlement": true,
+    "service": "TA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BATTERY_DISCONNECT_TRIGGERED_FLEET",
+    "mandatory": true,
+    "group": "TA",
+    "checkEntitlement": true,
+    "service": "TA",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_ON_FLEET",
+    "mandatory": false,
+    "group": "PRIVACY",
+    "checkEntitlement": false,
+    "service": "PRIVACY",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_OFF_FLEET",
+    "mandatory": false,
+    "group": "PRIVACY",
+    "checkEntitlement": false,
+    "service": "PRIVACY",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_STARTED_FLEET",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "EVNOT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAULTED_FLEET",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "EVNOT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_INTERRUPTED_FLEET",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "EVNOT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_COMPLETED_FLEET",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "EVNOT",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_PROFILE_COMPLETED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "CPCHRG2",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_PROFILE_FAILED",
+    "mandatory": false,
+    "group": "PHEV",
+    "checkEntitlement": true,
+    "service": "CPCHRG2",
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACTIVATESERVICES_EMAIL_FLEET",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACTIVATESERVICES_REMINDEREMAIL_FLEET",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_CONFIRMATION_EMAIL_FLEET",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RTN_FLEET",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_01",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_02",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S51_LOCATION_SHARING_DESTINATION_WITH_CPA",
+    "group": "NAV_LOCSHARE",
+    "service": "NAV_LOCSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S51_LOCATION_SHARING_DESTINATION_WITHOUT_CPA",
+    "group": "NAV_LOCSHARE",
+    "service": "NAV_LOCSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S51_LOCATION_SHARING_CURRENT_LOC_WITH_CPA",
+    "group": "NAV_LOCSHARE",
+    "service": "NAV_LOCSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S51_LOCATION_SHARING_CURRENT_LOC_WITHOUT_CPA",
+    "group": "NAV_LOCSHARE",
+    "service": "NAV_LOCSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACCOUNT_DEACTIVATE_FLEET",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_ACCOUNT_REACTIVATE_FLEET",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_USER_EMAIL_UPDATE_FLEET",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_USER_PROFILE_UPDATE_FLEET",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_VEHICLE_PROFILE_UPDATE_FLEET",
+    "group": "AC_MGMT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_TC_FLEET",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_USER_PROFILE_OLD_EMAIL_FLEET",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_ACCOUNT_LOCKED_FLEET",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_QA_UPDATED_FLEET",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_PIN_ACCOUNT_UPDATED_FLEET",
+    "group": "PIN",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C07_OTP_MANAGEMENT_FLEET",
+    "group": "OTP",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_03",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_04",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S12_RO_UNLOCK_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LOCK_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_START_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "REON",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_STOP_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "HBLF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_SUCCESS_REQ_RECVD",
+    "group": "VF",
+    "service": "VF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLIMATE_ON_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_CLIMATE_OFF_SUCCESS_REQ_RECVD",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S68_VI_LOW_FUEL",
+    "group": "VI",
+    "service": "VHSG",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "SR20_SERVICE_COUPONS_RECVD",
+    "group": "SC",
+    "service": "SERVICE_COUPONS",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S22_OTP_EMAIL_NOTIFICATION",
+    "group": "OTP",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S999_TEST_PUSH_CAMPGN_01",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSH_CAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_DEL_PMT_MTHD",
+    "group": "SM_PAYMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_CHNG_DFLT_PMT_MTHD",
+    "group": "SM_PAYMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_COMPLETEACCOUNT_REMINDER_NON_CONNECTED",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_COMPLETEACCOUNT_NON_CONNECTED",
+    "group": "E_S_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_VIN_SCAN",
+    "group": "ENROLLMENT",
+    "service": "ENROLLMENT",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S06_IVM_MARKETING_NOTIFICATION",
+    "group": "IVM_FLEXIBLE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S06_IVM_GENERAL_NOTIFICATION",
+    "group": "IVM_FLEXIBLE",
+    "service": "IVM",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_05",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_06",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_07",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_08",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_09",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C05_PUSH_NOTIFICATIONS_CAMPAIGN_10",
+    "group": "PUSH_CAMPAIGN",
+    "service": "PUSHCAMPAIGN",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S12_RO_APP_NOT_RUNNING",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_MULTIPLE",
+    "group": "RO",
+    "service": "REOFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_DELIVERY_ACCESS_AUTOMATIC",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_DELIVERY_ACCESS_INTERACTIVE",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LOCALIZATION",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_HORN_LIGHTS",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_UNLOCK",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LOCK",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_TRUNK",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_DELIVERY_END",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_LOCK_DOORS_FAILED_DOOR_NOT_PRESENT",
+    "group": "RO",
+    "service": "RDL",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_UNLOCK_DOORS_FAILED_DOOR_NOT_PRESENT",
+    "group": "RO",
+    "service": "RDU",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_SUCCESS",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_FAILED",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_EXISTSESSION",
+    "group": "CPA",
+    "service": "CPA",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LIGHTS",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_CLOSE_TRUNK",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_SUCCESS",
+    "group": "RO",
+    "service": "ROPRECOND",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROPRECOND",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED",
+    "group": "RO",
+    "service": "ROPRECOND",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROPRECOND",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_SUCCESS",
+    "group": "RO",
+    "service": "ROPRECOND_OFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_IGNITION_ON",
+    "group": "RO",
+    "service": "ROPRECOND_OFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED",
+    "group": "RO",
+    "service": "ROPRECOND_OFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_TIMEOUT",
+    "group": "RO",
+    "service": "ROPRECOND_OFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROPRECOND",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_SPEED_LOCKOUT",
+    "group": "RO",
+    "service": "ROPRECOND_OFF",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_PIN_WAGONEER",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C04_EN_RESET_SECURITY_Q_N_A_WAGONEER",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S120_ECO_NEW_BADGES_ACHIEVEMENT",
+    "group": "ECO3",
+    "service": "ECOCOACHING20",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S120_ECO_BEST_SCORE_BADGE_ACHIEVEMENT",
+    "group": "ECO2",
+    "service": "ECOCOACHING20",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S120_ECO_WELCOME_BADGE_ACHIEVEMENT",
+    "group": "ECO1",
+    "service": "ECOCOACHING20",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S101_APPOINTMENT_CONFIRMATION",
+    "group": "SERVICE_SCHEDULING",
+    "service": "SVC_SCHEDULE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S101_APPOINTMENT_CANCELLATION",
+    "group": "SERVICE_SCHEDULING",
+    "service": "SVC_SCHEDULE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S101_SERVICE_CONFIRMATION",
+    "group": "SERVICE_SCHEDULING",
+    "service": "SVC_SCHEDULE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S101_SERVICE_REMINDER",
+    "group": "SERVICE_SCHEDULING",
+    "service": "SVC_SCHEDULE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C11_TEST_BANNER_NOTIFCT_01",
+    "group": "BANNER_NOTIF",
+    "service": "BANNER_NOTIF",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_INSTALLATION_SUCCESSFULL",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_INSTALLATION_FAILURE",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_UNINSTALLATION_SUCCESSFULL",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_UNINSTALLATION_FAILURE",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_UPDATES_CONFIRMATION",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S110_UPDATES_FAILURE",
+    "group": "APPSTORE",
+    "service": "APPSTORE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_OPEN_LIFTGATE",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_CLOSE_LIFTGATE",
+    "group": "ROSECUREDELIVERY",
+    "service": "ROSECUREDELIVERY",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S55_CAL_INTG_LEAVE_NOTIFICATION",
+    "group": "NAV_CALINT",
+    "service": "NAV_CALINT",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S55_CAL_INTG_LATE_NOTIFICATION",
+    "group": "NAV_CALINT",
+    "service": "NAV_CALINT",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXP_IN_7_DAYS",
+    "group": "SXM_SM_EXPIRY",
+    "service": "SM_PRE_EXPIRY_SXM",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXP_DAY",
+    "group": "SXM_SM_EXPIRY",
+    "service": "SM_ON_EXPIRY_SXM",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXPIRED_14_DAYS",
+    "group": "SXM_SM_EXPIRY",
+    "service": "SM_POST_EXPIRY_SXM",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S55_CAL_INTG_DISSOCN",
+    "group": "NAV_CALINT",
+    "service": "NAV_CALINT",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S55_CAL_INTG_DISSOCN_NO_VEHICLE",
+    "group": "NAV_CALINT",
+    "service": "NAV_CALINT",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "S31_FULL_PRIVACY_MODE_ON",
+    "group": "PRIVACY",
+    "service": "PRIVACY",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S31_FULL_PRIVACY_MODE_OFF",
+    "group": "PRIVACY",
+    "service": "PRIVACY",
+    "mandatory": false,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "C04_EN_ENROLLMENT_INSTRUCTION",
+    "group": "S_ENROLLMENT",
+    "service": "",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "C32_OTA_VSP_COMPLETE",
+    "group": "FOTA",
+    "mandatory": true,
+    "service": "FOTA",
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_RESET_PIN_ALFA",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_RESET_SECURITY_Q_N_A_ALFA",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_RESET_PIN_FITA",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C04_EN_RESET_SECURITY_Q_N_A_FITA",
+    "group": "E_ENROLLMENT",
+    "service": " ",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "checkAssociation": false,
+    "groupType": "USER_ONLY"
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_AUD_STA_CG",
+    "group": "E_S_L2DATALOG",
+    "service": "L2DATALOG",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_AUD_PD_PSD",
+    "group": "E_S_L2DATALOG",
+    "service": "L2DATALOG",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_DRAIN_RISK",
+    "group": "VI",
+    "service": "BatteryDrainRisk",
+    "mandatory": true,
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_LOW",
+    "group": "VI",
+    "service": "VHSG",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_CRITICAL",
+    "group": "VI",
+    "service": "VHSG",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_LOW",
+    "group": "VI",
+    "mandatory": true,
+    "service": "VHS",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_CRITICAL",
+    "group": "VI",
+    "mandatory": true,
+    "service": "VHS",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_CHECKED_IN",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_REQUEST_ORDER_DETAILS_AVAILABLE",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_SERVICE_IN_PROGRESS",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_READY",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_PICKED_UP",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_READY",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_REVIEW",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_APPROVAL",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": false,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_APPOINTMENT_CONFIRMATION",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_DYNAMIC_CHKLIST",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_DIAGNOSIS_IN_PROGRESS",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_QUALITY_CHECK",
+    "group": "SERVICE_STATUS",
+    "service": "SVC_STATUS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S176_CONNECTED_PNC_ERROR",
+    "group": "XEVPNC",
+    "service": "XEVPNC",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S176_CONNECTED_PNC_CHARGE_COMPLETED",
+    "group": "XEVPNC",
+    "service": "XEVPNC",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S176_CONNECTED_PNC_IGNITION_ON",
+    "group": "XEVPNC",
+    "service": "XEVPNC",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_24H_TIME_EXPIRED",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_CONSENT_TIME_EXPIRED",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_STARTED",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_ENDED",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_ACCESS_INTERACTIVE",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_2H_TIME_EXPIRED",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_SECURITY_REASONS",
+    "group": "ROSDSQUICKSHARE",
+    "service": "ROSDSQUICKSHARE",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S22_OTP_SMS_NOTIFICATION",
+    "group": "OTP",
+    "mandatory": true,
+    "service": " ",
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S106_RDA_SESSION_APPROVAL",
+    "group": "RDA",
+    "mandatory": true,
+    "service": "RDA_HU",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_PAIRING_SUCCESS",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_PAIRING_FAILURE",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEY_AUTHORIZATION",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETE_SUCCESS",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETE_FAILURE",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETED",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETE-ALL_SUCCESS",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETE-ALL_FAILURE",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_RTN",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_SERVICE-EXPIRATION",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_SUSPEND",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_RESUME",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETEALL_AUTHORIZATION",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK-ALLKEYS_DELETED",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_SVLA",
+    "group": "SPAAK",
+    "mandatory": false,
+    "service": "SPKOWNRPAIR",
+    "checkEntitlement": true,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S175_AD_GPS_CRNS_NETWORK_ISS",
+    "group": "AD1_L2PLUSGPSCORRECTIONS",
+    "mandatory": true,
+    "service": "AD1_L2PLUSGPSCORRECTIONS",
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S175_AD_GPS_CRNS_DDS_SERVER_ISS",
+    "group": "AD1_L2PLUSGPSCORRECTIONS",
+    "mandatory": true,
+    "service": "AD1_L2PLUSGPSCORRECTIONS",
+    "checkEntitlement": false,
+    "groupType": "USER_VEHICLE",
+    "checkAssociation": true
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_LOW",
+    "group": "VI",
+    "service": "VHSG",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_LOW",
+    "group": "VI",
+    "service": "VHS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_VERY_LOW",
+    "group": "VI",
+    "service": "VHSG",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_VERY_LOW",
+    "group": "VI",
+    "service": "VHS",
+    "mandatory": true,
+    "checkEntitlement": true,
+    "checkAssociation": true,
+    "groupType": "USER_VEHICLE"
+  }
+]

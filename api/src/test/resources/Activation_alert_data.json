@@ -1,0 +1,75 @@
+{
+  "_id": "test2",
+  "timestamp": 1486094503015,
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSNSPushResponse",
+      "provider": "AWS_SNS_SMS",
+      "channelType": "MOBILE_APP_PUSH",
+      "alertEventData": {
+        "default": "test message"
+      },
+      "userID": "test@test.com",
+      "alertsObject": {
+        "EventID": "Activation",
+        "Data": {
+          "customExtension": null,
+          "serialNumber": "4532",
+          "imei": "353490069604532",
+          "tripid": null,
+          "id": "HU0SCIUKMYXFG9"
+        },
+        "Version": "1.0",
+        "BenchMode": 1,
+        "Timestamp": 1486094503015,
+        "Timezone": 180,
+        "pdid": "HU0SCIUKMYXFG9"
+      },
+      "processedTime": "1536313678585"
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.AmazonSESResponse",
+      "provider": "AWS_SES",
+      "channelType": "EMAIL",
+      "alertEventData": {
+        "default": "test message"
+      },
+      "userID": "test@test.com",
+      "alertsObject": {
+        "EventID": "Activation",
+        "Data": {
+          "customExtension": null,
+          "serialNumber": "4532",
+          "imei": "353490069604532",
+          "tripid": null,
+          "id": "HU0SCIUKMYXFG9"
+        },
+        "Version": "1.0",
+        "BenchMode": 1,
+        "Timestamp": 1486094503015,
+        "Timezone": 180,
+        "pdid": "HU0SCIUKMYXFG9"
+      },
+      "processedTime": "1536313678750"
+    }
+  ],
+  "pdid": "HU0SCIUKMYXFG9",
+  "alertType": "Activation",
+  "payload": {
+    "EventID": "Activation",
+    "alertsData": {
+      "alertDataProperties": {
+        "customExtension": null,
+        "serialNumber": "4532",
+        "imei": "353490069604532",
+        "tripid": null,
+        "id": "HU0SCIUKMYXFG9"
+      }
+    },
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503015,
+    "Timezone": 180,
+    "pdid": "HU0SCIUKMYXFG9"
+  }
+}

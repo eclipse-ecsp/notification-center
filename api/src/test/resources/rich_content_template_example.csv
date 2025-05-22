@@ -1,0 +1,9 @@
+Notification ID,,,
+S04_DRIVE_ALRT_VALETBREACH,,,
+Brand,Attribute,en-us,fr-ca
+Fita,Reference-HTML,htmls/generic.html,htmls/generic.html
+Fita,body-paragraph1-text,English Notification,French Notification
+Fita,body-paragraph2-text,Drive Alert,Drive Alert
+Alfa,Reference-HTML,htmls/generic.html,htmls/generic.html
+Alfa,body-paragraph1-text,English Notification,French Notification
+Alfa,body-paragraph2-text,Drive Alert,Drive Alert

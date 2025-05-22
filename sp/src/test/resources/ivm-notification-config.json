@@ -1,0 +1,12 @@
+{
+  "userId": "HUXOIDDN4HUN18",
+  "vehicleId": "HUXOIDDN4HUN18",
+  "group": "all",
+  "enabled": "true",
+  "channels": [
+    {
+      "type": "ivm",
+      "enabled": "true"
+    }
+  ]
+}

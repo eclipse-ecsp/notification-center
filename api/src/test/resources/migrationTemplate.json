@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "nshai_fita_fr_FR",
+    "notificationId": "nshai",
+    "notificationShortName": "nshai Notification",
+    "notificationLongName": "nshai Notification long",
+    "locale": "fr_FR",
+    "brand": "fita",
+    "channelTemplates": {
+      "ivm": {
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      },
+      "apipush": {
+        "subtitle": "Notification de faible consommation de carburant",
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      },
+      "sms": {
+        "body": "fita alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "portal": {
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "email": {
+        "subject": "fita Notification de faible consommation de carburant",
+        "from": "test@test.com",
+        "body": "fita alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "push": {
+        "subtitle": "Notification de faible consommation de carburant",
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      }
+    },
+    "lastUpdatedTime": "2021-06-01T06:31:49"
+  },
+  {
+    "_id": "nshai_fita_en_US",
+    "notificationId": "nshai",
+    "notificationShortName": "nshai Notification",
+    "notificationLongName": "nshai Notification long",
+    "locale": "en_US",
+    "brand": "fita",
+    "channelTemplates": {
+      "ivm": {
+        "body": "fita low fuel alert please stop at gas station",
+        "title": "fita low fuel Notification"
+      },
+      "apipush": {
+        "subtitle": "fita low fuel alert",
+        "body": "fita low fuel alert please stop at gas station",
+        "title": "fita low fuel Notification"
+      },
+      "sms": {
+        "body": "fita low fuel alert please stop at gas station"
+      },
+      "portal": {
+        "body": "fita low fuel alert please stop at gas station"
+      },
+      "email": {
+        "subject": "fita fita low fuel Notification",
+        "from": "test@test.com",
+        "body": "fita low fuel alert please stop at gas station"
+      },
+      "push": {
+        "subtitle": "fita low fuel Notification",
+        "body": "fita low fuel alert please stop at gas station",
+        "title": "fita low fuel Notification"
+      }
+    },
+    "lastUpdatedTime": "2021-06-01T06:31:49"
+  },
+  {
+    "_id": "nshai_default_fr_FR",
+    "notificationId": "nshai",
+    "notificationShortName": "nshai Notification",
+    "notificationLongName": "nshai Notification long",
+    "locale": "fr_FR",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      },
+      "apipush": {
+        "subtitle": "Notification de faible consommation de carburant",
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      },
+      "sms": {
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "portal": {
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "email": {
+        "subject": "Notification de faible consommation de carburant",
+        "from": "test@test.com",
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service"
+      },
+      "push": {
+        "subtitle": "Notification de faible consommation de carburant",
+        "body": "alerte faible en carburant, veuillez vous arrêter à la station-service",
+        "title": "Notification de faible consommation de carburant"
+      }
+    },
+    "lastUpdatedTime": "2021-06-01T06:31:49"
+  },
+  {
+    "_id": "nshai_default_en_US",
+    "notificationId": "nshai",
+    "notificationShortName": "nshai Notification",
+    "notificationLongName": "nshai Notification long",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "body": "low fuel alert please stop at gas station",
+        "title": "low fuel Notification"
+      },
+      "apipush": {
+        "subtitle": "low fuel alert",
+        "body": "low fuel alert please stop at gas station",
+        "title": "low fuel Notification"
+      },
+      "sms": {
+        "body": "low fuel alert please stop at gas station"
+      },
+      "portal": {
+        "body": "low fuel alert please stop at gas station"
+      },
+      "email": {
+        "subject": "low fuel Notification",
+        "from": "test@test.com",
+        "body": "low fuel in name [$.Data.vehicleProfile.name] alert please stop at gas station"
+      },
+      "push": {
+        "subtitle": "low fuel Notification",
+        "body": "low fuel alert please stop at gas station",
+        "title": "low fuel Notification"
+      }
+    },
+    "lastUpdatedTime": "2021-06-01T06:31:49"
+  }
+]

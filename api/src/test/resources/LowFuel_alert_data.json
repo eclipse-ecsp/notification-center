@@ -1,0 +1,51 @@
+{
+  "_id": "178690",
+  "pdid": "HUBIIDLFQAC476",
+  "alertType": "LowFuel",
+  "payload": {
+    "EventID": "LowFuel",
+    "alertsData": {
+      "alertDataProperties": {
+        "fuelLevel": 15
+      }
+    },
+    "Version": "1.0",
+    "BenchMode": 0,
+    "Timestamp": 1486100143530,
+    "Timezone": 60,
+    "pdid": "HUBIIDLFQAC476"
+  },
+  "channelResponses": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.FCMChannelResponse",
+      "provider": "FCM_PUSH",
+      "channelType": "MOBILE_APP_PUSH",
+      "topics": [
+        {
+          "topicARN": "arn:aws:sns:us-east-1:5:application_7",
+          "creationTrackingID": null,
+          "publishTrackingID": "2ffe736a-bd2b-5145-822a-22458fef840a",
+          "deleteTrackingID": null,
+          "subscriptions": []
+        }
+      ],
+      "alertEventData": {
+        "default": "Low fuel detected. Current fuel level is 15%.",
+        "APNS": "{\"aps\":{\"alert\":\"Low fuel detected. Current fuel level is 15%.\",\"sound\":\"default\"},\"payload\":{\"EventID\":\"LowFuel\",\"Data\":{\"fuelLevel\":15},\"Version\":\"1.0\",\"BenchMode\":0,\"Timestamp\":1454674114815,\"Timezone\":60,\"pdid\":\"HUBIIDLFQAC476\"}}"
+      },
+      "alertsObject": {
+        "EventID": "LowFuel",
+        "Data": {
+          "fuelLevel": 15
+        },
+        "Version": "1.0",
+        "BenchMode": 0,
+        "Timestamp": 1486100143530,
+        "Timezone": 60,
+        "pdid": "HUBIIDLFQAC476"
+      }
+    }
+  ],
+  "createDts": 1488269545248,
+  "timestamp": 1486100143530
+}

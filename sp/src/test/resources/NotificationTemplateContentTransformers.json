@@ -1,0 +1,92 @@
+[
+  {
+    "notificationId": "ContentTransformersTest",
+    "notificationShortName": "ContentTransformersTest",
+    "notificationLongName": "Content Transformers Test",
+    "locale": "en_US",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Hello [[demo-user-name|Neo]]",
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]",
+        "subtitle": "Goodbye [[demo-user-name|]]"
+      },
+      "email": {
+        "from": "no-reply@ahanet.net",
+        "subject": "Hello [[demo-user-name|Neo]]",
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]"
+      },
+      "sms": {
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]"
+      },
+      "ivm": {
+        "title": "Hello [[demo-user-name|Dog]]",
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]"
+      },
+      "portal": {
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]"
+      },
+      "apiPush": {
+        "title": "Hello [[demo-user-name|Neo]]",
+        "body": "This is a unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]",
+        "subtitle": "Goodbye [[demo-user-name|]]"
+      }
+    }
+  },
+  {
+    "notificationId": "ContentTransformersTest-unknownTransformer",
+    "notificationShortName": "ContentTransformersTest",
+    "notificationLongName": "Content Transformers Test",
+    "locale": "en_UK",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Hello [[blah-no-such-transformer|Neo]]",
+        "body": "This is a unit test for the [[no-such-transformer|best]] notification content transformer for [[demo-user-name|]]",
+        "subtitle": "Goodbye [[dog|cat]]"
+      }
+    }
+  },
+  {
+    "notificationId": "ContentTransformersTest-timeouts",
+    "notificationShortName": "ContentTransformersTest",
+    "notificationLongName": "Content Transformers Test",
+    "locale": "en_UK",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Hello [[demo-user-name|Neo]], now we will wait [[slooow|20]], [[slooow|40]], [[slooow|50]]",
+        "body": "This is a timeout [[slooow|70]] unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]",
+        "subtitle": "Goodbye [[demo-user-name|]], now we will throw an exception : [[slooow|NaN]]"
+      }
+    }
+  },
+  {
+    "notificationId": "ContentTransformersTest-exceptions",
+    "notificationShortName": "ContentTransformersTest",
+    "notificationLongName": "Content Transformers Test",
+    "locale": "en_UK",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Hello [[demo-user-name|Neo]], now we will wait [[slooow|Nana]], [[slooow|Banana]], [[slooow|Janana]]",
+        "body": "This is a timeout [[slooow|100]] unit test for the [[demo-upper-case|best]] notification content transformer for [[demo-user-name|]]. [[slooow|NaN-2]], [[slooow|NaN-3]]",
+        "subtitle": "Goodbye [[demo-user-name|]], now we will throw an exception : [[slooow|NaN]]"
+      }
+    }
+  },
+  {
+    "notificationId": "ContentTransformersTest-disabled",
+    "notificationShortName": "ContentTransformersTest",
+    "notificationLongName": "Content Transformers Test",
+    "locale": "en_UK",
+    "brand": "default",
+    "channelTemplates": {
+      "push": {
+        "title": "Hello [[demo-user-name|Neo]]",
+        "body": "This is a unit test for the [[disabled-transformer1|dog]] and [[disabled-transformer1|cat]] notification content transformer for [[demo-user-name|]].",
+        "subtitle": "Goodbye [[demo-user-name|]], now we will all [[disabled-transformer1|die]]"
+      }
+    }
+  }
+]

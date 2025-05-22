@@ -1,0 +1,5 @@
+
+#commands to send the events
+java -cp notification-sp.jar org.eclipse.ecsp.notification.msg.generator.KafkaConsoleProducer haa-internal HUX12345 "[{\"EventID\":\"VehicleAssociation\",\"Data\":{\"userId\":\"sabarish37\"}}]" "10.0.0.50:9092"
+
+java -cp notification-sp.jar org.eclipse.ecsp.notification.msg.generator.KafkaConsoleProducer rawmqttalerts HU8ZBBJAUYH563  "[{ \"EventID\":\"LowFuelLevel\", \"Version\":\"1.0\", \"BenchMode\":1, \"Timestamp\":1478769898, \"Timezone\":-5,\"Data\":{\"fuelLevel\":\"10\"   }   },   { \"EventID\":\"GeoFenceBreach\", \"Version\":\"1.0\", \"BenchMode\":1, \"Timestamp\":1478769898, \"Timezone\":-5,    \"Data\":    {     \"latitude\":\"12.9716N\",    \"longitude\":\"77.5946E\"   }   }]" "10.0.0.50:9092"

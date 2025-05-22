@@ -1,0 +1,5 @@
+{
+  "GCM": "{\"data\":{\"payload\":\"{\\\"EventID\\\":\\\"Collision\\\",\\\"Data\\\":{\\\"VehicleSpeedUnit\\\":\\\"kmph\\\",\\\"DummyKey\\\":\\\"DummyValue\\\",\\\"latitude\\\":\\\"15.92458\\\",\\\"longitude\\\":\\\"79.852421\\\",\\\"VehicleSpeed\\\":\\\"44\\\"},\\\"Version\\\":\\\"1.0\\\",\\\"BenchMode\\\":1,\\\"Timestamp\\\":1481724868055,\\\"Timezone\\\":330}\",\"message\":\"Vehicle crash detected at location http://maps.google.com/maps?q=loc:15.92458,79.852421. Your emergency contacts have been notified.\"},\"time_to_live\":2419200,\"dry_run\":false}",
+  "default": "Vehicle crash detected at location http://maps.google.com/maps?q=loc:15.92458,79.852421. Your emergency contacts have been notified.",
+  "APNS": "{\"aps\":{\"alert\":\"Vehicle crash detected at location http://maps.google.com/maps?q=loc:15.92458,79.852421. Your emergency contacts have been notified.\",\"sound\":\"default\"},\"payload\":{\"EventID\":\"Collision\",\"Data\":{\"VehicleSpeedUnit\":\"kmph\",\"DummyKey\":\"DummyValue\",\"latitude\":\"15.92458\",\"longitude\":\"79.852421\",\"VehicleSpeed\":\"44\"},\"Version\":\"1.0\",\"BenchMode\":1,\"Timestamp\":1481724868055,\"Timezone\":330}}"
+}

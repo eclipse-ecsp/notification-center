@@ -1,0 +1,49 @@
+{
+  "_id": "178691",
+  "pdid": "HUBIIDLFQAC476",
+  "timestamp": 1486044450,
+  "alertType": "Collision",
+  "payload": {
+    "EventID": "Collision",
+    "alertsData": {
+      "alertDataProperties": {
+        "acceleration": 190.06685236733642
+      }
+    },
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486044450,
+    "Timezone": 330,
+    "pdid": "HUBIIDLFQAC476"
+  },
+  "channelResponses": [
+    {
+      "provider": "AWS_SNS_PUSH",
+      "channelType": "MOBILE_APP_PUSH",
+      "topics": [
+        {
+          "topicARN": "arn:aws:sns:us-east-1:222260823685:h_application",
+          "creationTrackingID": null,
+          "publishTrackingID": "f03b8680-97e1-5fff-87ca-d78da89dab52",
+          "subscriptions": [
+          ]
+        }
+      ],
+      "alertEventData": {
+        "default": "Vehicle crash detected. Your emergency contacts have been notified.",
+        "APNS": "{\"aps\":{\"alert\":\"Vehicle crash detected. Your emergency contacts have been notified.\",\"sound\":\"default\"},\"payload\":{\"EventID\":\"Collision\",\"Data\":{\"acceleration\":190.06685236733642},\"Version\":\"1.0\",\"BenchMode\":1,\"Timestamp\":1486044452567,\"Timezone\":330,\"pdid\":\"HU0SCIUKMYXFG9\"}}"
+      },
+      "alertsObject": {
+        "EventID": "Collision",
+        "Data": {
+          "acceleration": 190.06685236733642
+        },
+        "Version": "1.0",
+        "BenchMode": 1,
+        "Timestamp": 1486044450,
+        "Timezone": 330,
+        "pdid": "HUBIIDLFQAC476"
+      }
+    }
+  ]
+}

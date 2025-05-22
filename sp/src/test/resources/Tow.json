@@ -1,0 +1,14 @@
+[
+  {
+    "EventID": "Tow",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1478769560,
+    "Timezone": -5,
+    "Data": {
+      "latitude": "12.9716S",
+      "longitude": "77.5946E"
+    }
+  }
+]
+

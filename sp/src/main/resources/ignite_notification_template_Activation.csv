@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+Activation,Activation Notification,Activation Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Congratulations!  Your device is activated and ready to use!
+default,apiPush,subtitle,Activation Notification
+default,apiPush,title,Activation Notification
+default,email,body,Congratulations!  Your device is activated and ready to use!
+default,email,from,no-reply@ahanet.net
+default,email,subject,Activation Notification
+default,ivm,body,Congratulations!  Your device is activated and ready to use!
+default,ivm,title,Activation Notification
+default,portal,body,Congratulations!  Your device is activated and ready to use!
+default,push,body,Congratulations!  Your device is activated and ready to use!
+default,push,subtitle,Activation Notification
+default,push,title,Activation Notification
+default,sms,body,Congratulations!  Your device is activated and ready to use!

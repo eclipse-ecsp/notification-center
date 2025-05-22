@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+LowFuel,LowFuel Notification,LowFuel Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].
+default,apiPush,subtitle,LowFuel Notification
+default,apiPush,title,LowFuel Notification
+default,email,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].
+default,email,from,no-reply@ahanet.net
+default,email,subject,LowFuel Notification
+default,ivm,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].
+default,ivm,title,LowFuel Notification
+default,portal,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].
+default,push,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].
+default,push,subtitle,LowFuel Notification
+default,push,title,LowFuel Notification
+default,sms,body,Low fuel detected. Current fuel level is [$.Data.fuelLevel].

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+DongleDetached,DongleDetached Notification,DongleDetached Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,The dongle has been disconnected from your vehicle.
+default,apiPush,subtitle,DongleDetached Notification
+default,apiPush,title,DongleDetached Notification
+default,email,body,The dongle has been disconnected from your vehicle.
+default,email,from,no-reply@ahanet.net
+default,email,subject,DongleDetached Notification
+default,ivm,body,The dongle has been disconnected from your vehicle.
+default,ivm,title,DongleDetached Notification
+default,portal,body,The dongle has been disconnected from your vehicle.
+default,push,body,The dongle has been disconnected from your vehicle.
+default,push,subtitle,DongleDetached Notification
+default,push,title,DongleDetached Notification
+default,sms,body,The dongle has been disconnected from your vehicle.

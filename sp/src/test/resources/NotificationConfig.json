@@ -1,0 +1,53 @@
+{
+  "_id": "5c40be114aeeb0000836de6d",
+  "className": "org.eclipse.ecsp.notification.config.NotificationConfig",
+  "userId": "HUXOIDDN4HUN18",
+  "vehicleId": "HUXOIDDN4HUN18",
+  "group": "all",
+  "enabled": true,
+  "locale": "en-US",
+  "channels": [
+    {
+      "className": "org.eclipse.ecsp.domain.notification.EmailChannel",
+      "emails": [
+        "Test@Test.com"
+      ],
+      "type": "email",
+      "enabled": true
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.SmsChannel",
+      "phones": [
+        "12345"
+      ],
+      "type": "sms",
+      "enabled": true
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.ApiPushChannel",
+      "type": "apiPush",
+      "enabled": true
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.PushChannel",
+      "service": "apns",
+      "appPlatform": "iOS",
+      "deviceTokens": [
+        "2632178ewrewr090",
+        "34324fdsf5345"
+      ],
+      "type": "push",
+      "enabled": true
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.PortalChannel",
+      "type": "portal",
+      "enabled": true
+    },
+    {
+      "className": "org.eclipse.ecsp.domain.notification.IVMChannel",
+      "type": "ivm",
+      "enabled": true
+    }
+  ]
+}

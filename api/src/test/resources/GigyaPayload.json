@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "type": "accountCreated",
+      "id": "ae87f362-9f5e-4cb1-a48f-e8f148e2fa6d",
+      "timestamp": "Tue, 14 Nov 2017 10:53:47 GMT",
+      "data": {
+        "uid": "b94mvg9f282c450a8928d293619bafb0"
+      }
+    },
+    {
+      "type": "accountLoggedIn",
+      "id": "7b8ab3e2-531c-4f4e-984c-72d28ba4137e",
+      "timestamp": "Tue, 14 Nov 2017 10:53:47 GMT",
+      "data": {
+        "uid": "b94mvg9f282c450a8928d293619bafb0"
+      }
+    },
+    {
+      "type": "accountRegistered",
+      "id": "a07fc2c5-7371-4c10-96c6-e2fb90891a03",
+      "timestamp": "Tue, 14 Nov 2017 10:53:47 GMT",
+      "data": {
+        "uid": "b94mvg9f282c450a8928d293619bafb0"
+      }
+    },
+    {
+      "type": "subscriptionUpdated",
+      "id": "e27f6dfc-ad13-4eb0-9d2b-788c5e4e0029",
+      "timestamp": "Tue, 14 Nov 2017 10:53:47 GMT",
+      "data": {
+        "apiKey": "***",
+        "uid": "g5ytn89f282c450a8928d293619bafb0",
+        "subscription": {
+          "Subs2": {
+            "email": {
+              "isSubscribed": true,
+              "lastUpdatedSubscriptionState": "2017-11-14T10:53:47.0855138Z",
+              "tags": null,
+              "doubleOptIn": {
+                "confirmTime": null,
+                "emailSentTime": "2017-11-14T10:53:47.0865138Z",
+                "status": "Pending"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timestamp": "Tue, 14 Nov 2017 10:53:48 GMT",
+  "nonce": "2e5a1988-44ad-4c47-b329-822db715792b",
+  "signature": "dSOD/fksTA6NvL71iVX0cn22J2M="
+}

@@ -1,0 +1,807 @@
+[
+  {
+    "notificationId": "GeoFence_in",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_out",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_valet_in",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_valet_out",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_generic_in",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "GeoFence_generic_out",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "LowFuel",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "Collision",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "DTCStored_set",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "DTCStored_cleared",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "OverSpeeding",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "Tow",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "CurfewViolation",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "CurfewViolation_time",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "Idle",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "DongleStatus_attached",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "DongleStatus_detached",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "DongleDetached",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "ServiceReminder_ReminderEngine",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "ServiceReminder_OdometerReading",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "PinGenerated",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "Disturbance",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "Activation",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "FirmwareDownloaded",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "FirmwareUpgraded",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "MMY",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_RECALL_NOTIFICATION",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_OIL_NOTIFICATION",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_TPM_NOTIFICATION",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_BRAKE_NOTIFICATION",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_BATTERY_NOTIFICATION",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_SOON_NOTIF",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_TODAY",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDED_NOTIF",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  },
+  {
+    "notificationId": "IVM_SUBS_ENROLL_REMINDER",
+    "apiPush": {
+      "criticality": "Critical",
+      "android": {
+        "ttl": "86400s",
+        "notification": {
+          "click_action": "OPEN_ACTIVITY_1"
+        },
+        "priority": "normal"
+      },
+      "apns": {
+        "headers": {
+          "apns-priority": "5"
+        },
+        "payload": {
+          "aps": {
+            "category": "NEW_MESSAGE_CATEGORY"
+          }
+        }
+      }
+    }
+  }
+]

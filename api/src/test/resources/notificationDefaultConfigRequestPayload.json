@@ -1,0 +1,33 @@
+[
+  {
+    "group": "ParentalControls",
+    "enabled": "true",
+    "channels": [
+      {
+        "type": "email",
+        "enabled": true
+      },
+      {
+        "type": "sms",
+        "enabled": true
+      },
+      {
+        "type": "apiPush",
+        "enabled": true
+      },
+      {
+        "type": "push",
+        "enabled": true
+      },
+      {
+        "type": "portal",
+        "enabled": true
+      },
+      {
+        "type": "ivm",
+        "enabled": true
+      }
+    ]
+  }
+]
+

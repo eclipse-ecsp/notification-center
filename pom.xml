@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2023-24 Harman International
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+         
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.eclipse.ecsp</groupId>
+    <artifactId>notification</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0</version>
+    <name>notification</name>
+    <description>Notification-Center for ECSP project</description>
+    <url>https://github.com/eclipse-ecsp/notification-center</url>
+
+    <modules>
+        <module>notification-common</module>
+        <module>common-model</module>
+        <module>sp</module>
+        <module>api</module>
+        <module>utility</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:https://github.com/eclipse-ecsp/notification-center.git</connection>
+        <url>https://github.com/eclipse-ecsp/notification-center</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>Pankaj-Behere_harman</id>
+            <name>Pankaj Behere</name>
+            <email>Pankaj.Behere@harman.com</email>
+        </developer>
+        <developer>
+            <id>Lavin-Motwani_harman</id>
+            <name>Lavin Motwani</name>
+            <email>Lavin.Motwani@harman.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/eclipse-ecsp/notification-center/issues</url>
+    </issueManagement>
+
+    <organization>
+        <url>https://github.com/eclipse-ecsp</url>
+        <name>eclipse-ecsp</name>
+    </organization>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>dash-licenses-releases</id>
+            <url>https://repo.eclipse.org/content/repositories/dash-licenses-releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+        <maven.clean.plugin>2.5</maven.clean.plugin>
+        <maven.shade.plugin>2.1</maven.shade.plugin>
+        <maven.release.plugin>2.5.3</maven.release.plugin>
+        <maven.surefire.version>2.18.1</maven.surefire.version>
+        <maven.dependency.plugin>2.10</maven.dependency.plugin>
+        <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
+        <cyclonedx-maven-plugin.version>2.7.10</cyclonedx-maven-plugin.version>
+        <!-- Java compiler version-->
+        <compiler.source.version>17</compiler.source.version>
+        <compiler.target.version>17</compiler.target.version>
+        <!-- Artifactory path -->
+        <artifactory.repo>https://artifactory-fr.harman.com/artifactory</artifactory.repo>
+        <!-- Jacoco Properties-->
+        <jacoco.plugin.version>0.8.13</jacoco.plugin.version>
+        <jacoco.plugin.outputDirectory>${project.basedir}/target/jacocoReport</jacoco.plugin.outputDirectory>
+        <jacoco.ut.execution.data.file>${project.build.directory}/coverage-reports/jacoco-ut.exec
+        </jacoco.ut.execution.data.file>
+        <!-- Sonar Properties-->
+        <sonar-maven-plugin.version>5.1.0.4751</sonar-maven-plugin.version>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco-ut/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.jacoco.itReportPath>${project.build.directory}/coverage-reports/jacoco-it.exec
+        </sonar.jacoco.itReportPath>
+        <sonar.language>java</sonar.language>
+        <sonar.scm.provider>git</sonar.scm.provider>
+        <sonar.java.source>17</sonar.java.source>
+        <sonar.java.target>17</sonar.java.target>
+        <!-- Checkstyle Properties -->
+        <!--suppress UnresolvedMavenProperty -->
+        <checkstyle.config.location>${project.basedir}/../checkstyle.xml</checkstyle.config.location>
+        <sonar.java.checkstyle.reportPaths>${project.build.directory}/checkstyle-result.xml
+        </sonar.java.checkstyle.reportPaths>
+        <!--Spring, Boot Version-->
+        <spring.boot.version>3.4.4</spring.boot.version>
+        <spring.version>6.2.4</spring.version>
+        <!-- Third part dependency versions-->
+        <aws.java.sdk.dynamodb.version>1.12.780</aws.java.sdk.dynamodb.version>
+        <aws.java.sdk.core.version>1.12.780</aws.java.sdk.core.version>
+        <aws.java.sdk.kms.version>1.12.780</aws.java.sdk.kms.version>
+        <amazon.sns.sdk.version>1.12.780</amazon.sns.sdk.version>
+        <amazon.ses.sdk.version>1.12.780</amazon.ses.sdk.version>
+        <!-- MongoDB dependencies versions-->
+        <mongodb.java.driver>3.6.3</mongodb.java.driver>
+        <embedded.mongodb>3.5.4</embedded.mongodb>
+        <mongock.version>4.3.8</mongock.version>
+        <!-- Logging dependencies versions -->
+        <lombok.version>1.18.34</lombok.version>
+        <time_stamp>${maven.build.timestamp}</time_stamp>
+        <google.guava.version>33.1.0-jre</google.guava.version>
+        <dynamodb-local.port>8000</dynamodb-local.port>
+        <dynamodb-local.endpoint>http://localhost:${dynamodb-local.port}</dynamodb-local.endpoint>
+        <paho.mqtt.client>1.2.1</paho.mqtt.client>
+        <javax.mail.version>1.6.0</javax.mail.version>
+        <scala.version>2.12.13</scala.version>
+        <esotericsoftware.version>4.0.3</esotericsoftware.version>
+        <apache.commons.version>2.6</apache.commons.version>
+        <powermock.version>2.0.9</powermock.version>
+        <easymock.version>3.4</easymock.version>
+        <dropwizard.version>3.1.2</dropwizard.version>
+        <fasterxml.jackson.version>2.15.3</fasterxml.jackson.version>
+        <commons.cli.version>1.4</commons.cli.version>
+        <org.json.version>20240303</org.json.version>
+        <aws.java.sdk.sas.version>1.12.573</aws.java.sdk.sas.version>
+        <apache.commons.lang3.version>3.9</apache.commons.lang3.version>
+        <moquette.broker.version>0.17</moquette.broker.version>
+        <fst.version>3.0.3</fst.version>
+        <jsonpath.version>2.8.0</jsonpath.version>
+        <json.simple.version>1.1.1</json.simple.version>
+        <!-- Test dependencies version -->
+        <surefire-plugin.version>2.21.0</surefire-plugin.version>
+        <junit.version>5.5.2</junit.version>
+        <testcontainers.version>1.18.3</testcontainers.version>
+        <!-- Ignite SDKs versions -->
+        <stream.base.version>1.1.0</stream.base.version>
+        <nosql.dao.version>1.1.0</nosql.dao.version>
+        <utils.version>1.1.1</utils.version>
+        <cache.enabler.version>1.0.0</cache.enabler.version>
+        <transformer.version>1.0.0</transformer.version>
+        <hcp.shared.version>0.14.11</hcp.shared.version>
+        <api.common.version>1.0.1</api.common.version>
+        <services.common.version>1.0.0</services.common.version>
+        <janino.version>3.1.12</janino.version>
+        <amazon.pinpoint.sdk.version>1.12.573</amazon.pinpoint.sdk.version>
+        <jakarta.activation.api.version>2.1.3</jakarta.activation.api.version>
+        <jakarta.annotation.api.version>2.1.1</jakarta.annotation.api.version>
+        <amazon.sts.sdk.version>1.12.573</amazon.sts.sdk.version>
+        <java.17.options>
+            --add-opens=java.base/java.io=ALL-UNNAMED
+            --add-opens=java.base/java.lang=ALL-UNNAMED
+            --add-opens=java.base/java.math=ALL-UNNAMED
+            --add-opens=java.base/java.util=ALL-UNNAMED
+            --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+            --add-opens=java.base/java.net=ALL-UNNAMED
+            --add-opens=java.base/java.text=ALL-UNNAMED
+            --add-opens=java.sql/java.sql=ALL-UNNAMED
+        </java.17.options>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Ignite SDKs Dependencies -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <dependency>
+                <groupId>org.eclipse.ecsp</groupId>
+                <artifactId>nosql-dao</artifactId>
+                <version>${nosql.dao.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.ecsp</groupId>
+                <artifactId>transformers</artifactId>
+                <version>${transformer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.ecsp</groupId>
+                <artifactId>streambase</artifactId>
+                <version>${stream.base.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.esotericsoftware</groupId>
+                        <artifactId>kryo</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.netty</groupId>
+                        <artifactId>netty</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.eclipse.ecsp</groupId>
+                        <artifactId>nosql-dao</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.5.7</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>1.5.7</version>
+            </dependency>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Ignite child module Dependencies -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <dependency>
+                <groupId>org.eclipse.ecsp</groupId>
+                <artifactId>notification-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Third party Dependencies -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-sns</artifactId>
+                <version>${amazon.sns.sdk.version}</version>
+                <!-- Excluding the older version of sdk -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.amazonaws</groupId>
+                        <artifactId>aws-java-sdk-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>javax.mail-api</artifactId>
+                <version>${javax.mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>${javax.mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-core</artifactId>
+                <version>${aws.java.sdk.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${esotericsoftware.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${apache.commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${apache.commons.version}</version>
+            </dependency>
+            <!-- MongoDB dependency -->
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver</artifactId>
+                <version>${mongodb.java.driver}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-core</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <!-- For converting the java time to joda time which can be understood by MongoDB -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-joda</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                        <artifactId>jackson-databind</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-parameter-names</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-cli</groupId>
+                <artifactId>commons-cli</artifactId>
+                <version>${commons.cli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${jsonpath.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.paho</groupId>
+                <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+                <version>${paho.mqtt.client}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-ses</artifactId>
+                <version>${amazon.ses.sdk.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.amazonaws</groupId>
+                        <artifactId>aws-java-sdk-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-sqs</artifactId>
+                <version>${aws.java.sdk.sas.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.commons.lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>${json.simple.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-kms</artifactId>
+                <version>${aws.java.sdk.kms.version}</version>
+            </dependency>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Test Dependencies -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Embedded MongoDB for testing -->
+            <dependency>
+                <groupId>de.flapdoodle.embed</groupId>
+                <artifactId>de.flapdoodle.embed.mongo</artifactId>
+                <version>${embedded.mongodb}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-api-easymock</artifactId>
+                <version>${powermock.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+                <version>${easymock.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!--The OWASP Security Logging project provides developers and ops personnel with functionality
+            for logging security-related events. The aim is to let developers use the same set of logging APIs they are already
+            familiar with from over a decade of experience with Log4J and its successors, while also adding powerful security features.
+
+           The API is completely code compatible with existing Log4J/SLF4J/Logback logging statements. All of the existing
+           logging statements in your code will continue to work
+           -->
+            <dependency>
+                <groupId>org.owasp</groupId>
+                <artifactId>security-logging-logback</artifactId>
+                <version>1.1.6</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>logback-classic</artifactId>
+                        <groupId>ch.qos.logback</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>logback-core</artifactId>
+                        <groupId>ch.qos.logback</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.2.0</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${compiler.source.version}</source>
+                        <target>${compiler.source.version}</target>
+                        <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                        <compilerArgs>
+                            <arg>--add-opens=java.base/java.io=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.lang=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.math=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.util=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.util.concurrent=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.net=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.base/java.text=ALL-UNNAMED</arg>
+                            <arg>--add-opens=java.sql/java.sql=ALL-UNNAMED</arg>
+                            <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
+                        </compilerArgs>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
+                <version>${cyclonedx-maven-plugin.version}</version>
+                <configuration>
+                    <projectType>application</projectType>
+                    <schemaVersion>1.5</schemaVersion>
+                    <includeBomSerialNumber>true</includeBomSerialNumber>
+                    <includeCompileScope>true</includeCompileScope>
+                    <includeProvidedScope>true</includeProvidedScope>
+                    <includeRuntimeScope>true</includeRuntimeScope>
+                    <includeSystemScope>true</includeSystemScope>
+                    <includeTestScope>true</includeTestScope>
+                    <includeLicenseText>true</includeLicenseText>
+                    <outputFormat>all</outputFormat>
+                    <outputDirectory>${project.basedir}/sbom</outputDirectory>
+                    <verbose>false</verbose>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>makeAggregateBom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <!-- Sets the VM argument line used when unit tests are
+                        run. -->
+                    <argLine>${surefireArgLine} ${java.17.options}</argLine>
+                    <forkMode>pertest</forkMode>
+                    <childDelegation>true</childDelegation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>${maven.dependency.plugin}</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <excludeClassifiers>test</excludeClassifiers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>${maven.shade.plugin}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven.release.plugin}</version>
+                <configuration>
+                    <preparationGoals>package</preparationGoals>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>${sonar-maven-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>META-INF/versions/**</exclude>
+                        <exclude>org/eclipse/ecsp/analytics/aws/**/*</exclude>
+                        <exclude>org/eclipse/ecsp/analytics/stream/kcl/**/*</exclude>
+                        <exclude>**/local_policy.jar</exclude>
+                        <exclude>**/US_export_policy.jar</exclude>
+                        <exclude>**/**.jar</exclude>
+                        <exclude>lombok/**</exclude>
+                        <exclude>**/lombok/**</exclude>
+                        <exclude>**/*$lombok*</exclude>
+                        <exclude>org/bouncycastle/**</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <!--Prepares the property pointing to the JaCoCo runtime
+                       agent which is passed as VM argument when Maven the Surefire plugin is executed.-->
+                    <execution>
+                        <id>pre-unit-test</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <!--Sets the path to the file which contains
+                               the execution data.-->
+                            <destFile>${jacoco.ut.execution.data.file}</destFile>
+                            <!--Sets the name of the property containing
+                               the settings for JaCoCo runtime agent.-->
+                            <propertyName>surefireArgLine</propertyName>
+                            <excludes>
+                                <exclude>META-INF/versions/**</exclude>
+                                <exclude>**/*Constant*</exclude>
+                                <exclude>**/domain/**/*EventData*</exclude>
+                                <exclude>**/domains/**/*EventData*</exclude>
+                                <exclude>**/*Exception*</exclude>
+                                <exclude>lombok/**</exclude>
+                                <exclude>**/lombok/**</exclude>
+                                <exclude>**/*$lombok*</exclude>
+                                <exclude>org/bouncycastle/**</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
+                    <!--Ensures that the code coverage report for unit tests
+                       is created after unit tests have been run.-->
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>META-INF/versions/**</exclude>
+                                <exclude>lombok/**</exclude>
+                                <exclude>**/lombok/**</exclude>
+                                <exclude>**/*$lombok*</exclude>
+                                <exclude>jakarta/activation/**</exclude>
+                                <exclude>org/bouncycastle/**</exclude>
+                            </excludes>
+                            <!--Sets the path to the file which contains
+                               the execution data.-->
+                            <dataFile>${jacoco.ut.execution.data.file}</dataFile>
+                            <!--Sets the output directory for the code coverage
+                               report.-->
+                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <!--Prepares the property pointing to the JaCoCo runtime
+                       agent which is passed as VM argument when Maven the Failsafe plugin is executed.-->
+                    <execution>
+                        <id>pre-integration-test</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the path to the file which contains
+                                the execution data.-->
+                            <destFile>${project.build.directory}/coverage-reports/jacoco-it.exec</destFile>
+                            <!--Sets the name of the property containing
+                               the settings for JaCoCo runtime agent. -->
+                            <propertyName>failsafeArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <!--Ensures that the code coverage report for integration
+                       tests after integration tests have been run. -->
+                    <execution>
+                        <id>post-integration-test</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <!--Sets the path to the file which contains
+                               the execution data. -->
+                            <dataFile>${project.build.directory}/coverage-reports/jacoco-it.exec</dataFile>
+                            <!--Sets the output directory for the code coverage
+                               report. -->
+                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            <outputFileFormat>xml</outputFileFormat>
+                            <failsOnError>true</failsOnError>
+                            <failOnViolation>true</failOnViolation>
+                            <violationSeverity>warning</violationSeverity>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                            <includeResources>true</includeResources>
+                            <includeTestResources>true</includeTestResources>
+                        </configuration>
+                        <goals>
+                            <!--Goal to only check any checkstyle violations.-->
+                            <goal>checkstyle</goal>
+                            <!--Goal To make the build will fail if there are any checkstyle violations.-->
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>10.13.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.dash</groupId>
+                <artifactId>license-tool-plugin</artifactId>
+                <version>1.1.0</version>
+                <configuration>
+                    <includeScope>test</includeScope>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>license-check</id>
+                        <goals>
+                            <goal>license-check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/scripts</directory>
+                <includes>
+                    <include>start.sh</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    <profiles>
+        <profile>
+            <id>dash</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.eclipse.dash</groupId>
+                        <artifactId>license-tool-plugin</artifactId>
+                        <configuration>
+                            <skip>false</skip>
+                            <failWhenReviewNeeded>true</failWhenReviewNeeded>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skipTests>true</skipTests>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>release</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+                <repository>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>${nexus-staging-maven-plugin.version}</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${maven-source-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven-javadoc-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>javadoc</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+                <repository>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven-javadoc-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                                <configuration>
+                                    <release>${java.version}</release>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

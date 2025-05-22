@@ -1,0 +1,48 @@
+{
+  "message": {
+    "notification": {
+      "subtitle": "Geofence Notification",
+      "title": "Geofence Notification",
+      "body": "Your vehicle is back inside the set boundary."
+    },
+    "data": {
+      "serviceData": {
+        "Version": "1.0",
+        "EventID": "GeoFence_in",
+        "VehicleId": "HUXOIDDN4HUN18",
+        "Data": {
+          "feedbackTopic": "DffFeedBackTopic",
+          "latitude": "12.9716N",
+          "position": "out",
+          "userId": "HUXOIDDN4HUN18",
+          "longitude": "77.5946E"
+        },
+        "Timestamp": 14890806555,
+        "SessionId": "biz123",
+        "PlatformResponseId": "req123"
+      },
+      "context": {
+        "brandMarketingName": "fita Punto",
+        "model": "Punto"
+      }
+    },
+    "android": {
+      "notification": {
+        "click_action": "OPEN_ACTIVITY_1"
+      },
+      "priority": "normal",
+      "ttl": "86400s"
+    },
+    "criticality": "Critical",
+    "apns": {
+      "headers": {
+        "apns-priority": "5"
+      },
+      "payload": {
+        "aps": {
+          "category": "NEW_MESSAGE_CATEGORY"
+        }
+      }
+    }
+  }
+}

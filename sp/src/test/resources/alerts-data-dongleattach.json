@@ -1,0 +1,14 @@
+[
+  {
+    "EventID": "DongleStatus",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1478769900,
+    "Timezone": -5,
+    "Data": {
+      "latitude": 42.2363501,
+      "longitude": -87.9428014,
+      "status": "attached"
+    }
+  }
+]

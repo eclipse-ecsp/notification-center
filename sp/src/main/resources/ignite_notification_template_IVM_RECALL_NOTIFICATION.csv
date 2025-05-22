@@ -1,0 +1,5 @@
+﻿Notification ID,Notification short name,Notification long name
+IVM_RECALL_NOTIFICATION,Recall Message sent to the vehicle's HU.,Recall Message sent to the vehicle's HU.
+Brand,Channel,Attribute,en_US
+default,ivm,body," "
+default,ivm,title," "

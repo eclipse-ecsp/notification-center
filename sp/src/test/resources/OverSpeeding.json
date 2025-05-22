@@ -1,0 +1,15 @@
+[
+  {
+    "EventID": "OverSpeeding",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1478769900,
+    "Timezone": -5,
+    "Data": {
+      "latitude": "12.9716N",
+      "longitude": "77.5946E",
+      "speed": "50",
+      "SpeedUnit": "kmph"
+    }
+  }
+]

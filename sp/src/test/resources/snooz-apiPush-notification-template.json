@@ -1,0 +1,43 @@
+{
+  "notificationId": "S12_RO_DOOR_LOCK_SUCCESS",
+  "notificationShortName": "S12_RO_DOOR_LOCK_SUCCESS",
+  "notificationLongName": "S12_RO_DOOR_LOCK_SUCCESS",
+  "language": "en_US",
+  "channelTemplates": {
+    "apiPush": {
+      "category": "IMI_S12_CATEGORY_15",
+      "title": "IMI_S12_TITLE_15",
+      "body": "IMI_S12_BODY_15",
+      "subtitle": "IMI_S12_SUBTITLE_15"
+    },
+    "email": {
+      "from": "abc@xyz.com",
+      "subject": "IMI_S12_SUBJECT_15",
+      "body": "IMI_S12_BODY_15",
+      "attachments": [
+        {
+          "id": "RO_DOOR_LOCK_SUCCESS",
+          "name": "RO_DOOR_LOCK_SUCCESS",
+          "url": "http://xyz.com/attach"
+        }
+      ]
+    },
+    "sms": {
+      "body": "IMI_S12_BODY_15"
+    },
+    "ivm": {
+      "title": "IMI_S12_TITLE_15",
+      "body": "IMI_S12_BODY_15",
+      "attachments": [
+        {
+          "id": "RO_DOOR_LOCK_SUCCESS",
+          "name": "RO_DOOR_LOCK_SUCCESS",
+          "url": "http://xyz.com/attach"
+        }
+      ]
+    },
+    "portal": {
+      "body": "IMI_S12_BODY_15"
+    }
+  }
+}

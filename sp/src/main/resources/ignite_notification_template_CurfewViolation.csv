@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+CurfewViolation,CurfewViolation Notification,CurfewViolation Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle is being used past curfew.
+default,apiPush,subtitle,CurfewViolation Notification
+default,apiPush,title,CurfewViolation Notification
+default,email,body,Your vehicle is being used past curfew.
+default,email,from,no-reply@ahanet.net
+default,email,subject,CurfewViolation Notification
+default,ivm,body,Your vehicle is being used past curfew.
+default,ivm,title,CurfewViolation Notification
+default,portal,body,Your vehicle is being used past curfew.
+default,push,body,Your vehicle is being used past curfew.
+default,push,subtitle,CurfewViolation Notification
+default,push,title,CurfewViolation Notification
+default,sms,body,Your vehicle is being used past curfew.

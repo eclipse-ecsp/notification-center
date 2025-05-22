@@ -1,10 +1,10 @@
 [<img src="./images/logo.png" width="400" height="200"/>](./images/logo.png)
 
-[![Build Status](replace with badge.svg)]( add url)
-[![Artifactory](replace with badge.svg)](add url)
-[![GitHub contributors](replace with badge.svg)](add url)
-[![Coverage](replace with badge.svg)](add url)
-[![License](replace with badge.svg)](#license)
+[![Maven Build & Sonar Analysis](https://github.com/eclipse-ecsp/notification-center/actions/workflows/maven-build.yml/badge.svg)](https://github.com/eclipse-ecsp/notification-center/actions/workflows/maven-build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_notification-center&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_notification-center)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=eclipse-ecsp_notification-center&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=eclipse-ecsp_notification-center)
+[![License Compliance](https://github.com/eclipse-ecsp/notification-center/actions/workflows/licence-compliance.yaml/badge.svg)](https://github.com/eclipse-ecsp/notification-center/actions/workflows/licence-compliance.yaml)
+[![Latest Release](https://img.shields.io/github/v/release/eclipse-ecsp/notification-center?sort=semver)](https://github.com/eclipse-ecsp/notification-center/releases)
 
 # Notification Center
 Notification Center is an independently deployable component(microservice) intended for sending various types of notifications.It provides a common abstraction layer on top of the various notification types and tracks the status of the notifications.

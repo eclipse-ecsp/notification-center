@@ -1,0 +1,44 @@
+{
+  "callId": "fed903317a9a4c5695ebacc4a4569f0f",
+  "errorCode": 0,
+  "apiVersion": 2,
+  "statusCode": 200,
+  "statusReason": "OK",
+  "time": "2019-03-22T08:29:53.471Z",
+  "registeredTimestamp": 1551189463000,
+  "UID": "7cfc36955b794138aaed0e82515c674e",
+  "created": "2019-02-26T13:57:42.852Z",
+  "createdTimestamp": 1551189462000,
+  "isActive": true,
+  "isRegistered": true,
+  "isVerified": true,
+  "lastLogin": "2019-03-21T21:41:14.787Z",
+  "lastLoginTimestamp": 1553204474000,
+  "lastUpdated": "2019-02-26T14:00:25.410Z",
+  "lastUpdatedTimestamp": 1551189625410,
+  "loginProvider": "site",
+  "oldestDataUpdated": "2019-02-26T13:57:42.852Z",
+  "oldestDataUpdatedTimestamp": 1551189462852,
+  "profile": {
+    "firstName": "TestFirstName",
+    "lastName": "TestLasttName",
+    "country": "US",
+    "email": "test@test.com",
+    "locale": "en-US",
+    "phones": [
+      {
+        "number": "+39",
+        "type": "prefix mobile"
+      },
+      {
+        "number": "1231231233",
+        "type": "mobile"
+      }
+    ],
+    "state": "US"
+  },
+  "registered": "2019-02-26T13:57:43.045Z",
+  "socialProviders": "site",
+  "verified": "2019-02-26T14:00:25.407Z",
+  "verifiedTimestamp": 1551189625407
+}

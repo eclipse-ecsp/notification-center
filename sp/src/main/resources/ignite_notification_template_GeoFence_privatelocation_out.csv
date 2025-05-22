@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+GeoFence_privatelocation_out,GeoFence_privatelocation_out Notification,GeoFence_privatelocation_out Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle is back outside of the [$.Data.name] boundary.
+default,apiPush,subtitle,GeoFence_privatelocation_out Notification
+default,apiPush,title,GeoFence_privatelocation_out Notification
+default,email,body,Your vehicle is back outside of the [$.Data.name] boundary.
+default,email,from,no-reply@ahanet.net
+default,email,subject,GeoFence_privatelocation_out Notification
+default,ivm,body,Your vehicle is back outside of the [$.Data.name] boundary.
+default,ivm,title,GeoFence_privatelocation_out Notification
+default,portal,body,Your vehicle is back outside of the [$.Data.name] boundary.
+default,push,body,Your vehicle is back outside of the [$.Data.name] boundary.
+default,push,subtitle,GeoFence_privatelocation_out Notification
+default,push,title,GeoFence_privatelocation_out Notification
+default,sms,body,Your vehicle is back outside of the [$.Data.name] boundary.

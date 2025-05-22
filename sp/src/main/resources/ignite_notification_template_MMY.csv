@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+MMY,MMY Notification,MMY Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+default,apiPush,subtitle,MMY Notification
+default,apiPush,title,MMY Notification
+default,email,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+default,email,from,no-reply@ahanet.net
+default,email,subject,MMY Notification
+default,ivm,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+default,ivm,title,MMY Notification
+default,portal,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+default,push,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."
+default,push,subtitle,MMY Notification
+default,push,title,MMY Notification
+default,sms,body,"Your vehicle's Make, Model, Year and Vehicle Name could not be determined. Please set now."

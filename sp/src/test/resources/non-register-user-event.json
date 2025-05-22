@@ -1,0 +1,29 @@
+{
+  "EventID": "NON_REGISTERED_USER_NOTIFICATION_EVENT",
+  "Version": "1.0",
+  "Timestamp": 1536963886613,
+  "Data": {
+    "notificationId": "LowFuel",
+    "version": "1.0",
+    "recipients": [
+      {
+        "sms": "+972525705515",
+        "push": {
+          "token": "djfkghdjfkghjks",
+          "client": "web"
+        },
+        "brand": "default",
+        "locale": "fr_FR",
+        "data": {
+          "name": "moshe",
+          "age": 43
+        }
+      },
+      {
+        "sms": "+972525705515",
+        "brand": "default",
+        "locale": "en_US"
+      }
+    ]
+  }
+}

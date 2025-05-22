@@ -1,0 +1,18 @@
+{
+  "alertType": "Collision",
+  "channelResponses": [],
+  "payload": {
+    "BenchMode": 1,
+    "Data": {
+      "DummyKey": "DummyValue",
+      "tripid": null
+    },
+    "EventID": "Collision",
+    "pdid": "HU2WKMILIGT550",
+    "Timestamp": 1481724868055,
+    "Timezone": 330,
+    "Version": "1.0"
+  },
+  "pdid": "HU2WKMILIGT550",
+  "timestamp": 1481724868055
+}

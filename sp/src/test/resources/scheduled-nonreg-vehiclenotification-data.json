@@ -1,0 +1,27 @@
+{
+  "Timestamp": 16022243530,
+  "EventID": "GenericNotificationEvent",
+  "RequestId": "make-costa-great-again",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 330,
+  "BizTransactionId": "make-costa-great-again",
+  "Version": "1.0",
+  "Data": {
+    "schedule": "2022-09-11T07:58:30.996",
+    "campaignId": null,
+    "UserNotification": false,
+    "name": "moshe",
+    "notificationId": "aaa1",
+    "userId": "costa1",
+    "age": "43",
+    "vehicleProfile": {
+      "make": "Kia2",
+      "model": "Cherokee",
+      "vin": "VIN00001123",
+      "name": "Deep",
+      "licensePlate": "A15 1947",
+      "emergencyContacts": "+12489879090"
+    }
+  },
+  "DeviceDeliveryCutoff": -1
+}

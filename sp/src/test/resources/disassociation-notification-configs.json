@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "test_vehicle1_user1",
+    "id": "test_vehicle1_user1",
+    "userId": "disUser1",
+    "vehicleId": "disVehicle1",
+    "contactId": "self",
+    "group": "all",
+    "enabled": "true",
+    "channels": [
+      {
+        "type": "portal",
+        "enabled": "true"
+      }
+    ]
+  },
+  {
+    "_id": "test_vehicle2_user2",
+    "id": "test_vehicle2_user2",
+    "userId": "disUser2",
+    "vehicleId": "disVehicle2",
+    "contactId": "self",
+    "group": "all",
+    "enabled": "true",
+    "channels": [
+      {
+        "type": "portal",
+        "enabled": "true"
+      }
+    ]
+  },
+  {
+    "_id": "test_vehicle3_user3",
+    "id": "test_vehicle3_user3",
+    "userId": "disUser3",
+    "vehicleId": "disVehicle3",
+    "contactId": "self",
+    "group": "all",
+    "enabled": "true",
+    "channels": [
+      {
+        "type": "portal",
+        "enabled": "true"
+      }
+    ]
+  }
+]

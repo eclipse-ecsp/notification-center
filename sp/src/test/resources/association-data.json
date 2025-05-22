@@ -1,0 +1,33 @@
+{
+  "EventID": "VEHICLE_PROFILE_CHANGED_NOTIFICATION_EVENT",
+  "Version": "1.1",
+  "Timestamp": 1536963886612,
+  "Data": {
+    "changeDescriptions": [
+      {
+        "key": "authorizedUsers",
+        "path": "authorizedUsers",
+        "old": null,
+        "changed": [
+          {
+            "userId": "disUser2",
+            "role": "VEHICLE_OWNER",
+            "tc": [
+              {
+                "status": "AGREED",
+                "countryCode": "string",
+                "version": "21212",
+                "lastAcceptedOn": 1536962830149,
+                "offset": 0
+              }
+            ],
+            "createdOn": 1536963850995
+          }
+        ]
+      }
+    ]
+  },
+  "VehicleId": "disVehicle2",
+  "Timezone": 0,
+  "DeviceDeliveryCutoff": -1
+}

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+DocumentExpiry,DocumentExpiry Notification,DocumentExpiry Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).
+default,apiPush,subtitle,DocumentExpiry Notification
+default,apiPush,title,DocumentExpiry Notification
+default,email,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).
+default,email,from,no-reply@ahanet.net
+default,email,subject,DocumentExpiry Notification
+default,ivm,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).
+default,ivm,title,DocumentExpiry Notification
+default,portal,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).
+default,push,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).
+default,push,subtitle,DocumentExpiry Notification
+default,push,title,DocumentExpiry Notification
+default,sms,body,Your [$.Data.DocumentName] document will be expired in [$.Data.ExpiryDate] day(s).

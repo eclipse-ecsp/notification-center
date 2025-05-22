@@ -1,0 +1,40 @@
+{
+  "EventID": "ScheduleOpStatusEvent",
+  "Version": "1.0",
+  "Timestamp": 1602492509723,
+  "Data": {
+    "scheduleId": "9c1ea6fc-e0b5-4a01-ab41-cb16233d4410",
+    "status": "CREATE",
+    "igniteEvent": {
+      "EventID": "CreateScheduleEvent",
+      "Version": "1.0",
+      "Timestamp": 1602491851146,
+      "Data": {
+        "initialDelayMs": 6000,
+        "recurrenceType": "CUSTOM_MS",
+        "recurrenceDelayMs": 0,
+        "firingCount": 1,
+        "notificationPayload": "eyJFdmVudElEIjoiUmV0cnlOb3RpZmljYXRpb25FdmVudCIsIlZlcnNpb24iOiIxLjAiLCJUaW1lc3RhbXAiOjAsIkRhdGEiOnsicmV0cnlSZWNvcmQiOnsicmV0cnlFeGNlcHRpb24iOiJqYXZhLmxhbmcuUnVudGltZUV4Y2VwdGlvbiIsIm1heFJldHJ5TGltaXQiOjIsInJldHJ5Q291bnQiOjAsInJldHJ5SW50ZXJ2YWxNcyI6MTAwMDB9LCJvcmlnaW5hbEV2ZW50IjoiZXlKRmRtVnVkRWxFSWpvaVIyVnVaWEpwWTA1dmRHbG1hV05oZEdsdmJrVjJaVzUwSWl3aVZtVnljMmx2YmlJNklqRXVNQ0lzSWxScGJXVnpkR0Z0Y0NJNk1Dd2lSR0YwWVNJNmJuVnNiQ3dpVW1WeGRXVnpkRWxrSWpvaWNtVnhkV1Z6ZEVsa01ERWlMQ0pUYjNWeVkyVkVaWFpwWTJWSlpDSTZiblZzYkN3aVZtVm9hV05zWlVsa0lqb2lkbVZvYVdOc1pVbGtJaXdpZEhKalEzUjRJanB1ZFd4c0xDSlVhVzFsZW05dVpTSTZNQ3dpUkVaR1VYVmhiR2xtYVdWeUlqcHVkV3hzTENKTlpYTnpZV2RsU1dRaU9tNTFiR3dzSWtOdmNuSmxiR0YwYVc5dVNXUWlPbTUxYkd3c0lrSnBlbFJ5WVc1ellXTjBhVzl1U1dRaU9tNTFiR3dzSWtKbGJtTm9UVzlrWlNJNmJuVnNiQ3dpVlhObGNrTnZiblJsZUhRaU9tNTFiR3dzSWtSbGRtbGpaVVJsYkdsMlpYSjVRM1YwYjJabUlqb3RNU3dpUkhWd2JHbGpZWFJsVFdWemMyRm5aU0k2Ym5Wc2JIMD0iLCJvcmlnaW5hbEV2ZW50VG9waWMiOiJub3RpZmljYXRpb24iLCJjdXN0b21FeHRlbnNpb24iOm51bGx9LCJSZXF1ZXN0SWQiOiJyZXF1ZXN0SWQiLCJTb3VyY2VEZXZpY2VJZCI6bnVsbCwiVmVoaWNsZUlkIjpudWxsLCJ0cmNDdHgiOm51bGwsIlRpbWV6b25lIjowLCJERkZRdWFsaWZpZXIiOm51bGwsIk1lc3NhZ2VJZCI6bnVsbCwiQ29ycmVsYXRpb25JZCI6bnVsbCwiQml6VHJhbnNhY3Rpb25JZCI6bnVsbCwiQmVuY2hNb2RlIjpudWxsLCJVc2VyQ29udGV4dCI6bnVsbCwiRGV2aWNlRGVsaXZlcnlDdXRvZmYiOi0xLCJEdXBsaWNhdGVNZXNzYWdlIjpudWxsfQ==",
+        "notificationKey": {
+          "key": "HU4COSTA2217012187778492"
+        },
+        "notificationTopic": "scheduler-callback",
+        "serviceName": "my-notification"
+      },
+      "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+      "SourceDeviceId": "HU4COSTA2217012187778492",
+      "VehicleId": "HU4COSTA2217012187778492",
+      "Timezone": 0,
+      "MessageId": "5001",
+      "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+      "DeviceDeliveryCutoff": -1
+    },
+    "valid": true
+  },
+  "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 0,
+  "MessageId": "91351",
+  "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+  "DeviceDeliveryCutoff": -1
+}

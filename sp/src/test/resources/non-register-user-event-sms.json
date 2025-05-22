@@ -1,0 +1,20 @@
+{
+  "EventID": "NON_REGISTERED_USER_NOTIFICATION_EVENT",
+  "Version": "1.0",
+  "Timestamp": 1536963886613,
+  "Data": {
+    "notificationId": "LowFuel",
+    "version": "1.0",
+    "recipients": [
+      {
+        "brand": "default",
+        "sms": "+9720520000000",
+        "locale": "fr_FR",
+        "data": {
+          "name": "moshe",
+          "age": 43
+        }
+      }
+    ]
+  }
+}

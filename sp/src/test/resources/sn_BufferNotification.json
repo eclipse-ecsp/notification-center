@@ -1,0 +1,25 @@
+{
+  "className": "org.eclipse.ecsp.notification.config.NotificationBuffer",
+  "alertsInfo": [
+    {
+      "EventID": "GenericNotificationEvent",
+      "alertsData": {
+        "alertDataProperties": {
+          "customExtension": null,
+          "campaignId": null,
+          "name": "akshay",
+          "userId": "AWh_YZbs3JWC8U6WROnj"
+        }
+      },
+      "Version": "1.0",
+      "BenchMode": 0,
+      "Timestamp": 1479970890268,
+      "Timezone": 330,
+      "pdid": "HUR902N3KHU7U7"
+    }
+  ],
+  "channelType": "API_PUSH",
+  "userId": "AWh_YZbs3JWC8U6WROnj",
+  "group": "all",
+  "vehicleId": "HUR902N3KHU7U7"
+}

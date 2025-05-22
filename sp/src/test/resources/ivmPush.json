@@ -1,0 +1,31 @@
+{
+  "EventID": "VehicleMessagePublish",
+  "Version": "1.0",
+  "Timestamp": 1528977275388,
+  "Timezone": 330,
+  "VehicleId": "HUXOIDDN4HUN18",
+  "RequestId": "req123",
+  "Data": {
+    "userId": "HUXOIDDN4HUN18",
+    "harmanId": "HU1232523452356",
+    "fileName": "feedFile.xlsx",
+    "countryCode": "US",
+    "notificationId": "S06_IVM_SUBS_ENDED_NOTIF",
+    "vin": "HUXOIDDN4HUN18",
+    "campaignDate": "02/10/2017",
+    "messageTemplate": "hi",
+    "messageParameters": {
+      "key": "value",
+      "key1": "value1"
+    },
+    "messageDetailType": "SUBSCRIPTION_TO_EXPIRE",
+    "serviceMessageEventID": "gg",
+    "messageType": "SUBSCRIPTION_NOTICE",
+    "message": [
+      {
+        "language": "ENG",
+        "messageText": "hhh"
+      }
+    ]
+  }
+}

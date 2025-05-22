@@ -1,0 +1,17 @@
+{
+  "Timestamp": 16022243530,
+  "EventID": "InvalidScheduledNotification",
+  "RequestId": "RequestId-001",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 330,
+  "BizTransactionId": "Biz-Transaction-Id-001",
+  "Version": "1.0",
+  "Data": {
+    "PlatformResponseId": "scheduler-id-001",
+    "name": "prashant",
+    "notificationId": "ababaaa1",
+    "userId": "prashant01",
+    "age": "28"
+  },
+  "DeviceDeliveryCutoff": -1
+}

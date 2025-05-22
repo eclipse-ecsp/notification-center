@@ -1,0 +1,5243 @@
+[
+  {
+    "notificationId": "S04_DRIVE_ALRT_VALETBREACH",
+    "notificationShortName": "Valet breach occurred",
+    "notificationLongName": "Cutomer is informed when the vehicle is driven outside a (cutomer-defined) radius of a drop off zone.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_01",
+        "body": "IMI_S04_BODY_01",
+        "subtitle": "IMI_S04_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CURFEWBREACH",
+    "notificationShortName": "Curfew breach occurred",
+    "notificationLongName": "Customer is informed when the vehicle is being driven outside of an owner selected curfew time.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_02",
+        "body": "IMI_S04_BODY_02",
+        "subtitle": "IMI_S04_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_SPEEDBREACH",
+    "notificationShortName": "Speed breach occurred",
+    "notificationLongName": "Customer is informed when the vehicle exceeds an owner-selected speed parameter.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_03",
+        "body": "IMI_S04_BODY_03",
+        "subtitle": "IMI_S04_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEENTRY",
+    "notificationShortName": "Geofence entry breach occurred",
+    "notificationLongName": "Customer is informed when the vehicle is driven into an owner-specified geographic boundary",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_04",
+        "body": "IMI_S04_BODY_04",
+        "subtitle": "IMI_S04_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEEXIT",
+    "notificationShortName": "Geofence exit breach occurred",
+    "notificationLongName": "Customer is informed when the vehicle is driven out of an owner-specified geographic boundary",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_05",
+        "body": "IMI_S04_BODY_05",
+        "subtitle": "IMI_S04_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CONFIG_SUCCESS",
+    "notificationShortName": "Drive Alert Configuration Success",
+    "notificationLongName": "Customer is informed when the Alert Configuration Setup is successful.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_06",
+        "body": "IMI_S04_BODY_06",
+        "subtitle": "IMI_S04_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CONFIG_FAILURE",
+    "notificationShortName": "Drive Alert Configuration Failed",
+    "notificationLongName": "Customer is informed when the Alert Configuration Setup is not successful.(Notify the user on which alert type config failed).",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_07",
+        "body": "IMI_S04_BODY_07",
+        "subtitle": "IMI_S04_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S07_LMN_DESTINATION",
+    "notificationShortName": "Last Mile Notification",
+    "notificationLongName": "Last Mile Notification",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S07_TITLE_01",
+        "body": "IMI_S07_BODY_01",
+        "subtitle": "IMI_S07_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S11_VEHICLE_HEALTH_REPORT_LOW",
+    "notificationShortName": "NEW VHR",
+    "notificationLongName": "New Vehicle Health Report Available Notification",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S11_TITLE_10",
+        "body": "IMI_S11_BODY_10",
+        "subtitle": "IMI_S11_SUB_10"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_SERVICES_INITIATED",
+    "notificationShortName": "SVLA Initiated",
+    "notificationLongName": "Customers can initiate SVLA mode by contacting call center with valid police report",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_01",
+        "body": "IMI_S14_BODY_01",
+        "subtitle": "IMI_S14_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_EXPIRATION_REMINDER",
+    "notificationShortName": "SVLA Expiration Reminder",
+    "notificationLongName": "Customers can extend SVLA mode",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_02",
+        "body": "IMI_S14_BODY_02",
+        "subtitle": "IMI_S14_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_CONFIRMATION",
+    "notificationShortName": "SVLA Extension Confirmation",
+    "notificationLongName": "Extension confirmation for SVL mode",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_03",
+        "body": "IMI_S14_BODY_03",
+        "subtitle": "IMI_S14_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_CUSTOMER_CANCELLATION",
+    "notificationShortName": "SVLA Customer Cancellation",
+    "notificationLongName": "Customer is informed that SVLA event has ended",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_04",
+        "body": "IMI_S14_BODY_04",
+        "subtitle": "IMI_S14_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_NO_ACK_RECIEVED",
+    "notificationShortName": "SLVA acknowledgement not received",
+    "notificationLongName": "Customer is informed of the lack of acknowledgement to activate SVLA mode",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_05",
+        "body": "IMI_S14_BODY_05",
+        "subtitle": "IMI_S14_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_SYSTEM_CANCEL_ORIGINAL",
+    "notificationShortName": "SVLA System Cancellation (original request)",
+    "notificationLongName": "System cancelletation if the customer does not extend the service.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_06",
+        "body": "IMI_S14_BODY_06",
+        "subtitle": "IMI_S14_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_EXPIRED",
+    "notificationShortName": "SVLA extention expired",
+    "notificationLongName": "SVLA extention expired",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_07",
+        "body": "IMI_S14_BODY_07",
+        "subtitle": "IMI_S14_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Door lock failed - speed lockout",
+    "notificationLongName": "Remote door lock request failed due to speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_12",
+        "body": "IMI_S12_BODY_12",
+        "subtitle": "IMI_S12_SUB_12"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Doors cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Doors cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_13",
+        "body": "IMI_S12_BODY_13",
+        "subtitle": "IMI_S12_SUB_13"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Door lock failed - timeout",
+    "notificationLongName": "Remote door lock request failed due to timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_14",
+        "body": "IMI_S12_BODY_14",
+        "subtitle": "IMI_S12_SUB_14"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_SUCCESS",
+    "notificationShortName": "Door lock success",
+    "notificationLongName": "Remote door lock request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_15",
+        "body": "IMI_S12_BODY_15",
+        "subtitle": "IMI_S12_SUB_15"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Door unlock failed - speed lockout",
+    "notificationLongName": "Remote door unlock request failed due to speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_16",
+        "body": "IMI_S12_BODY_16",
+        "subtitle": "IMI_S12_SUB_16"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Doors cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Doors cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_17",
+        "body": "IMI_S12_BODY_17",
+        "subtitle": "IMI_S12_SUB_17"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Door unlock failed - timeout",
+    "notificationLongName": "Remote door unlock request failed due to timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_18",
+        "body": "IMI_S12_BODY_18",
+        "subtitle": "IMI_S12_SUB_18"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_SUCCESS",
+    "notificationShortName": "Door unlock success",
+    "notificationLongName": "Remote door unlock request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_19",
+        "body": "IMI_S12_BODY_19",
+        "subtitle": "IMI_S12_SUB_19"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_IGNITION_ON",
+    "notificationShortName": "Start failed - ignition ON",
+    "notificationLongName": "Remote start request failed due to ignition ON status",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_20",
+        "body": "IMI_S12_BODY_20",
+        "subtitle": "IMI_S12_SUB_20"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Start failed - speed lockout",
+    "notificationLongName": "Remote start request failed due to speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_21",
+        "body": "IMI_S12_BODY_21",
+        "subtitle": "IMI_S12_SUB_21"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED_TIMEOUT",
+    "notificationShortName": "Start failed - timeout",
+    "notificationLongName": "Remote start request failed due to timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_22",
+        "body": "IMI_S12_BODY_22",
+        "subtitle": "IMI_S12_SUB_22"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_SUCCESS",
+    "notificationShortName": "Start success",
+    "notificationLongName": "Remote start request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_23",
+        "body": "IMI_S12_BODY_23",
+        "subtitle": "IMI_S12_SUB_23"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_GBOX_OPEN",
+    "notificationShortName": "RO STARTFAILED GBOX OPEN",
+    "notificationLongName": "Remote Start Failed due to Glove Box is open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_123",
+        "body": " IMI_S12_BODY_123",
+        "subtitle": " IMI_S12_SUB_123"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RBOX_OPEN",
+    "notificationShortName": "RO STARTFAILED RBOX OPEN",
+    "notificationLongName": "Remote Start Failed due to SHYAM box is open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_124",
+        "body": " IMI_S12_BODY_124",
+        "subtitle": " IMI_S12_SUB_124"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_WINDOW_OPEN",
+    "notificationShortName": "RO STARTFAILED WINDOW OPEN",
+    "notificationLongName": "Remote Start Failed due to window open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_125",
+        "body": " IMI_S12_BODY_125",
+        "subtitle": " IMI_S12_SUB_125"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_TRUNK_OPEN",
+    "notificationShortName": "RO STARTFAILED TRUNK OPEN",
+    "notificationLongName": "Remote Start Failed due to trunk open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_126",
+        "body": " IMI_S12_BODY_126",
+        "subtitle": " IMI_S12_SUB_126"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_FOTA_OTA_ONGOING",
+    "notificationShortName": "RO STARTFAILED FOTA OTA ONGOING",
+    "notificationLongName": "Remote Start Failed due to fota/aota in progress",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_127",
+        "body": " IMI_S12_BODY_127",
+        "subtitle": " IMI_S12_SUB_127"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RUN_MODE",
+    "notificationShortName": "RO STARTFAILED RUN MODE",
+    "notificationLongName": "Remote Start Failed due to timeout run mode",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_128",
+        "body": " IMI_S12_BODY_128",
+        "subtitle": " IMI_S12_SUB_128"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_CUSTOMER_ACCESS",
+    "notificationShortName": "RO STARTFAILED CUSTOMER ACCESS",
+    "notificationLongName": "Remote Start Failed due to timeout customer access",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_129",
+        "body": " IMI_S12_BODY_129",
+        "subtitle": " IMI_S12_SUB_129"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_DR_DOOR_OPEN",
+    "notificationShortName": "RO STARTFAILED DR DOOR OPEN",
+    "notificationLongName": "Remote Start Failed due to driver door open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_130",
+        "body": " IMI_S12_BODY_130",
+        "subtitle": " IMI_S12_SUB_130"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_PASS_DOOR_OPEN",
+    "notificationShortName": "RO STARTFAILED PASS DOOR OPEN",
+    "notificationLongName": "Remote Start Failed due to passenger door open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_131",
+        "body": " IMI_S12_BODY_131",
+        "subtitle": " IMI_S12_SUB_131"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LR_DOOR_OPEN",
+    "notificationShortName": "RO STARTFAILED LR DOOR OPEN",
+    "notificationLongName": "Remote Start Failed due to left rear door open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_132",
+        "body": " IMI_S12_BODY_132",
+        "subtitle": " IMI_S12_SUB_132"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RR_DOOR_OPEN",
+    "notificationShortName": "RO STARTFAILED RR DOOR OPEN",
+    "notificationLongName": "Remote Start Failed due to right rear door open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_133",
+        "body": " IMI_S12_BODY_133",
+        "subtitle": " IMI_S12_SUB_133"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_START_COUNTER_EXCEEDED",
+    "notificationShortName": "RO STARTFAILED START COUNTER EXCEEDED",
+    "notificationLongName": "Remote Start Failed due to Start Counter Reached",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_134",
+        "body": " IMI_S12_BODY_134",
+        "subtitle": " IMI_S12_SUB_134"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_COUNTER_EXCEEDED",
+    "notificationShortName": "RO STARTFAILED COUNTER EXCEEDED",
+    "notificationLongName": "Remote Start Failed due to Failed Counter Reached",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_135",
+        "body": " IMI_S12_BODY_135",
+        "subtitle": " IMI_S12_SUB_135"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOW_RPM",
+    "notificationShortName": "RO STARTFAILED LOW RPM",
+    "notificationLongName": "Remote Start Failed due to Low RPM Shutdown",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_136",
+        "body": " IMI_S12_BODY_136",
+        "subtitle": " IMI_S12_SUB_136"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_KEY_IGN",
+    "notificationShortName": "RO STARTFAILED KEY IGN",
+    "notificationLongName": "Remote Start Failed due to Key In Ign",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_137",
+        "body": " IMI_S12_BODY_137",
+        "subtitle": " IMI_S12_SUB_137"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BREAK_PRESSED",
+    "notificationShortName": "RO STARTFAILED BREAK PRESSED",
+    "notificationLongName": "Remote Start Failed due to Brake Pressed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_138",
+        "body": " IMI_S12_BODY_138",
+        "subtitle": " IMI_S12_SUB_138"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_HAZARD_LIGHTS_ON",
+    "notificationShortName": "RO STARTFAILED HAZARD LIGHTS ON",
+    "notificationLongName": "Remote Start Failed due to Hazard Lamps active",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_139",
+        "body": " IMI_S12_BODY_139",
+        "subtitle": " IMI_S12_SUB_139"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_GEAR_ENGAGED",
+    "notificationShortName": "RO STARTFAILED GEAR ENGAGED",
+    "notificationLongName": "Remote Start Failed due to Not In Park",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_140",
+        "body": " IMI_S12_BODY_140",
+        "subtitle": " IMI_S12_SUB_140"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_SPEED_LOCKOUT",
+    "notificationShortName": "RO STARTFAILED SPEED LOCKOUT",
+    "notificationLongName": "Remote Start Failed due to Vehicle Speed High",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_141",
+        "body": " IMI_S12_BODY_141",
+        "subtitle": " IMI_S12_SUB_141"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_HOOD_OPEN",
+    "notificationShortName": "RO STARTFAILED HOOD OPEN",
+    "notificationLongName": "Remote Start Failed due to Hood open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_142",
+        "body": " IMI_S12_BODY_142",
+        "subtitle": " IMI_S12_SUB_142"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LIFTGATE_OPEN",
+    "notificationShortName": "RO STARTFAILED LIFTGATE OPEN",
+    "notificationLongName": "Remote Start Failed due to Liftgate open",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_143",
+        "body": " IMI_S12_BODY_143",
+        "subtitle": " IMI_S12_SUB_143"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_VTA_ALARM",
+    "notificationShortName": "RO STARTFAILED VTA ALARM",
+    "notificationLongName": "Remote Start Failed due to VTA alarm",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_144",
+        "body": " IMI_S12_BODY_144",
+        "subtitle": " IMI_S12_SUB_144"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BATTERY_HIGH",
+    "notificationShortName": "RO STARTFAILED BATTERY HIGH",
+    "notificationLongName": "Remote Start Failed due to Battery Voltage High",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_145",
+        "body": " IMI_S12_BODY_145",
+        "subtitle": " IMI_S12_SUB_145"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_BATTERY_LOW",
+    "notificationShortName": "RO STARTFAILED BATTERY LOW",
+    "notificationLongName": "Remote Start Failed due to Battery Voltage Low",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_146",
+        "body": " IMI_S12_BODY_146",
+        "subtitle": " IMI_S12_SUB_146"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_POWER_LOSS",
+    "notificationShortName": "RO STARTFAILED POWER LOSS",
+    "notificationLongName": "Remote Start Failed due to Battery Reset/Power Loss",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_147",
+        "body": " IMI_S12_BODY_147",
+        "subtitle": " IMI_S12_SUB_147"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_MIL_LIGHT_ON",
+    "notificationShortName": "RO STARTFAILED MIL LIGHT ON",
+    "notificationLongName": "Remote Start Failed due to MIL On/Flashing",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_148",
+        "body": " IMI_S12_BODY_148",
+        "subtitle": " IMI_S12_SUB_148"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_OIL_PRESSURE_LOW",
+    "notificationShortName": "RO STARTFAILED OIL PRESSURE LOW",
+    "notificationLongName": "Remote Start Failed due to Oil Pressure Low",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_149",
+        "body": " IMI_S12_BODY_149",
+        "subtitle": " IMI_S12_SUB_149"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_COOLANT_TEMP_HIGH",
+    "notificationShortName": "RO STARTFAILED COOLANT TEMP HIGH",
+    "notificationLongName": "Remote Start Failed due to Coolant Temp High",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_150",
+        "body": " IMI_S12_BODY_150",
+        "subtitle": " IMI_S12_SUB_150"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_CRANK_NO_START",
+    "notificationShortName": "RO STARTFAILED CRANK NO START",
+    "notificationLongName": "Remote Start Failed due to Crank No Start",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_151",
+        "body": " IMI_S12_BODY_151",
+        "subtitle": " IMI_S12_SUB_151"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_OFF_REQUESTED",
+    "notificationShortName": "RO STARTFAILED OFF REQUESTED",
+    "notificationLongName": "Remote Start Failed due to Remote Start Off Request",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_152",
+        "body": " IMI_S12_BODY_152",
+        "subtitle": " IMI_S12_SUB_152"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_DISABLED",
+    "notificationShortName": "RO STARTFAILED DISABLED",
+    "notificationLongName": "Remote Start Failed due to Remote Start Previously Disabled",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_153",
+        "body": " IMI_S12_BODY_153",
+        "subtitle": " IMI_S12_SUB_153"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NOT_CONFIGURED",
+    "notificationShortName": "RO STARTFAILED NOT CONFIGURED",
+    "notificationLongName": "Remote Start Failed due to Vehicle Not Configured for Remote Start",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_154",
+        "body": " IMI_S12_BODY_154",
+        "subtitle": " IMI_S12_SUB_154"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NO_HOOD_SWITCH",
+    "notificationShortName": "RO STARTFAILED NO HOOD SWITCH",
+    "notificationLongName": "Remote Start Failed due to No Hood Switch",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_155",
+        "body": " IMI_S12_BODY_155",
+        "subtitle": " IMI_S12_SUB_155"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NO_AUTO_TRANS",
+    "notificationShortName": "RO STARTFAILED NO AUTO TRANS",
+    "notificationLongName": "Remote Start Failed due to No Auto Transmission",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_156",
+        "body": " IMI_S12_BODY_156",
+        "subtitle": " IMI_S12_SUB_156"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_NOT_ENABLED",
+    "notificationShortName": "RO STARTFAILED NOT ENABLED",
+    "notificationLongName": "Remote Start Failed due to Remote Start Not Enabled",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_157",
+        "body": " IMI_S12_BODY_157",
+        "subtitle": " IMI_S12_SUB_157"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_IGN_STS_UNKNOWN",
+    "notificationShortName": "RO STARTFAILED IGN STS UNKNOWN",
+    "notificationLongName": "Remote Start Failed due to The ignition state of the car is unknown",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_158",
+        "body": " IMI_S12_BODY_158",
+        "subtitle": " IMI_S12_SUB_158"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_IGN_NOT_LOCK",
+    "notificationShortName": "RO STARTFAILED IGN NOT LOCK",
+    "notificationLongName": "Remote Start Failed due to  The ignition status is not in the off/lock state",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_159",
+        "body": " IMI_S12_BODY_159",
+        "subtitle": " IMI_S12_SUB_159"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOW_FUEL",
+    "notificationShortName": "RO STARTFAILED LOW FUEL",
+    "notificationLongName": "Remote Start Failed due to Low Fuel",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_160",
+        "body": " IMI_S12_BODY_160",
+        "subtitle": " IMI_S12_SUB_160"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_ETC_LAMP_ON",
+    "notificationShortName": "RO STARTFAILED ETC LAMP ON",
+    "notificationLongName": "Remote Start Failed due to  Electronic Throttle Control light is on",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_161",
+        "body": " IMI_S12_BODY_161",
+        "subtitle": " IMI_S12_SUB_161"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_LOGISTIC_MODE",
+    "notificationShortName": "RO STARTFAILED LOGISTIC MODE",
+    "notificationLongName": "Remote Start Failed due to Vehicle is in Plant/Logistics/Shipping Mode",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_162",
+        "body": " IMI_S12_BODY_162",
+        "subtitle": " IMI_S12_SUB_162"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_ESL_NOT_UNLOCKED",
+    "notificationShortName": "RO STARTFAILED ESL NOT UNLOCKED",
+    "notificationLongName": "Remote Start Failed due to Electronic Steering Lock did not send successful unlock signal",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_163",
+        "body": " IMI_S12_BODY_163",
+        "subtitle": " IMI_S12_SUB_163"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_RF_HUB_HS_FAILED",
+    "notificationShortName": "RO STARTFAILED RF HUB HS FAILED",
+    "notificationLongName": "Remote Start Failed due to RF Hub Failure",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_164",
+        "body": " IMI_S12_BODY_164",
+        "subtitle": " IMI_S12_SUB_164"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_PSA_NOT_ACTIVE",
+    "notificationShortName": "RO STARTFAILED PSA NOT ACTIVE",
+    "notificationLongName": "Remote Start Failed due to PHEV Propulsion System not Active",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_165",
+        "body": " IMI_S12_BODY_165",
+        "subtitle": " IMI_S12_SUB_165"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STARTFAILED_FOTA_INSTALL_OR_FAIL",
+    "notificationShortName": "RO STARTFAILED FOTA INSTALL OR FAIL",
+    "notificationLongName": "Remote Start Failed due to  Firmware-Over-The-Air Install is currently in progress or has failed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_166",
+        "body": " IMI_S12_BODY_166",
+        "subtitle": " IMI_S12_SUB_166"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Stop failed - speed lockout",
+    "notificationLongName": "Remote stop request failed due to speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_24",
+        "body": "IMI_S12_BODY_24",
+        "subtitle": "IMI_S12_SUB_24"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED_TIMEOUT",
+    "notificationShortName": "Stop failed - timeout",
+    "notificationLongName": "Remote stop request failed due to timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_25",
+        "body": "IMI_S12_BODY_25",
+        "subtitle": "IMI_S12_SUB_25"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_APP_NOT_RUNNING",
+    "notificationShortName": "Stop failed",
+    "notificationLongName": "App not running If the vehicle is not running(no remote start in less than 15 minutes)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_106",
+        "body": "IMI_S12_BODY_106",
+        "subtitle": "IMI_S12_SUB_106"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STOP_SUCCESS",
+    "notificationShortName": "Stop success",
+    "notificationLongName": "Remote stop request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_26",
+        "body": "IMI_S12_BODY_26",
+        "subtitle": "IMI_S12_SUB_26"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_RELOCK_OVERLAP",
+    "notificationShortName": "Lock and Unlock overlapped",
+    "notificationLongName": "Remote lock and unlock command overlapped",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_27",
+        "body": "IMI_S12_BODY_27",
+        "subtitle": "IMI_S12_SUB_27"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_IGNITION_ON",
+    "notificationShortName": "Horns and Lights failed - ignition ON",
+    "notificationLongName": "Remote horns and lights request failed due to ignition ON status",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_37",
+        "body": "IMI_S12_BODY_37",
+        "subtitle": "IMI_S12_SUB_37"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Horns and Lights failed - speed lockout",
+    "notificationLongName": "Remote horns and lights request failed due to speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_38",
+        "body": "IMI_S12_BODY_38",
+        "subtitle": "IMI_S12_SUB_38"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED_TIMEOUT",
+    "notificationShortName": "Horns and Lights failed - timeout",
+    "notificationLongName": "Remote horns and lights request failed due to timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_39",
+        "body": "IMI_S12_BODY_39",
+        "subtitle": "IMI_S12_SUB_39"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_SUCCESS",
+    "notificationShortName": "Horns and Lights success",
+    "notificationLongName": "Remote horns and lights request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_40",
+        "body": "IMI_S12_BODY_40",
+        "subtitle": "IMI_S12_SUB_40"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_FAILED",
+    "notificationShortName": "Remote Horns Lights failed - Not Authorized",
+    "notificationLongName": "Remote Horns Lights failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_41",
+        "body": "IMI_S12_BODY_41",
+        "subtitle": "IMI_S12_SUB_41"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_IGNITION_ON",
+    "notificationShortName": "Lights failed - ignition ON",
+    "notificationLongName": "Lights failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_28",
+        "body": "IMI_S12_BODY_28",
+        "subtitle": "IMI_S12_SUB_28"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Lights failed - speed lockout",
+    "notificationLongName": "Lights failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_29",
+        "body": "IMI_S12_BODY_29",
+        "subtitle": "IMI_S12_SUB_29"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED_TIMEOUT",
+    "notificationShortName": "Lights failed - timeout",
+    "notificationLongName": "Lights failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_30",
+        "body": "IMI_S12_BODY_30",
+        "subtitle": "IMI_S12_SUB_30"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_SUCCESS",
+    "notificationShortName": "Lights success",
+    "notificationLongName": "Remote lights request executed successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_31",
+        "body": "IMI_S12_BODY_31",
+        "subtitle": "IMI_S12_SUB_31"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIGHTS_FAILED",
+    "notificationShortName": "Remote Lights failed - Not Authorized",
+    "notificationLongName": "Remote Lights failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_36",
+        "body": "IMI_S12_BODY_36",
+        "subtitle": "IMI_S12_SUB_36"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_LOCK_FAILED",
+    "notificationShortName": "Door lock failed - Not Authorized",
+    "notificationLongName": "Door lock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_32",
+        "body": "IMI_S12_BODY_32",
+        "subtitle": "IMI_S12_SUB_32"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_DOOR_UNLOCK_FAILED",
+    "notificationShortName": "Door unlock failed - Not Authorized",
+    "notificationLongName": "Door unlock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_33",
+        "body": "IMI_S12_BODY_33",
+        "subtitle": "IMI_S12_SUB_33"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_FAILED",
+    "notificationShortName": "Your vehicle is not in the correct condition to execute this command. Please click on the link for more details and try again.",
+    "notificationLongName": "Your vehicle is not in the correct condition to execute this command. Please click on the link for more details and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_34",
+        "body": "IMI_S12_BODY_34",
+        "subtitle": "IMI_S12_SUB_34"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STOP_FAILED",
+    "notificationShortName": "S12_RO_STOP_FAILED",
+    "notificationLongName": "S12_RO_STOP_FAILED",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_35",
+        "body": "IMI_S12_BODY_35",
+        "subtitle": "IMI_S12_SUB_35"
+      }
+    }
+  },
+  {
+    "notificationId": "S13_SEND_DES_TO_VEHICLE_SUCCESS",
+    "notificationShortName": "SD2V Success",
+    "notificationLongName": "To allow customer to send a destination to the vehicle from their mobile device/web.  This destination can be sent to the navigation system in the vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S13_TITLE_32",
+        "body": "IMI_S13_BODY_32",
+        "subtitle": "IMI_S13_SUB_32"
+      }
+    }
+  },
+  {
+    "notificationId": "S13_SEND_DES_TO_VEHICLE_FAILED",
+    "notificationShortName": "SD2V Fail",
+    "notificationLongName": "To allow customer to send a destination to the vehicle from their mobile device/web. This destination can be sent to the navigation system in the vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S13_TITLE_33",
+        "body": "IMI_S13_BODY_33",
+        "subtitle": "IMI_S13_SUB_33"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BCM_MODE_TRIGGERED",
+    "notificationShortName": "Vehicle AlarmTriggered",
+    "notificationLongName": "Vehicle AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_01",
+        "body": "IMI_S15_BODY_01",
+        "subtitle": "IMI_S15_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_ACCELERATION_TRIGGERED",
+    "notificationShortName": "Acceleration AlarmTriggered",
+    "notificationLongName": "Acceleration AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_02",
+        "body": "IMI_S15_BODY_02",
+        "subtitle": "IMI_S15_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BATTERY_DISCONNECT_TRIGGERED",
+    "notificationShortName": "Battery Disconneded AlarmTriggered",
+    "notificationLongName": "Battery Disconneded AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_03",
+        "body": "IMI_S15_BODY_03",
+        "subtitle": "IMI_S15_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_SUPPRESS_SUCCESS",
+    "notificationShortName": "To pass forward the TANSuppression response (SUCCESS) from xyz to Channels",
+    "notificationLongName": "To pass forward the TANSuppression response (SUCCESS) from xyz to Channels",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_04",
+        "body": "IMI_S15_BODY_04",
+        "subtitle": "IMI_S15_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_SUPPRESS_FAIL",
+    "notificationShortName": "To pass forward the TANSuppression response (FAIL) from xyz to Channels",
+    "notificationLongName": "To pass forward the TANSuppression response (FAIL) from xyz to Channels",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_05",
+        "body": "IMI_S15_BODY_05",
+        "subtitle": "IMI_S15_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_NOTSUPPRESS_SUCCESS",
+    "notificationShortName": "To pass forward the TANSuppression Revocation response (SUCCESS) from xyz to Channels",
+    "notificationLongName": "To pass forward the TANSuppression Revocation response (SUCCESS) from xyz to Channels",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_06",
+        "body": "IMI_S15_BODY_06",
+        "subtitle": "IMI_S15_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_NOTSUPPRESS_FAIL",
+    "notificationShortName": "To pass forward the TANSuppression Revocation response (fail) from xyz to Channels",
+    "notificationLongName": "To pass forward the TANSuppression Revocation response (fail) from xyz to Channels",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_07",
+        "body": "IMI_S15_BODY_07",
+        "subtitle": "IMI_S15_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_LOCATION_UPDATE",
+    "notificationShortName": "Response for OnDemand Location request",
+    "notificationLongName": "Vehicle finder request successfully executed and location is updated",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S17_TITLE_01",
+        "body": "IMI_S17_BODY_01",
+        "subtitle": "IMI_S17_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED",
+    "notificationShortName": "Vehicle Finder request failed",
+    "notificationLongName": "Vehicle Finder request failed - generic failure",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S17_TITLE_04",
+        "body": "IMI_S17_BODY_04",
+        "subtitle": "IMI_S17_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Vehicle Finder request failed - vehicle is in motion.",
+    "notificationLongName": "Vehicle finder request failed due to speed lockout. Vehicle Speed greater than 3 km/hr",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S17_TITLE_05",
+        "body": "IMI_S17_BODY_05",
+        "subtitle": "IMI_S17_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_FAILED_PRIVACY_ON",
+    "notificationShortName": "Vehicle Finder request failed - privacy ON",
+    "notificationLongName": "Privacy mode state rejected the vehicle finder request.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S17_TITLE_06",
+        "body": "IMI_S17_BODY_06",
+        "subtitle": "IMI_S17_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_ON",
+    "notificationShortName": "PrivacyMode Status on",
+    "notificationLongName": "PrivacyMode Status on",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_01",
+        "body": "IMI_S31_BODY_01",
+        "subtitle": "IMI_S31_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_OFF",
+    "notificationShortName": "PrivacyMode Status off ",
+    "notificationLongName": "PrivacyMode Status off ",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_02",
+        "body": "IMI_S31_BODY_02",
+        "subtitle": "IMI_S31_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_STARTED",
+    "notificationShortName": "ChargeStarted",
+    "notificationLongName": "A charge initiated. when the vehicle begins it's charging process",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_01",
+        "body": "IMI_S33_BODY_01",
+        "subtitle": "IMI_S33_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAULTED",
+    "notificationShortName": "ChargeFaulted",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_02",
+        "body": "IMI_S33_BODY_02",
+        "subtitle": "IMI_S33_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_INTERRUPTED",
+    "notificationShortName": "ChargeInterrupted",
+    "notificationLongName": "When a charging interruption occurs. A charge interrupt. Charging has been interrupted due to an unplug event or disruption of the EVSE.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_03",
+        "body": "IMI_S33_BODY_03",
+        "subtitle": "IMI_S33_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_COMPLETED",
+    "notificationShortName": "On Demand Completed",
+    "notificationLongName": "On demand.Charge data request completed.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_04",
+        "body": "IMI_S33_BODY_04",
+        "subtitle": "IMI_S33_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_FAILED",
+    "notificationShortName": "On Demand Failed",
+    "notificationLongName": "On demand. Charge data request failed.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_05",
+        "body": "IMI_S33_BODY_05",
+        "subtitle": "IMI_S33_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_COMPLETED",
+    "notificationShortName": "ChargeCompleted",
+    "notificationLongName": "A charge completed. Charging has been completed charging.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_06",
+        "body": "IMI_S33_BODY_06",
+        "subtitle": "IMI_S33_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_COMPLETED",
+    "notificationShortName": "Charge Schedule Success",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_07",
+        "body": "IMI_S33_BODY_07",
+        "subtitle": "IMI_S33_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_FAILED",
+    "notificationShortName": "Charge Schedule Failed",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_08",
+        "body": "IMI_S33_BODY_08",
+        "subtitle": "IMI_S33_SUB_08"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAILED",
+    "notificationShortName": "Charge Now Failed",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_09",
+        "body": "IMI_S33_BODY_09",
+        "subtitle": "IMI_S33_SUB_09"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CLIMATE_REMINDER",
+    "notificationShortName": "Climate Schedule Reminder",
+    "notificationLongName": "Climate Schedule Reminder.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_10",
+        "body": "IMI_S33_BODY_10",
+        "subtitle": "IMI_S33_SUB_10"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_PROFILE_COMPLETED",
+    "notificationShortName": "Charge Profile Plus Success",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_11",
+        "body": "IMI_S33_BODY_11",
+        "subtitle": "IMI_S33_SUB_11"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_SCHEDULE_PROFILE_FAILED",
+    "notificationShortName": "Charge Profile Plus Failed",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_12",
+        "body": "IMI_S33_BODY_12",
+        "subtitle": "IMI_S33_SUB_12"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SETTING_COMPLETED",
+    "notificationShortName": "Charge Setting Success",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_13",
+        "body": "IMI_S33_BODY_13",
+        "subtitle": "IMI_S33_SUB_13"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SETTING_FAILED",
+    "notificationShortName": "Charge Setting Failed",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_14",
+        "body": "IMI_S33_BODY_14",
+        "subtitle": "IMI_S33_SUB_14"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_UNPLUGGED_FAILURE",
+    "notificationShortName": "Charge Now Unplugged Failure",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_15",
+        "body": "IMI_S33_BODY_15",
+        "subtitle": "IMI_S33_SUB_15"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_UNPLUGGED_FAILURE",
+    "notificationShortName": "On Demand Unplugged Failure",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_16",
+        "body": "IMI_S33_BODY_16",
+        "subtitle": "IMI_S33_SUB_16"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_ON_DEMAND_VEHICLE_DATA_NOT_AVAILABLE_FAILURE",
+    "notificationShortName": "On Demand Vehicle Data Failure",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_17",
+        "body": "IMI_S33_BODY_17",
+        "subtitle": "IMI_S33_SUB_17"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_SUCCESS",
+    "notificationShortName": "Charge Now Success",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_18",
+        "body": "IMI_S33_BODY_18",
+        "subtitle": "IMI_S33_SUB_18"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CABIN_CLIMATE_START",
+    "notificationShortName": "CABIN CLIMATE START",
+    "notificationLongName": "CABIN CLIMATE START",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_19",
+        "body": "IMI_S33_BODY_19",
+        "subtitle": "IMI_S33_SUB_19"
+      }
+    }
+  },
+  {
+    "notificationId": "S16_MARKETPLACE_SUCCESS",
+    "notificationShortName": "Successful purchase for marketplace service",
+    "notificationLongName": "Successful purchase for marketplace service",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S16_TITLE_1",
+        "body": "IMI_S16_BODY_1",
+        "subtitle": "IMI_S16_SUB_1"
+      }
+    }
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_REQUEST",
+    "notificationShortName": "DLR",
+    "notificationLongName": "DataLog Request Notification to Requested User",
+    "locale": "en-GB",
+    "brand": "Default",
+    "channelTemplates": {
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Data logs download request status for -  \"[$.Data.reasonForRequest]\"",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C26_ADAS_DATA_LOGGER_AVAILABILITY",
+    "notificationShortName": "DataLog Availability",
+    "notificationLongName": "DataLog Availability Intimation to Requested User",
+    "locale": "en-GB",
+    "brand": "Default",
+    "channelTemplates": {
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Data logs received on [$.Data.date]",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_DISCONNECT_SUCCESS",
+    "notificationShortName": "User should see In-App notification when disconnect operation is successful",
+    "notificationLongName": "User should see In-App notification when disconnect operation is successful",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_1",
+        "body": "IMI_S42_BODY_1",
+        "subtitle": "IMI_S42_SUB_1"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_DISCONNECT_FAILED",
+    "notificationShortName": "User should see In-App notification when disconnect operation is Failled",
+    "notificationLongName": "User should see In-App notification when disconnect operation is Failled",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_2",
+        "body": "IMI_S42_BODY_2",
+        "subtitle": "IMI_S42_SUB_2"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_DELETE_SUCCESS",
+    "notificationShortName": "User should see In-App notification when delete operation is successful",
+    "notificationLongName": "User should see In-App notification when delete operation is successful",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_3",
+        "body": "IMI_S42_BODY_3",
+        "subtitle": "IMI_S42_SUB_3"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_DELETE_FAILED",
+    "notificationShortName": "User should see In-App notification when delete operation is Failled",
+    "notificationLongName": "User should see In-App notification when delete operation is Failled",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_4",
+        "body": "IMI_S42_BODY_4",
+        "subtitle": "IMI_S42_SUB_4"
+      }
+    }
+  },
+  {
+    "notificationId": "S34_RECALL_IS_AVAILABLE",
+    "notificationShortName": "User should see in-App & Push when recall is available",
+    "notificationLongName": "User should see in-App & Push when recall is available",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S34_TITLE_1",
+        "body": "IMI_S34_BODY_1",
+        "subtitle": "IMI_S34_SUB_1"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_SUCCESS",
+    "notificationShortName": "Trunk lock success",
+    "notificationLongName": "Trunk lock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_42",
+        "body": "IMI_S12_BODY_42",
+        "subtitle": "IMI_S12_SUB_42"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Trunk lock failed - speed lockout",
+    "notificationLongName": "Trunk lock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_43",
+        "body": "IMI_S12_BODY_43",
+        "subtitle": "IMI_S12_SUB_43"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Trunk cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Trunk cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_44",
+        "body": "IMI_S12_BODY_44",
+        "subtitle": "IMI_S12_SUB_44"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED",
+    "notificationShortName": "Trunk lock failed - Not Authorized",
+    "notificationLongName": "Trunk lock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_45",
+        "body": "IMI_S12_BODY_45",
+        "subtitle": "IMI_S12_SUB_45"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_LOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Trunk lock failed - timeout",
+    "notificationLongName": "Trunk lock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_46",
+        "body": "IMI_S12_BODY_46",
+        "subtitle": "IMI_S12_SUB_46"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_SUCCESS",
+    "notificationShortName": "Trunk unlock success",
+    "notificationLongName": "Trunk unlock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_47",
+        "body": "IMI_S12_BODY_47",
+        "subtitle": "IMI_S12_SUB_47"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Trunk unlock failed - speed lockout",
+    "notificationLongName": "Trunk unlock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_48",
+        "body": "IMI_S12_BODY_48",
+        "subtitle": "IMI_S12_SUB_48"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED",
+    "notificationShortName": "Trunk unlock failed - Not Authorized",
+    "notificationLongName": "Trunk unlock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_49",
+        "body": "IMI_S12_BODY_49",
+        "subtitle": "IMI_S12_SUB_49"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Trunk cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Trunk cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_120",
+        "body": "IMI_S12_BODY_120",
+        "subtitle": "IMI_S12_SUB_120"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNK_UNLOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Trunk unlock failed - timeout",
+    "notificationLongName": "Trunk unlock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_50",
+        "body": "IMI_S12_BODY_50",
+        "subtitle": "IMI_S12_SUB_50"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_SUCCESS",
+    "notificationShortName": "Glove Box lock success",
+    "notificationLongName": "Glove Box lock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_51",
+        "body": "IMI_S12_BODY_51",
+        "subtitle": "IMI_S12_SUB_51"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_FAILED",
+    "notificationShortName": "Glove Box lock failed - Not Authorized",
+    "notificationLongName": "Glove Box lock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_52",
+        "body": "IMI_S12_BODY_52",
+        "subtitle": "IMI_S12_SUB_52"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_LOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Glove Box lock failed - timeout",
+    "notificationLongName": "Glove Box lock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_53",
+        "body": "IMI_S12_BODY_53",
+        "subtitle": "IMI_S12_SUB_53"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_SUCCESS",
+    "notificationShortName": "Glove Box unlock success",
+    "notificationLongName": "Glove Box unlock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_57",
+        "body": "IMI_S12_BODY_57",
+        "subtitle": "IMI_S12_SUB_57"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_FAILED",
+    "notificationShortName": "Glove Box unlock failed - Not Authorized",
+    "notificationLongName": "Glove Box unlock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_58",
+        "body": "IMI_S12_BODY_58",
+        "subtitle": "IMI_S12_SUB_58"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_GLOVEBOX_UNLOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Glove Box unlock failed - timeout",
+    "notificationLongName": "Glove Box unlock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_59",
+        "body": "IMI_S12_BODY_59",
+        "subtitle": "IMI_S12_SUB_59"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_SUCCESS",
+    "notificationShortName": "Trunk SHYAM Box lock success",
+    "notificationLongName": "Trunk SHYAM Box lock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_60",
+        "body": "IMI_S12_BODY_60",
+        "subtitle": "IMI_S12_SUB_60"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Trunk SHYAM Box lock failed - speed lockout",
+    "notificationLongName": "Trunk SHYAM Box lock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_61",
+        "body": "IMI_S12_BODY_61",
+        "subtitle": "IMI_S12_SUB_61"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Trunk SHYAM Box cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Trunk SHYAM Box cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_62",
+        "body": "IMI_S12_BODY_62",
+        "subtitle": "IMI_S12_SUB_62"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED",
+    "notificationShortName": "Trunk SHYAM Box lock failed - Not Authorized",
+    "notificationLongName": "Trunk SHYAM Box lock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_63",
+        "body": "IMI_S12_BODY_63",
+        "subtitle": "IMI_S12_SUB_63"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_LOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Trunk SHYAM Box lock failed - timeout",
+    "notificationLongName": "Trunk SHYAM Box lock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_64",
+        "body": "IMI_S12_BODY_64",
+        "subtitle": "IMI_S12_SUB_64"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_SUCCESS",
+    "notificationShortName": "Trunk SHYAM Box unlock success",
+    "notificationLongName": "Trunk SHYAM Box unlock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_65",
+        "body": "IMI_S12_BODY_65",
+        "subtitle": "IMI_S12_SUB_65"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Trunk SHYAM Box unlock failed - speed lockout",
+    "notificationLongName": "Trunk SHYAM Box unlock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_66",
+        "body": "IMI_S12_BODY_66",
+        "subtitle": "IMI_S12_SUB_66"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED",
+    "notificationShortName": "Trunk SHYAM Box unlock failed - Not Authorized",
+    "notificationLongName": "Trunk SHYAM Box unlock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_67",
+        "body": "IMI_S12_BODY_67",
+        "subtitle": "IMI_S12_SUB_67"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Trunk SHYAM Box cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Trunk SHYAM Box cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_121",
+        "body": "IMI_S12_BODY_121",
+        "subtitle": "IMI_S12_SUB_121"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_TRUNKRMABOX_UNLOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Trunk SHYAM Box unlock failed - timeout",
+    "notificationLongName": "Trunk SHYAM Box unlock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_68",
+        "body": "IMI_S12_BODY_68",
+        "subtitle": "IMI_S12_SUB_68"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_SUCCESS",
+    "notificationShortName": "HVAC ON success",
+    "notificationLongName": "HVAC ON success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_69",
+        "body": "IMI_S12_BODY_69",
+        "subtitle": "IMI_S12_SUB_69"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_IGNITION_ON",
+    "notificationShortName": "HVAC ON failed - ignition ON",
+    "notificationLongName": "HVAC ON failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_70",
+        "body": "IMI_S12_BODY_70",
+        "subtitle": "IMI_S12_SUB_70"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED",
+    "notificationShortName": "HVAC ON failed - Not Authorized",
+    "notificationLongName": "HVAC ON failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_71",
+        "body": "IMI_S12_BODY_71",
+        "subtitle": "IMI_S12_SUB_71"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_ON_FAILED_TIMEOUT",
+    "notificationShortName": "HVAC ON failed - timeout",
+    "notificationLongName": "HVAC ON failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_72",
+        "body": "IMI_S12_BODY_72",
+        "subtitle": "IMI_S12_SUB_72"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_SUCCESS",
+    "notificationShortName": "HVAC OFF success",
+    "notificationLongName": "HVAC OFF success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_73",
+        "body": "IMI_S12_BODY_73",
+        "subtitle": "IMI_S12_SUB_73"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_IGNITION_ON",
+    "notificationShortName": "HVAC OFF failed - ignition ON",
+    "notificationLongName": "HVAC OFF failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_74",
+        "body": "IMI_S12_BODY_74",
+        "subtitle": "IMI_S12_SUB_74"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED",
+    "notificationShortName": "HVAC OFF failed - Not Authorized",
+    "notificationLongName": "HVAC OFF failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_75",
+        "body": "IMI_S12_BODY_75",
+        "subtitle": "IMI_S12_SUB_75"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HVAC_OFF_FAILED_TIMEOUT",
+    "notificationShortName": "HVAC OFF failed - timeout",
+    "notificationLongName": "HVAC OFF failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_76",
+        "body": "IMI_S12_BODY_76",
+        "subtitle": "IMI_S12_SUB_76"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_SUCCESS",
+    "notificationShortName": "Auto On Comfort ON success",
+    "notificationLongName": "Auto On Comfort ON success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_77",
+        "body": "IMI_S12_BODY_77",
+        "subtitle": "IMI_S12_SUB_77"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED_IGNITION_ON",
+    "notificationShortName": "Auto On Comfort ON failed - ignition ON",
+    "notificationLongName": "Auto On Comfort ON failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_78",
+        "body": "IMI_S12_BODY_78",
+        "subtitle": "IMI_S12_SUB_78"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED",
+    "notificationShortName": "Auto On Comfort ON failed - Not Authorized",
+    "notificationLongName": "Auto On Comfort ON failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_79",
+        "body": "IMI_S12_BODY_79",
+        "subtitle": "IMI_S12_SUB_79"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_ON_FAILED_TIMEOUT",
+    "notificationShortName": "Auto On Comfort ON failed - timeout",
+    "notificationLongName": "Auto On Comfort ON failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_80",
+        "body": "IMI_S12_BODY_80",
+        "subtitle": "IMI_S12_SUB_80"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_SUCCESS",
+    "notificationShortName": "Auto On Comfort OFF success",
+    "notificationLongName": "Auto On Comfort OFF success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_81",
+        "body": "IMI_S12_BODY_81",
+        "subtitle": "IMI_S12_SUB_81"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED_IGNITION_ON",
+    "notificationShortName": "Auto On Comfort OFF failed - ignition ON",
+    "notificationLongName": "Auto On Comfort OFF failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_82",
+        "body": "IMI_S12_BODY_82",
+        "subtitle": "IMI_S12_SUB_82"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED",
+    "notificationShortName": "Auto On Comfort OFF failed - Not Authorized",
+    "notificationLongName": "Auto On Comfort OFF failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_83",
+        "body": "IMI_S12_BODY_83",
+        "subtitle": "IMI_S12_SUB_83"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_AUTOONCOMFORT_OFF_FAILED_TIMEOUT",
+    "notificationShortName": "Auto On Comfort OFF failed - timeout",
+    "notificationLongName": "Auto On Comfort OFF failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_84",
+        "body": "IMI_S12_BODY_84",
+        "subtitle": "IMI_S12_SUB_84"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_SUCCESS",
+    "notificationShortName": "Liftgate lock success",
+    "notificationLongName": "Liftgate lock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_89",
+        "body": "IMI_S12_BODY_89",
+        "subtitle": "IMI_S12_SUB_89"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Liftgate lock failed - speed lockout",
+    "notificationLongName": "Liftgate lock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_90",
+        "body": "IMI_S12_BODY_90",
+        "subtitle": "IMI_S12_SUB_90"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Liftgate cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Liftgate cannot be locked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_91",
+        "body": "IMI_S12_BODY_91",
+        "subtitle": "IMI_S12_SUB_91"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED",
+    "notificationShortName": "Liftgate lock failed - Not Authorized",
+    "notificationLongName": "Liftgate lock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_92",
+        "body": "IMI_S12_BODY_92",
+        "subtitle": "IMI_S12_SUB_92"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_LOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Liftgate lock failed - timeout",
+    "notificationLongName": "Liftgate lock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_93",
+        "body": "IMI_S12_BODY_93",
+        "subtitle": "IMI_S12_SUB_93"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_SUCCESS",
+    "notificationShortName": "Liftgate unlock success",
+    "notificationLongName": "Liftgate unlock success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_94",
+        "body": "IMI_S12_BODY_94",
+        "subtitle": "IMI_S12_SUB_94"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "Liftgate unlock failed - speed lockout",
+    "notificationLongName": "Liftgate unlock failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_95",
+        "body": "IMI_S12_BODY_95",
+        "subtitle": "IMI_S12_SUB_95"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED",
+    "notificationShortName": "Liftgate unlock failed - Not Authorized",
+    "notificationLongName": "Liftgate unlock failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_96",
+        "body": "IMI_S12_BODY_96",
+        "subtitle": "IMI_S12_SUB_96"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_DOOR_OPEN",
+    "notificationShortName": "Your Liftgate cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "notificationLongName": "Your Liftgate cannot be unlocked because at least one of your doors or liftgate/trunk or windows is open. Please secure your vehicle and try again.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_122",
+        "body": "IMI_S12_BODY_122",
+        "subtitle": "IMI_S12_SUB_122"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LIFTGATE_UNLOCK_FAILED_TIMEOUT",
+    "notificationShortName": "Liftgate unlock failed - timeout",
+    "notificationLongName": "Liftgate unlock failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_97",
+        "body": "IMI_S12_BODY_97",
+        "subtitle": "IMI_S12_SUB_97"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_SUCCESS",
+    "notificationShortName": "Remote Clear Peronal Data success",
+    "notificationLongName": "Remote Clear Peronal Data success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_85",
+        "body": "IMI_S12_BODY_85",
+        "subtitle": "IMI_S12_SUB_85"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED_VEHICLE_IN_MOTION",
+    "notificationShortName": "Remote Clear Peronal Data failed - vehicle in motion",
+    "notificationLongName": "Remote Clear Peronal Data failed - vehicle in motion",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_86",
+        "body": "IMI_S12_BODY_86",
+        "subtitle": "IMI_S12_SUB_86"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED",
+    "notificationShortName": "Remote Clear Peronal Data failed - general failure",
+    "notificationLongName": "Remote Clear Peronal Data failed - general failure",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_87",
+        "body": "IMI_S12_BODY_87",
+        "subtitle": "IMI_S12_SUB_87"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_FAILED_TIME_OUT",
+    "notificationShortName": "Remote Clear Peronal Data failed - timeout",
+    "notificationLongName": "Remote Clear Peronal Data failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_88",
+        "body": "IMI_S12_BODY_88",
+        "subtitle": "IMI_S12_SUB_88"
+      }
+    }
+  },
+  {
+    "notificationId": "SR20_SERVICE_COUPONS_AVAILABLE",
+    "notificationShortName": "To inform user through push and in-app notification when new coupons are available",
+    "notificationLongName": "To inform user through push and in-app notification when new coupons are available",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_SR20_TITLE_01",
+        "body": "IMI_SR20_BODY_01",
+        "subtitle": "IMI_SR20_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLEARPERSONALDATA_SIXDAY_ELAPSED",
+    "notificationShortName": "Remote Clear Personal Data failed - 6 days elapsed",
+    "notificationLongName": "Remote Clear Personal Data failed - 6 days elapsed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_98",
+        "body": "IMI_S12_BODY_98",
+        "subtitle": "IMI_S12_SUB_98"
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_RECALL_NOTIFICATION",
+    "notificationShortName": "Recall Message sent to the vehicle's HU.",
+    "notificationLongName": "Display messages to Customer in the HU for Recall",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "URGENT SAFETY RECALL",
+        "body": "Your vehicle has an urgent Safety Recall. <Recall Name> Call Customer Care or your dealer to schedule a Free Repair."
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_OIL_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Oil",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Oil",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "Oil Change Due",
+        "body": "It is time to change the oil in your engine.Press Call for assistance."
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_TPM_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Tire-Pressure",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Tire-Pressure",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "Low Tire Pressure",
+        "body": "Your Tire Pressure is low.Press Call for assistance."
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_BRAKE_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Brake",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Brake",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "Brake System Alert",
+        "body": "Your Brake System requires attention.Press Call for assistance."
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_BATTERY_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for Service Message - Battery",
+    "notificationLongName": "Display messages to Customer in the HU for Service Message - Battery",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "Battery Alert",
+        "body": "Your vehicle's Battery requires attention.Press Call for assistance."
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDING_SOON_NOTIF",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDING_TODAY",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENDED_NOTIF",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_SUBS_ENROLL_REMINDER",
+    "notificationShortName": "Display messages to Customer in the HU for Subscription Message",
+    "notificationLongName": "Display messages to Customer in the HU for Subscription Message",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S08_LIVE_WEATHER_ALERTS",
+    "notificationShortName": "Weather Alerts, Traffic Events, ETA Updates, Speed Camera Alerts, Chinese License Plate Restriction (CLPR)",
+    "notificationLongName": "To inform the customer of Weather Alerts,Traffic Events ETA Updates,Speed Camera Alerts within navigation system.  For China, there is additional funcationality for  CLPR (Chinese License Plate Restrictions Events",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S08_LIVE_TRAFFIC_EVENTS",
+    "notificationShortName": "Traffic Events",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S08_LIVE_ETA_UPDATES",
+    "notificationShortName": "ETA Updates",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S08_NAV_SPEED_CAMERA_ALERTS",
+    "notificationShortName": "Speed breach occurred",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S08_LIVE_CLPR",
+    "notificationShortName": "Chinese License Plate Restriction (CLPR)",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_VALETBREACH_FLEET",
+    "notificationShortName": "Valet breach occurred",
+    "notificationLongName": "Valet breach occurred",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_01",
+        "body": "IMI_S04_BODY_01",
+        "subtitle": "IMI_S04_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CURFEWBREACH_FLEET",
+    "notificationShortName": "Curfew breach occurred",
+    "notificationLongName": "Curfew breach occurred",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_02",
+        "body": "IMI_S04_BODY_02",
+        "subtitle": "IMI_S04_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_SPEEDBREACH_FLEET",
+    "notificationShortName": "Speed breach occurred",
+    "notificationLongName": "Speed breach occurred",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_03",
+        "body": "IMI_S04_BODY_03",
+        "subtitle": "IMI_S04_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEENTRY_FLEET",
+    "notificationShortName": "Geofence entry breach occurred",
+    "notificationLongName": "Geofence entry breach occurred",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_04",
+        "body": "IMI_S04_BODY_04",
+        "subtitle": "IMI_S04_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_GEOFENCEEXIT_FLEET",
+    "notificationShortName": "Geofence exit breach occurred",
+    "notificationLongName": "Geofence exit breach occurred",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_05",
+        "body": "IMI_S04_BODY_05",
+        "subtitle": "IMI_S04_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_SERVICES_INITIATED_FLEET",
+    "notificationShortName": "SVLA Initiated",
+    "notificationLongName": "SVLA Initiated",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_01",
+        "body": "IMI_S14_BODY_01",
+        "subtitle": "IMI_S14_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_EXPIRATION_REMINDER_FLEET",
+    "notificationShortName": "SVLA Expiration Reminder",
+    "notificationLongName": "SVLA Expiration Reminder",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_02",
+        "body": "IMI_S14_BODY_02",
+        "subtitle": "IMI_S14_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_EXTENSION_CONFIRMATION_FLEET",
+    "notificationShortName": "SVLA Extension Confirmation",
+    "notificationLongName": "SVLA Extension Confirmation",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_03",
+        "body": "IMI_S14_BODY_03",
+        "subtitle": "IMI_S14_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_CUSTOMER_CANCELLATION_FLEET",
+    "notificationShortName": "SVLA Customer Cancellation",
+    "notificationLongName": "SVLA Customer Cancellation",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_04",
+        "body": "IMI_S14_BODY_04",
+        "subtitle": "IMI_S14_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_NO_ACK_RECIEVED_FLEET",
+    "notificationShortName": "SLVA acknowledgement not received",
+    "notificationLongName": "SLVA acknowledgement not received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_05",
+        "body": "IMI_S14_BODY_05",
+        "subtitle": "IMI_S14_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S14_SVLA_SYSTEM_CANCEL_ORIGINAL_FLEET",
+    "notificationShortName": "SVLA System Cancellation (original request)",
+    "notificationLongName": "SVLA System Cancellation (original request)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S14_TITLE_06",
+        "body": "IMI_S14_BODY_06",
+        "subtitle": "IMI_S14_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BCM_MODE_TRIGGERED_FLEET",
+    "notificationShortName": "Vehicle AlarmTriggered",
+    "notificationLongName": "Vehicle AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_01",
+        "body": "IMI_S15_BODY_01",
+        "subtitle": "IMI_S15_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_ACCELERATION_TRIGGERED_FLEET",
+    "notificationShortName": "Acceleration AlarmTriggered",
+    "notificationLongName": "Acceleration AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_02",
+        "body": "IMI_S15_BODY_02",
+        "subtitle": "IMI_S15_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S15_TAN_ALARM_BATTERY_DISCONNECT_TRIGGERED_FLEET",
+    "notificationShortName": "Battery Disconneded AlarmTriggered",
+    "notificationLongName": "Battery Disconneded AlarmTriggered",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S15_TITLE_03",
+        "body": "IMI_S15_BODY_03",
+        "subtitle": "IMI_S15_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_ON_FLEET",
+    "notificationShortName": "PrivacyMode Status on",
+    "notificationLongName": "PrivacyMode Status on",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_01",
+        "body": "IMI_S31_BODY_01",
+        "subtitle": "IMI_S31_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_PRIVACY_MODE_OFF_FLEET",
+    "notificationShortName": "PrivacyMode Status off",
+    "notificationLongName": "PrivacyMode Status off",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_02",
+        "body": "IMI_S31_BODY_02",
+        "subtitle": "IMI_S31_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_STARTED_FLEET",
+    "notificationShortName": "ChargeStarted",
+    "notificationLongName": "ChargeStarted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_01",
+        "body": "IMI_S33_BODY_01",
+        "subtitle": "IMI_S33_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_FAULTED_FLEET",
+    "notificationShortName": "ChargeFaulted",
+    "notificationLongName": "ChargeFaulted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_02",
+        "body": "IMI_S33_BODY_02",
+        "subtitle": "IMI_S33_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_INTERRUPTED_FLEET",
+    "notificationShortName": "ChargeInterrupted",
+    "notificationLongName": "ChargeInterrupted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_03",
+        "body": "IMI_S33_BODY_03",
+        "subtitle": "IMI_S33_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_COMPLETED_FLEET",
+    "notificationShortName": "ChargeCompleted",
+    "notificationLongName": "ChargeCompleted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_06",
+        "body": "IMI_S33_BODY_06",
+        "subtitle": "IMI_S33_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_PROFILE_COMPLETED",
+    "notificationShortName": "Charge Profile 2+2 Success",
+    "notificationLongName": "Charge Profile 2+2 Success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_20",
+        "body": "IMI_S33_BODY_20",
+        "subtitle": "IMI_S33_SUB_20"
+      }
+    }
+  },
+  {
+    "notificationId": "S33_PHEV_CHARGE_PROFILE_FAILED",
+    "notificationShortName": "Charge Profile 2+2Failed",
+    "notificationLongName": "Charge Profile 2+2Failed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S33_TITLE_21",
+        "body": "IMI_S33_BODY_21",
+        "subtitle": "IMI_S33_SUB_21"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_UNLOCK_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Unlock Success - Request received",
+    "notificationLongName": "Remote Unlock Success - Request received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_99",
+        "body": "IMI_S12_BODY_99",
+        "subtitle": "IMI_S12_SUB_99"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LOCK_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Lock Success - Request Received",
+    "notificationLongName": "Remote Lock Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_100",
+        "body": "IMI_S12_BODY_100",
+        "subtitle": "IMI_S12_SUB_100"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_START_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Start Success Push Notification - Request Received",
+    "notificationLongName": "Remote Start Success Push Notification - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_101",
+        "body": "IMI_S12_BODY_101",
+        "subtitle": "IMI_S12_SUB_101"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_STOP_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Stop Success Push Notification - Request Received",
+    "notificationLongName": "Remote Stop Success Push Notification - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_102",
+        "body": "IMI_S12_BODY_102",
+        "subtitle": "IMI_S12_SUB_102"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_HORNLIGHT_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Horns and Lights Success - Request Received",
+    "notificationLongName": "Remote Horns and Lights Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_103",
+        "body": "IMI_S12_BODY_103",
+        "subtitle": "IMI_S12_SUB_103"
+      }
+    }
+  },
+  {
+    "notificationId": "S17_VEHICLE_FINDER_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Remote Vehicle Finder Success - Request Received",
+    "notificationLongName": "Remote Vehicle Finder Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S17_TITLE_07",
+        "body": "IMI_S17_BODY_07",
+        "subtitle": "IMI_S17_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLIMATE_ON_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Climate ON Success - Request Received",
+    "notificationLongName": "Climate ON Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_104",
+        "body": "IMI_S12_BODY_104",
+        "subtitle": "IMI_S12_SUB_104"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_CLIMATE_OFF_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Climate OFF Success - Request Received",
+    "notificationLongName": "Climate OFF Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_105",
+        "body": "IMI_S12_BODY_105",
+        "subtitle": "IMI_S12_SUB_105"
+      }
+    }
+  },
+  {
+    "notificationId": "S04_DRIVE_ALRT_CONFIG_SUCCESS_REQ_RECVD",
+    "notificationShortName": "Drive Alerts Success - Request Received",
+    "notificationLongName": "Drive Alerts Success - Request Received",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S04_TITLE_06",
+        "body": "IMI_S04_BODY_06",
+        "subtitle": "IMI_S04_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "SR20_SERVICE_COUPONS_RECVD",
+    "notificationShortName": "Service Coupons Push Notification",
+    "notificationLongName": "Service Coupons Push Notification",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_SR20_TITLE_02",
+        "body": "IMI_SR20_BODY_02",
+        "subtitle": "IMI_SR20_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_LOW_FUEL",
+    "notificationShortName": "Low Fuel Push Notification",
+    "notificationLongName": "Low Fuel Push Notification",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S68_TITLE_01",
+        "body": "IMI_S68_BODY_01",
+        "subtitle": "IMI_S68_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S999_TEST_PUSH_CAMPGN_01",
+    "notificationShortName": "This is sample push notification for App Parity",
+    "notificationLongName": "This is sample push notification for App Parity",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S999_TITLE_01",
+        "body": "IMI_S999_BODY_01",
+        "subtitle": "IMI_S999_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_ELIGIBLE",
+    "notificationShortName": "Notification remider for eligbile customers",
+    "notificationLongName": "Notification remider for eligbile customers",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_09",
+        "body": "IMI_C14_BODY_09",
+        "subtitle": "IMI_C14_SUB_09"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Notification remider for eligbile customers",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_EXPIRY_WO_PURCHASE",
+    "notificationShortName": "Notification for upcoming promo expiration",
+    "notificationLongName": "Notification for upcoming promo expiration",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_10",
+        "body": "IMI_C14_BODY_10",
+        "subtitle": "IMI_C14_SUB_10"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Notification for upcoming promo expiration",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_EXTNSN_PURCHASE",
+    "notificationShortName": "Subscription activation for promo purchase",
+    "notificationLongName": "Subscription activation for promo purchase",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_11",
+        "body": "IMI_C14_BODY_11",
+        "subtitle": "IMI_C14_SUB_11"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Subscription activation for promo purchase",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_PERIOD_ON_PAID_CANCEL",
+    "notificationShortName": "Paid cancellation notification - Notifciation will be sent indicating the expiration of promo",
+    "notificationLongName": "Paid cancellation notification - Notifciation will be sent indicating the expiration of promo",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_12",
+        "body": "IMI_C14_BODY_12",
+        "subtitle": "IMI_C14_SUB_12"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Paid cancellation notification - Notifciation will be sent indicating the expiration of promo",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_EXPIRY",
+    "notificationShortName": "Active promo about to expire (3 days before)",
+    "notificationLongName": "Active promo about to expire (3 days before)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_13",
+        "body": "IMI_C14_BODY_13",
+        "subtitle": "IMI_C14_SUB_13"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Active promo about to expire (3 days before)",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_PROMO_TO_PAID_BEFORE_7D",
+    "notificationShortName": "Upcoming promo to paid, notification to be sent -7 days before",
+    "notificationLongName": "Upcoming promo to paid, notification to be sent -7 days before",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_14",
+        "body": "IMI_C14_BODY_14",
+        "subtitle": "IMI_C14_SUB_14"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Upcoming promo to paid, notification to be sent -7 days before",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_3P3_EXTNSN_PAID_INVOICE",
+    "notificationShortName": "Purchase confirmation (first invoice)",
+    "notificationLongName": "Purchase confirmation (first invoice)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_15",
+        "body": "IMI_C14_BODY_15",
+        "subtitle": "IMI_C14_SUB_15"
+      },
+      "email": {
+        "from": "adasdatalogger@abcgroup.com",
+        "subject": "Purchase confirmation (first invoice)",
+        "body": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_DEL_PMT_MTHD",
+    "notificationShortName": "Payment method deletion",
+    "notificationLongName": "Payment method deletion",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_04",
+        "body": "IMI_C14_BODY_04",
+        "subtitle": "IMI_C14_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_CHNG_DFLT_PMT_MTHD",
+    "notificationShortName": "Change default payment method",
+    "notificationLongName": "Change default payment method",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_05",
+        "body": "IMI_C14_BODY_05",
+        "subtitle": "IMI_C14_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_CHECKED_IN",
+    "notificationShortName": "Customer has checked in vehicle",
+    "notificationLongName": "Customer has checked in vehicle",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_01",
+        "body": "IMI_S100_BODY_01",
+        "subtitle": "IMI_S100_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_REQUEST_ORDER_DETAILS_AVAILABLE",
+    "notificationShortName": "Service request order details are available",
+    "notificationLongName": "Service request order details are available",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_02",
+        "body": "IMI_S100_BODY_02",
+        "subtitle": "IMI_S100_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_SERVICE_IN_PROGRESS",
+    "notificationShortName": "Vehicle Service is in progress",
+    "notificationLongName": "Vehicle Service is in progress",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_03",
+        "body": "IMI_S100_BODY_03",
+        "subtitle": "IMI_S100_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_READY",
+    "notificationShortName": "Service completed & vehicle is ready to pick-up",
+    "notificationLongName": "Service completed & vehicle is ready to pick-up",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_04",
+        "body": "IMI_S100_BODY_04",
+        "subtitle": "IMI_S100_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_PICKED_UP",
+    "notificationShortName": "Vehicle has been picked up by a customer",
+    "notificationLongName": "Vehicle has been picked up by a customer",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_05",
+        "body": "IMI_S100_BODY_05",
+        "subtitle": "IMI_S100_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_MARKETING_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for any custom marketing messages",
+    "notificationLongName": "Display messages to Customer in the HU for any custom marketing messages",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "You do not want to miss this offer",
+        "body": "Your Deep Qualifies for a $20 discount on Synthetic Oil Change Contact Parkway Chrslr godge Deep SHYAM to schedule an appointment"
+      }
+    }
+  },
+  {
+    "notificationId": "S06_IVM_GENERAL_NOTIFICATION",
+    "notificationShortName": "Display messages to Customer in the HU for any custom general messages",
+    "notificationLongName": "Display messages to Customer in the HU for any custom general messages",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "ivm": {
+        "title": "You do not want to miss this offer",
+        "body": "Your Deep Qualifies for a $20 discount on Synthetic Oil Change Contact Parkway Chrslr godge Deep SHYAM to schedule an appointment"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_MULTIPLE",
+    "notificationShortName": "If there is more that one remote operation being executed. Notify that it will take more time to perform the remote commands.",
+    "notificationLongName": "If there is more that one remote operation being executed. Notify that it will take more time to perform the remote commands.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_107",
+        "body": "IMI_S12_BODY_107",
+        "subtitle": "IMI_S12_SUB_107"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_DELIVERY_ACCESS_AUTOMATIC",
+    "notificationShortName": "Third party informes user it has requested access to vehicle . The access is provided automatically to third party",
+    "notificationLongName": "Third party informes user it has requested access to vehicle . The access is provided automatically to third party",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_101",
+        "body": "IMI_S99_BODY_101",
+        "subtitle": "IMI_S99_SUB_101"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_DELIVERY_ACCESS_INTERACTIVE",
+    "notificationShortName": "Third party requires access to vehicle in a time window.The acceptance of access is required to user",
+    "notificationLongName": "Third party requires access to vehicle in a time window.The acceptance of access is required to user",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_102",
+        "body": "IMI_S99_BODY_102",
+        "subtitle": "IMI_S99_SUB_102"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LOCALIZATION",
+    "notificationShortName": "Third party send a command to localize the vehicle",
+    "notificationLongName": "Third party send a command to localize the vehicle",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_103",
+        "body": "IMI_S99_BODY_103",
+        "subtitle": "IMI_S99_SUB_103"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_HORN_LIGHTS",
+    "notificationShortName": "Third party send a command to turn on the lights/horn",
+    "notificationLongName": "Third party send a command to turn on the lights/horn",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_104",
+        "body": "IMI_S99_BODY_104",
+        "subtitle": "IMI_S99_SUB_104"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_UNLOCK",
+    "notificationShortName": "Third party send a command to unlock the vehicle",
+    "notificationLongName": "Third party send a command to unlock the vehicle",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_105",
+        "body": "IMI_S99_BODY_105",
+        "subtitle": "IMI_S99_SUB_105"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LOCK",
+    "notificationShortName": "Third party send a command to lock the vehicle",
+    "notificationLongName": "Third party send a command to lock the vehicle",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_106",
+        "body": "IMI_S99_BODY_106",
+        "subtitle": "IMI_S99_SUB_106"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_TRUNK",
+    "notificationShortName": "Third party send a command to open the trunk",
+    "notificationLongName": "Third party send a command to open the trunk",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_107",
+        "body": "IMI_S99_BODY_107",
+        "subtitle": "IMI_S99_SUB_107"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_DELIVERY_END",
+    "notificationShortName": "Third party notifies user for the end of delivery",
+    "notificationLongName": "Third party notifies user for the end of delivery",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_108",
+        "body": "IMI_S99_BODY_108",
+        "subtitle": "IMI_S99_SUB_108"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_LOCK_DOORS_FAILED_DOOR_NOT_PRESENT",
+    "notificationShortName": "Door lock failed - door removed",
+    "notificationLongName": "",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_108",
+        "body": "IMI_S12_BODY_108",
+        "subtitle": "IMI_S12_SUB_108"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_UNLOCK_DOORS_FAILED_DOOR_NOT_PRESENT",
+    "notificationShortName": "Door unlock failed - door removed",
+    "notificationLongName": "Door unlock failed - door removed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_109",
+        "body": "IMI_S12_BODY_109",
+        "subtitle": "IMI_S12_SUB_109"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_SUCCESS",
+    "notificationShortName": "User should see In-App notification when QRcode login operation is successful",
+    "notificationLongName": "User should see In-App notification when QRcode login operation is successful",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_5",
+        "body": "IMI_S42_BODY_5",
+        "subtitle": "IMI_S42_SUB_5"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_FAILED",
+    "notificationShortName": "User should see In-App notification when Qrcode login operation is failed",
+    "notificationLongName": "User should see In-App notification when Qrcode login operation is failed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_6",
+        "body": "IMI_S42_BODY_6",
+        "subtitle": "IMI_S42_SUB_6"
+      }
+    }
+  },
+  {
+    "notificationId": "S42_CPA_QRCODELOGIN_EXISTSESSION",
+    "notificationShortName": "User should see In-App notification when a session is already existing",
+    "notificationLongName": "User should see In-App notification when a session is already existing",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S42_TITLE_7",
+        "body": "IMI_S42_BODY_7",
+        "subtitle": "IMI_S42_SUB_7"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_READY",
+    "notificationShortName": "MPI Ready (Dealer ready to complete MPI)",
+    "notificationLongName": "MPI Ready (Dealer ready to complete MPI)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_04",
+        "body": "IMI_S100_BODY_04",
+        "subtitle": "IMI_S100_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_REVIEW",
+    "notificationShortName": "MPI Review (Review of MPI Results)",
+    "notificationLongName": "MPI Review (Review of MPI Results)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_05",
+        "body": "IMI_S100_BODY_05",
+        "subtitle": "IMI_S100_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_APPROVAL",
+    "notificationShortName": "MPI Approval (Customer review/accept/decline additional work)",
+    "notificationLongName": "MPI Approval (Customer review/accept/decline additional work)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_06",
+        "body": "IMI_S100_BODY_06",
+        "subtitle": "IMI_S100_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_LIGHTS",
+    "notificationShortName": "Third party send a lights request command",
+    "notificationLongName": "Third party send a lights request command",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_109",
+        "body": "IMI_S99_BODY_109",
+        "subtitle": "IMI_S99_SUB_109"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_CLOSE_TRUNK",
+    "notificationShortName": "Third party send a command to close the trunk",
+    "notificationLongName": "Third party send a command to close the trunk",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_110",
+        "body": "IMI_S99_BODY_110",
+        "subtitle": "IMI_S99_SUB_110"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_SUCCESS",
+    "notificationShortName": "BEV_PRECOND ON success",
+    "notificationLongName": "BEV_PRECOND ON success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_110",
+        "body": "IMI_S12_BODY_110",
+        "subtitle": "IMI_S12_SUB_110"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_IGNITION_ON",
+    "notificationShortName": "BEV_PRECOND ON failed - ignition ON",
+    "notificationLongName": "BEV_PRECOND ON failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_111",
+        "body": "IMI_S12_BODY_111",
+        "subtitle": "IMI_S12_SUB_111"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED",
+    "notificationShortName": "BEV_PRECOND ON failed - Not Authorizedd",
+    "notificationLongName": "BEV_PRECOND ON failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_112",
+        "body": "IMI_S12_BODY_112",
+        "subtitle": "IMI_S12_SUB_112"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_TIMEOUT",
+    "notificationShortName": "BEV_PRECOND ON failed - timeout",
+    "notificationLongName": "BEV_PRECOND ON failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_113",
+        "body": "IMI_S12_BODY_113",
+        "subtitle": "IMI_S12_SUB_113"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_SUCCESS",
+    "notificationShortName": "BEV_PRECOND OFF success",
+    "notificationLongName": "BEV_PRECOND OFF success",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_114",
+        "body": "IMI_S12_BODY_114",
+        "subtitle": "IMI_S12_SUB_114"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_IGNITION_ON",
+    "notificationShortName": "BEV_PRECOND OFF failed - ignition ON",
+    "notificationLongName": "BEV_PRECOND OFF failed - ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_115",
+        "body": "IMI_S12_BODY_115",
+        "subtitle": "IMI_S12_SUB_115"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED",
+    "notificationShortName": "BEV_PRECOND OFF failed - Not Authorized",
+    "notificationLongName": "BEV_PRECOND OFF failed - Not Authorized",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_116",
+        "body": "IMI_S12_BODY_116",
+        "subtitle": "IMI_S12_SUB_116"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_TIMEOUT",
+    "notificationShortName": "BEV_PRECOND OFF failed - timeout",
+    "notificationLongName": "BEV_PRECOND OFF failed - timeout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_117",
+        "body": "IMI_S12_BODY_117",
+        "subtitle": "IMI_S12_SUB_117"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_ON_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "BEV_PRECOND failed - speed lockout",
+    "notificationLongName": "BEV_PRECOND failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_118",
+        "body": "IMI_S12_BODY_118",
+        "subtitle": "IMI_S12_SUB_118"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_BEV_PRECOND_OFF_FAILED_SPEED_LOCKOUT",
+    "notificationShortName": "BEV_PRECOND OFF failed - speed lockout",
+    "notificationLongName": "BEV_PRECOND OFF failed - speed lockout",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_119",
+        "body": "IMI_S12_BODY_119",
+        "subtitle": "IMI_S12_SUB_119"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_SUCCESS",
+    "notificationShortName": "RO ACV SUCCESS",
+    "notificationLongName": "Your Active Cabin Ventilation  was successful",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_167",
+        "body": "IMI_S12_BODY_167",
+        "subtitle": "IMI_S12_SUB_167"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_GENERIC",
+    "notificationShortName": "RO ACV FAILED GENERIC",
+    "notificationLongName": "Your Active Cabin Ventilation Failed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_168",
+        "body": "IMI_S12_BODY_168",
+        "subtitle": "IMI_S12_SUB_168"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_IGNITION",
+    "notificationShortName": "RO ACV FAILED IGNITION",
+    "notificationLongName": "Your Active Cabin Ventilation Failed due to Ignition ON",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_169",
+        "body": "IMI_S12_BODY_169",
+        "subtitle": "IMI_S12_SUB_169"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_ONGOING",
+    "notificationShortName": "RO ACV FAILED ONGOING",
+    "notificationLongName": "Your Active Cabin Ventilation Failed due to another ACV session active.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_170",
+        "body": "IMI_S12_BODY_170",
+        "subtitle": "IMI_S12_SUB_170"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_SOC",
+    "notificationShortName": "RO ACV FAILED SOC",
+    "notificationLongName": "Your Active Cabin Ventilation Failed due to insufficient vehicle battery charge",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_171",
+        "body": "IMI_S12_BODY_171",
+        "subtitle": "IMI_S12_SUB_171"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_TIME_EXPIRED",
+    "notificationShortName": "RO ACV FAILED STOP TIME EXPIRED",
+    "notificationLongName": "An ongoing ACV session has been stopped, due to timer expiration (default: 5 minutes)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_172",
+        "body": "IMI_S12_BODY_172",
+        "subtitle": "IMI_S12_SUB_172"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_SOC",
+    "notificationShortName": "RO ACV FAILED STOP SOC",
+    "notificationLongName": "An ongoing ACV session has been stopped, due to insufficient vehicle battery charge (before timer expiration)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_173",
+        "body": "IMI_S12_BODY_173",
+        "subtitle": "IMI_S12_SUB_173"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_HVAC",
+    "notificationShortName": "RO ACV FAILED STOP HVAC",
+    "notificationLongName": "An ongoing ACV session has been stopped by the HVAC system, due to cabin cooling completed (before timer expiration)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_174",
+        "body": "IMI_S12_BODY_174",
+        "subtitle": "IMI_S12_SUB_174"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_REMOTE_OP",
+    "notificationShortName": "RO ACV FAILED STOP REMOTE OP",
+    "notificationLongName": "An ongoing ACV session has been stopped by the Onboard, due to the arrival of another RO request (before timer expiration)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_175",
+        "body": "IMI_S12_BODY_175",
+        "subtitle": "IMI_S12_SUB_175"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_STOP_KFOB_OP",
+    "notificationShortName": "RO ACV FAILED STOP KFOB OP",
+    "notificationLongName": "An ongoing ACV session has been stopped by the Onboard, due to the arrival of a key fob operation request (before timer expiration)",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_176",
+        "body": "IMI_S12_BODY_176",
+        "subtitle": "IMI_S12_SUB_176"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_FAILED_ERR_GENERIC",
+    "notificationShortName": "RO ACV FAILED ERR GENERIC",
+    "notificationLongName": "Your Active Cabin Ventilation Failed due to an ongoing ACV session has been stooped because invalid ACV status on CAN.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_177",
+        "body": "IMI_S12_BODY_177",
+        "subtitle": "IMI_S12_SUB_177"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_SCHEDULE_SUCCESS",
+    "notificationShortName": "RO ACV SCHEDULE SUCCESS",
+    "notificationLongName": "Your ACV schedule was saved succefully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_178",
+        "body": "IMI_S12_BODY_178",
+        "subtitle": "IMI_S12_SUB_178"
+      }
+    }
+  },
+  {
+    "notificationId": "S12_RO_ACV_SCHEDULE_FAILED",
+    "notificationShortName": "RO ACV SCHEDULE FAILED",
+    "notificationLongName": "Your ACV schedule was NOT saved",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S12_TITLE_179",
+        "body": "IMI_S12_BODY_179",
+        "subtitle": "IMI_S12_SUB_179"
+      }
+    }
+  },
+  {
+    "notificationId": "S120_ECO_NEW_BADGES_ACHIEVEMENT",
+    "notificationShortName": "To inform user through push and in-app notification that the user achieved new badges in the badging period",
+    "notificationLongName": "To inform user through push and in-app notification that the user achieved new badges in the badging period",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S120_TITLE_01",
+        "body": "IMI_S120_BODY_01",
+        "subtitle": "IMI_S120_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S120_ECO_BEST_SCORE_BADGE_ACHIEVEMENT",
+    "notificationShortName": "To inform user through push and in-app notification that the he achieved a new best score badge",
+    "notificationLongName": "To inform user through push and in-app notification that the he achieved a new best score badge",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S120_TITLE_02",
+        "body": "IMI_S120_BODY_02",
+        "subtitle": "IMI_S120_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S120_ECO_WELCOME_BADGE_ACHIEVEMENT",
+    "notificationShortName": "To inform user through push and in-app notification that he achieved the welcome badge",
+    "notificationLongName": "To inform user through push and in-app notification that he achieved the welcome badge",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S120_TITLE_03",
+        "body": "IMI_S120_BODY_03",
+        "subtitle": "IMI_S120_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S101_APPOINTMENT_CONFIRMATION",
+    "notificationShortName": "Confirmation of appointment scheduled or rescheduled by the vehicle owner",
+    "notificationLongName": "Confirmation of appointment scheduled or rescheduled by the vehicle owner",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_01",
+        "body": "IMI_S101_BODY_01",
+        "subtitle": "IMI_S101_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S101_APPOINTMENT_CANCELLATION",
+    "notificationShortName": "Appointment cancelled by the vehicle owner",
+    "notificationLongName": "Appointment cancelled by the vehicle owner",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_03",
+        "body": "IMI_S101_BODY_03",
+        "subtitle": "IMI_S101_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S101_SERVICE_CONFIRMATION",
+    "notificationShortName": "Service detected by the service advisor system",
+    "notificationLongName": "Service detected by the service advisor system",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_04",
+        "body": "IMI_S101_BODY_04",
+        "subtitle": "IMI_S101_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S101_SERVICE_REMINDER",
+    "notificationShortName": "Reminder for Service Appointment",
+    "notificationLongName": "Reminder for Service Appointment",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_05",
+        "body": "IMI_S101_BODY_05",
+        "subtitle": "IMI_S101_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "C11_TEST_BANNER_NOTIFCT_01",
+    "notificationShortName": "This is sample banner notification",
+    "notificationLongName": "This is sample banner notification",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C11_TITLE_01",
+        "body": "IMI_C11_BODY_01",
+        "subtitle": "IMI_C11_SUB_01",
+        "bannertitle": "IMI_C11_BANNER_TITLE_01",
+        "bannerdesc": "IMI_C11_BANNER_DESC_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_INSTALLATION_SUCCESSFULL",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Success Installation of the new App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Success Installation of the new App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_01",
+        "body": "IMI_S101_BODY_01",
+        "subtitle": "IMI_S101_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_INSTALLATION_FAILURE",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Failure Installation of the new App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Failure Installation of the new App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_02",
+        "body": "IMI_S101_BODY_02",
+        "subtitle": "IMI_S101_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_UNINSTALLATION_SUCCESSFULL",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Success Uninstallation of the App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Success Uninstallation of the App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_03",
+        "body": "IMI_S101_BODY_03",
+        "subtitle": "IMI_S101_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_UNINSTALLATION_FAILURE",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Failure Uninstallation of the App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Failure Uninstallation of the App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_04",
+        "body": "IMI_S101_BODY_04",
+        "subtitle": "IMI_S101_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_UPDATES_CONFIRMATION",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Success Updates of the App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Success Updates of the App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_05",
+        "body": "IMI_S101_BODY_05",
+        "subtitle": "IMI_S101_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S110_UPDATES_FAILURE",
+    "notificationShortName": "Provide in-app notification in Global Mobile App to the user for Failure Updates of the App in the Vehicle.",
+    "notificationLongName": "Provide in-app notification in Global Mobile App to the user for Failure Updates of the App in the Vehicle.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S101_TITLE_06",
+        "body": "IMI_S101_BODY_06",
+        "subtitle": "IMI_S101_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_OPEN_LIFTGATE",
+    "notificationShortName": "Third party send a command to open the liftgate",
+    "notificationLongName": "Third party send a command to open the liftgate",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_111",
+        "body": "IMI_S99_BODY_111",
+        "subtitle": "IMI_S99_SUB_111"
+      }
+    }
+  },
+  {
+    "notificationId": "S99_THIRD_PARTY_CLOSE_LIFTGATE",
+    "notificationShortName": "Third party send a command to close the liftgate",
+    "notificationLongName": "Third party send a command to close the liftgate",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S99_TITLE_112",
+        "body": "IMI_S99_BODY_112",
+        "subtitle": "IMI_S99_SUB_112"
+      }
+    }
+  },
+  {
+    "notificationId": "S55_CAL_INTG_LEAVE_NOTIFICATION",
+    "notificationShortName": "Send to the user the leaving time",
+    "notificationLongName": "Send to the user the leaving time",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S55_TITLE_01",
+        "body": "IMI_S55_BODY_01",
+        "subtitle": "IMI_S55_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S55_CAL_INTG_LATE_NOTIFICATION",
+    "notificationShortName": "Inform the user that he is in late",
+    "notificationLongName": "Inform the user that he is in late",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S55_TITLE_02",
+        "body": "IMI_S55_BODY_02",
+        "subtitle": "IMI_S55_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXP_IN_7_DAYS",
+    "notificationShortName": "Notification will be triggered 7 days prior to trial expiration by SXM at 1 AM",
+    "notificationLongName": "Notification will be triggered 7 days prior to trial expiration by SXM at 1 AM",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_01",
+        "body": "IMI_C14_BODY_01",
+        "subtitle": "IMI_C14_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXP_DAY",
+    "notificationShortName": "Notification will be triggered on days of trial expiration by SXM at 1 AM",
+    "notificationLongName": "Notification will be triggered on days of trial expiration by SXM at 1 AM",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_02",
+        "body": "IMI_C14_BODY_02",
+        "subtitle": "IMI_C14_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "C14_SM_PRE_TRIAL_EXPIRED_14_DAYS",
+    "notificationShortName": "Notification will be triggered 14 days after of trial expiration by SXM at 1 AM",
+    "notificationLongName": "Notification will be triggered 14 days after of trial expiration by SXM at 1 AM",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C14_TITLE_03",
+        "body": "IMI_C14_BODY_03",
+        "subtitle": "IMI_C14_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S55_CAL_INTG_DISSOCN",
+    "notificationShortName": "Vehicle Disassociation when at least one vehicle is available",
+    "notificationLongName": "Vehicle Disassociation when at least one vehicle is available",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S55_TITLE_03",
+        "body": "IMI_S55_BODY_03",
+        "subtitle": "IMI_S55_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S55_CAL_INTG_DISSOCN_NO_VEHICLE",
+    "notificationShortName": "Vehicle Disassociation with no more vehicle available scenario",
+    "notificationLongName": "Vehicle Disassociation with no more vehicle available scenario",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S55_TITLE_04",
+        "body": "IMI_S55_BODY_04",
+        "subtitle": "IMI_S55_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_FULL_PRIVACY_MODE_OFF",
+    "notificationShortName": "FullPrivacyMode Status off",
+    "notificationLongName": "FullPrivacyMode Status off",
+    "locale": "en-US",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_02",
+        "body": "IMI_S31_BODY_02",
+        "subtitle": "IMI_S31_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S31_FULL_PRIVACY_MODE_ON",
+    "notificationShortName": "FullPrivacyMode Status on",
+    "notificationLongName": "FullPrivacyMode Status on",
+    "locale": "en-US",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S31_TITLE_01",
+        "body": "IMI_S31_BODY_01",
+        "subtitle": "IMI_S31_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "C04_EN_ENROLLMENT_INSTRUCTION",
+    "notificationShortName": "SMS notification that takes customer to GMA for completion of enrollment that is triggered from HU IVE App",
+    "notificationLongName": "SMS notification that takes customer to GMA for completion of enrollment that is triggered from HU IVE App",
+    "locale": "en-US",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "",
+        "body": "",
+        "subtitle": ""
+      }
+    }
+  },
+  {
+    "notificationId": "C04_VIN_SCAN",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_C04_TITLE_01",
+        "body": "IMI_C04_BODY_01",
+        "subtitle": "IMI_C04_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_LOW",
+    "notificationShortName": "Battery Status Low",
+    "notificationLongName": "Battery Status Low",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S68_SUB_03",
+        "title": "IMI_S68_TITLE_03",
+        "body": "IMI_S68_BODY_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_LOW",
+    "notificationShortName": "Battery Status Low",
+    "notificationLongName": "Battery Status Low",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S68_SUB_03",
+        "title": "IMI_S68_TITLE_03",
+        "body": "IMI_S68_BODY_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_CRITICAL",
+    "notificationShortName": "Battery Status Critical",
+    "notificationLongName": "Battery Status Critical",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S68_SUB_04",
+        "title": "IMI_S68_TITLE_04",
+        "body": "IMI_S68_BODY_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_STATUS_CRITICAL",
+    "notificationShortName": "Battery Status Critical",
+    "notificationLongName": "Battery Status Critical",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S68_SUB_04",
+        "title": "IMI_S68_TITLE_04",
+        "body": "IMI_S68_BODY_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_BATTERY_DRAIN_RISK",
+    "notificationShortName": "Inform the customer after 14 days without ignition on about the risk of battery drain in case of long stops",
+    "notificationLongName": "Inform the customer after 14 days without ignition on about the risk of battery drain in case of long stops",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S68_TITLE_02",
+        "body": "IMI_S68_BODY_02",
+        "subtitle": "IMI_S68_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_APPOINTMENT_CONFIRMATION",
+    "notificationShortName": "The appointment requested has been confirmed",
+    "notificationLongName": "The appointment requested has been confirmed",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S100_TITLE_09",
+        "title": "IMI_S100_BODY_09",
+        "body": "IMI_S100_SUB_09"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_DIAGNOSIS_IN_PROGRESS",
+    "notificationShortName": "The virtual and physical vehicle check is on going",
+    "notificationLongName": "The virtual and physical vehicle check is on going",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S100_TITLE_11",
+        "title": "IMI_S100_BODY_11",
+        "body": "IMI_S100_SUB_11"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_DYNAMIC_CHKLIST",
+    "notificationShortName": "The dynamic checklist has been completed",
+    "notificationLongName": "The dynamic checklist has been completed",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S100_TITLE_10",
+        "title": "IMI_S100_BODY_10",
+        "body": "IMI_S100_SUB_10"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_QUALITY_CHECK",
+    "notificationShortName": "Services and repairs quality  have been verified",
+    "notificationLongName": "Services and repairs quality  have been verified",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apipush": {
+        "subtitle": "IMI_S100_TITLE_12",
+        "title": "IMI_S100_BODY_12",
+        "body": "IMI_S100_SUB_12"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_CHECKED_IN",
+    "notificationShortName": "Customer has checked in vehicle",
+    "notificationLongName": "Customer has checked in vehicle",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_01",
+        "body": "IMI_S100_BODY_01",
+        "subtitle": "IMI_S100_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_REQUEST_ORDER_DETAILS_AVAILABLE",
+    "notificationShortName": "Service request order details are available",
+    "notificationLongName": "Service request order details are available",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_02",
+        "body": "IMI_S100_BODY_02",
+        "subtitle": "IMI_S100_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_SERVICE_IN_PROGRESS",
+    "notificationShortName": "Vehicle Service is in progress",
+    "notificationLongName": "Vehicle Service is in progress",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_03",
+        "body": "IMI_S100_BODY_03",
+        "subtitle": "IMI_S100_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_READY",
+    "notificationShortName": "Service completed & vehicle is ready to pick-up",
+    "notificationLongName": "Service completed & vehicle is ready to pick-up",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_04",
+        "body": "IMI_S100_BODY_04",
+        "subtitle": "IMI_S100_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_PICKED_UP",
+    "notificationShortName": "Vehicle has been picked up by a customer",
+    "notificationLongName": "Vehicle has been picked up by a customer",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_05",
+        "body": "IMI_S100_BODY_05",
+        "subtitle": "IMI_S100_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_READY",
+    "notificationShortName": "MPI Ready (Dealer ready to complete MPI)",
+    "notificationLongName": "MPI Ready (Dealer ready to complete MPI)",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_06",
+        "body": "IMI_S100_BODY_06",
+        "subtitle": "IMI_S100_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_REVIEW",
+    "notificationShortName": "MPI Review (Review of MPI Results)",
+    "notificationLongName": "MPI Review (Review of MPI Results)",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_07",
+        "body": "IMI_S100_BODY_07",
+        "subtitle": "IMI_S100_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_MPI_APPROVAL",
+    "notificationShortName": "MPI Approval (Customer review/accept/decline additional work)",
+    "notificationLongName": "MPI Approval (Customer review/accept/decline additional work)",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_08",
+        "body": "IMI_S100_BODY_08",
+        "subtitle": "IMI_S100_SUB_08"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_APPOINTMENT_CONFIRMATION",
+    "notificationShortName": "The appointment requested has been confirmed",
+    "notificationLongName": "The appointment requested has been confirmed",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_09",
+        "body": "IMI_S100_BODY_09",
+        "subtitle": "IMI_S100_SUB_09"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_DYNAMIC_CHKLIST",
+    "notificationShortName": "The dynamic checklist has been completed.",
+    "notificationLongName": "The dynamic checklist has been completed.",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_10",
+        "body": "IMI_S100_BODY_10",
+        "subtitle": "IMI_S100_SUB_10"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_DIAGNOSIS_IN_PROGRESS",
+    "notificationShortName": "The virtual and physical vehicle check is on going.",
+    "notificationLongName": "The virtual and physical vehicle check is on going.",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_11",
+        "body": "IMI_S100_BODY_11",
+        "subtitle": "IMI_S100_SUB_11"
+      }
+    }
+  },
+  {
+    "notificationId": "S100_SS_VEHICLE_QUALITY_CHECK",
+    "notificationShortName": "Services and repairs quality  have been verified",
+    "notificationLongName": "Services and repairs quality  have been verified",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S100_TITLE_12",
+        "body": "IMI_S100_BODY_12",
+        "subtitle": "IMI_S100_SUB_12"
+      }
+    }
+  },
+  {
+    "notificationId": "S176_CONNECTED_PNC_ERROR",
+    "notificationShortName": "Notification to inform the vehicle owner that something goes wrong with the charge",
+    "notificationLongName": "Notification to inform the vehicle owner that something goes wrong with the charge",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S176_TITLE_01",
+        "body": "IMI_S176_BODY_01",
+        "subtitle": "IMI_S176_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S176_CONNECTED_PNC_CHARGE_COMPLETED",
+    "notificationShortName": "Notification to inform the vehicle owner about the billing ID, date of payment, the amount of payment, charging duration and the electrical quantity received at charge completed",
+    "notificationLongName": "Notification to inform the vehicle owner about the billing ID, date of payment, the amount of payment, charging duration and the electrical quantity received at charge completed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S176_TITLE_02",
+        "body": "IMI_S176_BODY_02",
+        "subtitle": "IMI_S176_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_24H_TIME_EXPIRED",
+    "notificationShortName": "QUICK SHARE 24H TIME EXPIRED",
+    "notificationLongName": "Notification to inform the vehicle owner that the delegation time is expired without any access from the delegate to the link within the 24h",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_01",
+        "body": "IMI_S177_BODY_01",
+        "subtitle": "IMI_S177_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_STARTED",
+    "notificationShortName": "QUICK SHARE STARTED",
+    "notificationLongName": "Notification to inform the vehicle owner that the delegation is started",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_03",
+        "body": "IMI_S177_BODY_03",
+        "subtitle": "IMI_S177_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_ENDED",
+    "notificationShortName": "QUICK SHARE ENDED",
+    "notificationLongName": "Notification to inform the vehicle owner that the delegation is ended",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_04",
+        "body": "IMI_S177_BODY_04",
+        "subtitle": "IMI_S177_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_ACCESS_INTERACTIVE",
+    "notificationShortName": "QUICK SHARE ACCESS INTERACTIVE",
+    "notificationLongName": "The delegated person requires access to vehicle in a time window (2h). The acceptance of access is required to the vehicle owner.",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_05",
+        "body": "IMI_S177_BODY_05",
+        "subtitle": "IMI_S177_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_2H_TIME_EXPIRED",
+    "notificationShortName": "QUICK SHARE 2H TIME EXPIRED",
+    "notificationLongName": "Notification to inform the vehicle owner that the delegation is ended because nobody pressed on Stop Delegation within 2h",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_06",
+        "body": "IMI_S177_BODY_06",
+        "subtitle": "IMI_S177_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S177_QUICK_SHARE_SECURITY_REASONS",
+    "notificationShortName": "QUICK SHARE SECURITY REASONS",
+    "notificationLongName": "Notification to inform the vehicle owner that the delegation is stopped due to security reasons",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S177_TITLE_07",
+        "body": "IMI_S177_BODY_07",
+        "subtitle": "IMI_S177_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S106_RDA_SESSION_APPROVAL",
+    "notificationShortName": "RDA SESSION APPROVAL",
+    "notificationLongName": "Notify customer to approve or reject RDA session request",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S106_TITLE_01",
+        "body": "IMI_S106_BODY_01",
+        "subtitle": "IMI_S106_SUB_01"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_PAIRING_SUCCESS",
+    "notificationShortName": "DK_PAIRING_SUCCESS",
+    "notificationLongName": "Digital key succcessfully paired",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_02",
+        "body": "IMI_S126_BODY_02",
+        "subtitle": "IMI_S126_SUB_02"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_PAIRING_FAILURE",
+    "notificationShortName": "DK_PAIRING_FAILURE",
+    "notificationLongName": "Digital key pairing failied",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_03",
+        "body": "IMI_S126_BODY_03",
+        "subtitle": "IMI_S126_SUB_03"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEY_AUTHORIZATION",
+    "notificationShortName": "DK_DELETEKEY_AUTHORIZATION",
+    "notificationLongName": "Digital key delete authorization ",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_04",
+        "body": "IMI_S126_BODY_04",
+        "subtitle": "IMI_S126_SUB_04"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETE_SUCCESS",
+    "notificationShortName": "DK_DELETE_SUCCESS",
+    "notificationLongName": "Digital key is  deleted successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_05",
+        "body": "IMI_S126_BODY_05",
+        "subtitle": "IMI_S126_SUB_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETE_FAILURE",
+    "notificationShortName": "DK_DELETE_FAILURE",
+    "notificationLongName": "Digital key is deletion failed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_06",
+        "body": "IMI_S126_BODY_06",
+        "subtitle": "IMI_S126_SUB_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETED",
+    "notificationShortName": "DK_DELETED",
+    "notificationLongName": "Digital key got deleted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_07",
+        "body": "IMI_S126_BODY_07",
+        "subtitle": "IMI_S126_SUB_07"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETE-ALL_SUCCESS",
+    "notificationShortName": "DK_DELETE-ALL_SUCCESS",
+    "notificationLongName": "All the Digital keys deleted successfully",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_08",
+        "body": "IMI_S126_BODY_08",
+        "subtitle": "IMI_S126_SUB_08"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETE-ALL_FAILURE",
+    "notificationShortName": "DK_DELETE-ALL_FAILURE",
+    "notificationLongName": "All the Digital keys deletion failed ",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_09",
+        "body": "IMI_S126_BODY_09",
+        "subtitle": "IMI_S126_SUB_09"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_RTN",
+    "notificationShortName": "DK_DELETEKEYS_RTN",
+    "notificationLongName": "Digital key(s) deletion due to RTN",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_10",
+        "body": "IMI_S126_BODY_10",
+        "subtitle": "IMI_S126_SUB_10"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_SERVICE-EXPIRATION",
+    "notificationShortName": "DK_DELETEKEYS_SERVICE-EXPIRATION",
+    "notificationLongName": "Digital key(s) deletion due to subscription expiry",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_12",
+        "body": "IMI_S126_BODY_12",
+        "subtitle": "IMI_S126_SUB_12"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETEKEYS_SVLA",
+    "notificationShortName": "DK_DELETEKEYS_SVLA",
+    "notificationLongName": "Digital key(s) deletion due to Stolen Vehicle",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_13",
+        "body": "IMI_S126_BODY_13",
+        "subtitle": "IMI_S126_SUB_13"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_SUSPEND",
+    "notificationShortName": "DK_SUSPEND",
+    "notificationLongName": "Digital key is suspended ",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_14",
+        "body": "IMI_S126_BODY_14",
+        "subtitle": "IMI_S126_SUB_14"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_RESUME",
+    "notificationShortName": "DK_RESUME",
+    "notificationLongName": "Digital key is Resumed",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_15",
+        "body": "IMI_S126_BODY_15",
+        "subtitle": "IMI_S126_SUB_15"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK_DELETEALL_AUTHORIZATION",
+    "notificationShortName": "DK_DELETEALL_AUTHORIZATION",
+    "notificationLongName": "All digital key delete authorization ",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_17",
+        "body": "IMI_S126_BODY_17",
+        "subtitle": "IMI_S126_SUB_17"
+      }
+    }
+  },
+  {
+    "notificationId": "S126_DK-ALLKEYS_DELETED",
+    "notificationShortName": "DK-ALLKEYS_DELETED",
+    "notificationLongName": "All Digital keys got deleted",
+    "locale": "en-GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "title": "IMI_S126_TITLE_18",
+        "body": "IMI_S126_BODY_18",
+        "subtitle": "IMI_S126_SUB_18"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_LOW",
+    "notificationShortName": "Notify customer for a Low Tire status",
+    "notificationLongName": "Notify customer for a Low Tire status",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "subtitle": "IMI_S68_SUB_05",
+        "title": "IMI_S68_TITLE_05",
+        "body": "IMI_S68_BODY_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_LOW",
+    "notificationShortName": "Notify customer for a Low Tire status",
+    "notificationLongName": "Notify customer for a Low Tire status",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "subtitle": "IMI_S68_SUB_05",
+        "title": "IMI_S68_TITLE_05",
+        "body": "IMI_S68_BODY_05"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_VERY_LOW",
+    "notificationShortName": "Notify customer for a Very Low Tire status",
+    "notificationLongName": "Notify customer for a Very Low Tire status",
+    "locale": "it_IT",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "subtitle": "IMI_S68_SUB_06",
+        "title": "IMI_S68_BODY_06",
+        "body": "IMI_S68_BODY_06"
+      }
+    }
+  },
+  {
+    "notificationId": "S68_VI_TIRE_STATUS_VERY_LOW",
+    "notificationShortName": "Notify customer for a Very Low Tire status",
+    "notificationLongName": "Notify customer for a Very Low Tire status",
+    "locale": "en_GB",
+    "brand": "default",
+    "channelTemplates": {
+      "apiPush": {
+        "subtitle": "IMI_S68_SUB_06",
+        "title": "IMI_S68_BODY_06",
+        "body": "IMI_S68_BODY_06"
+      }
+    }
+  }
+]

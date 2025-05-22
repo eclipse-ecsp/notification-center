@@ -1,0 +1,6 @@
+﻿Notification ID,Notification short name,Notification long name,,
+ayush1,ayush,ayush,,
+Brand,Channel,Attribute,EN_US,fr_FR
+Kia,email,body,"""Purchasing date: [[formatDate|yyyy-MM-dd|dd-MM-yyyy|[$.Data.purchaseDate]]] and Expiration date: [[formatDate|yyyy-MM-dd|dd-MM-yyyy|[$.Data.SubExpirationDate]]]""","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,email,from,Vered.Arvili@harman.com,Vered.Arvili@harman.com
+Kia,email,subject,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station",Notification de faible consommation de carburant

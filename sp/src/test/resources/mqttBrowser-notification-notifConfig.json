@@ -1,0 +1,36 @@
+{
+  "userId": "HUXOIDDN4HUN18",
+  "vehicleId": "HUXOIDDN4HUN18",
+  "contactId": "self",
+  "group": "all",
+  "enabled": "true",
+  "channels": [
+    {
+      "type": "apiPush",
+      "enabled": false
+    },
+    {
+      "type": "push",
+      "enabled": false
+    },
+    {
+      "type": "email",
+      "enabled": false,
+      "emails": [
+        "johndoe@hotmail.com",
+        "abcd@xyz.com"
+      ]
+    },
+    {
+      "type": "sms",
+      "enabled": false,
+      "phones": [
+        "123456789"
+      ]
+    },
+    {
+      "type": "portal",
+      "enabled": true
+    }
+  ]
+}

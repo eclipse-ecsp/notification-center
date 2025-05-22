@@ -1,0 +1,34 @@
+{
+  "EventID": "ScheduleOpStatusEvent",
+  "Version": "1.0",
+  "Timestamp": 1602492509723,
+  "Data": {
+    "scheduleId": "8c1ea6fc-e0b5-4a01-ab41-cb16233d4410",
+    "status": "DELETE",
+    "igniteEvent": {
+      "EventID": "DeleteScheduleEvent",
+      "Version": "1.0",
+      "Timestamp": 1603201542643,
+      "Data": {
+        "scheduleId": "X4fcb679-d1fa-4f97-858b-56fe909b0644"
+      },
+      "RequestId": "6525120b-63c8-4fe1-91ed-f48a41dc2291",
+      "SourceDeviceId": "HU0487905376AB",
+      "VehicleId": "HU0487905376AB",
+      "Timezone": 0,
+      "MessageId": "1",
+      "BizTransactionId": "de71ed6c-41e2-4a64-b0d8-70abad8060e1",
+      "ecuType": "",
+      "mqttTopic": "",
+      "DeviceDeliveryCutoff": -1,
+      "DuplicateMessage": false
+    },
+    "valid": true
+  },
+  "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 0,
+  "MessageId": "91351",
+  "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+  "DeviceDeliveryCutoff": -1
+}

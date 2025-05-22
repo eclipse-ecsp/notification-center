@@ -1,0 +1,24 @@
+{
+  "EventID": "NotificationSettings",
+  "Version": "1.0",
+  "Data": {
+    "notificationConfig": [
+      {
+        "pdids": [
+          "HUIOUGBJNQAB89"
+        ],
+        "channels": [
+          {
+            "type": "push",
+            "enabled": "true",
+            "token": "8d243ba602e016572465b36302f6281315f941b1d51cef89fc9a073bf190a79f",
+            "service": "apns_sandbox",
+            "alertTypes": [
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

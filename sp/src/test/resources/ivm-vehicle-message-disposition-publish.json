@@ -1,0 +1,20 @@
+{
+  "EventID": "VehicleMessageDispositionPublish",
+  "Version": "1.0",
+  "Timestamp": 0,
+  "RequestId": "req123",
+  "VehicleId": "HUXOIDDN4HUN18",
+  "Timezone": "0",
+  "MessageId": "1",
+  "CorrelationId": "1",
+  "DeviceDeliveryCutoff": -1,
+  "Data": {
+    "notificationId": "VehicleMessageDispositionPublish",
+    "vehicleMessageId": "1",
+    "messageDisplayTimestamp": 1548791674462,
+    "messageHMIDispositionEventTimestamp": 1548791674462,
+    "failureDiagnostic": "Failure",
+    "disposition": "MESSAGE_CONFIRMED_BY_OPERATOR",
+    "customExtension": "Custom Extension"
+  }
+}

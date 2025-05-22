@@ -1,0 +1,5 @@
+﻿Notification ID,Notification short name,Notification long name
+IVM_OIL_NOTIFICATION,Display messages to Customer in the HU for Service Message - Oil,Display messages to Customer in the HU for Service Message - Oil
+Brand,Channel,Attribute,en_US
+default,ivm,body," "
+default,ivm,title," "

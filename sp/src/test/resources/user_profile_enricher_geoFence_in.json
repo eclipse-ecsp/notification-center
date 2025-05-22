@@ -1,0 +1,17 @@
+{
+  "EventID": "GenericNotificationEvent",
+  "Version": "1.0",
+  "Timestamp": 1553597260,
+  "RequestId": "MBh5EAzPdQh7rBZHuYy8biUMxZTXBg9A",
+  "VehicleId": "HUR902N3KHU7U7",
+  "Timezone": 330,
+  "BizTransactionId": "MBh5EAzPdQh7rBZHuYy8biUMxZTXBg9A",
+  "DeviceDeliveryCutoff": -1,
+  "Data": {
+    "campaignId": null,
+    "name": "akshay",
+    "notificationId": "GeoFence_in",
+    "userId": "AWh_YZbs3JWC8U6WROnj",
+    "UserNotification": false
+  }
+}

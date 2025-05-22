@@ -1,0 +1,236 @@
+[
+  {
+    "notificationId": "GeoFence_in",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_out",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "LowFuel",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "OverSpeeding",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "Collision",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DTCStored_set",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DTCStored_cleared",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_valet_in",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_valet_out",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_generic_in",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_generic_out",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "CurfewViolation",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "CurfewViolation_time",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "Idle",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "NonIdle",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "Tow",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_out",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "GeoFence_privatelocation_in",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DongleStatus_attached",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DongleStatus_detached",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DongleDetached",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "DocumentExpiry",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "ServiceReminder_ReminderEngine",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "ServiceReminder_OdometerReading",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "PinGenerated",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "Disturbance",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "Activation",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "FirmwareDownloaded",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "FirmwareUpgraded",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "MMY",
+    "group": "all",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_RECALL_NOTIFICATION",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_OIL_NOTIFICATION",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_TPM_NOTIFICATION",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_BRAKE_NOTIFICATION",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_BATTERY_NOTIFICATION",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_SOON_NOTIF",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDING_TODAY",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_SUBS_ENDED_NOTIF",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  },
+  {
+    "notificationId": "IVM_SUBS_ENROLL_REMINDER",
+    "group": "ivm",
+    "mandatory": false,
+    "checkEntitlement": false
+  }
+]

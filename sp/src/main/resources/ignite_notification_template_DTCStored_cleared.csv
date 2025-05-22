@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+DTCStored_cleared,DTCStored_cleared Notification,DTCStored_cleared Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,One or more problems ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.
+default,apiPush,subtitle,DTCStored_cleared Notification
+default,apiPush,title,DTCStored_cleared Notification
+default,email,body,One or more problems ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.
+default,email,from,no-reply@ahanet.net
+default,email,subject,DTCStored_cleared Notification
+default,ivm,body,One or more problems ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.
+default,ivm,title,DTCStored_cleared Notification
+default,portal,body,One or more problems  ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.
+default,push,body,One or more problems ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.
+default,push,subtitle,DTCStored_cleared Notification
+default,push,title,DTCStored_cleared Notification
+default,sms,body,One or more problems ([[dtc-content-transformer| [$.Data.cleared] ]]) have been fixed.

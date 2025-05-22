@@ -1,0 +1,31 @@
+Notification IDD,Notification short name,Notification long name,,
+ayush1,ayush,ayush,,
+Brand,Channel,Attribute,EN_US,fr_FR
+Kia,apipush,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,apipush,subtitle,vered123low fuel Notification,Notification de faible consommation de carburant
+Kia,apipush,title,vered123low fuel Notification,Notification de faible consommation de carburant
+Kia,email,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,email,from,Vered.Arvili@harman.com,Vered.Arvili@harman.com
+Kia,email,subject,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station",Notification de faible consommation de carburant
+Kia,ivm,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,ivm,title,low fuel Notification,Notification de faible consommation de carburant
+Kia,portal,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,push,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+Kia,push,subtitle,low fuel Notification,Notification de faible consommation de carburant
+Kia,push,title,low fuel Notification,Notification de faible consommation de carburant
+Kia,sms,body," [$.Data.name] , [$.Data.vehicleProfile.emergencyNumber] placeholders and
+
+ [$.Data.vehicleProfile.plateNumber]  [$.Data.vehicleProfile.emergencyNumber] [$.Data.vehicleProfile.model]  low fuel ", [$.Data.vehicleProfile.plateNumber]  [$.Data.vehicleProfile.emergencyNumber] [$.Data.vehicleProfile.model]  low fuel 
+default,apipush,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+default,apipush,subtitle,vered123low fuel Notification,Notification de faible consommation de carburant
+default,apipush,title,vered123low fuel Notification,Notification de faible consommation de carburant
+default,email,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station"," [$.Data.marketingName] alerte faible en carburant, veuillez vous arrêter à la station-service"
+default,email,from,Vered.Arvili@harman.com,Vered.Arvili@harman.com
+default,email,subject,low fuel Notification,Notification de faible consommation de carburant
+default,ivm,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+default,ivm,title,low fuel Notification,Notification de faible consommation de carburant
+default,portal,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+default,push,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station","alerte faible en carburant, veuillez vous arrêter à la station-service"
+default,push,subtitle,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station",Notification de faible consommation de carburant
+default,push,title,low fuel Notification,Notification de faible consommation de carburant
+default,sms,body,"low fuel for car:[$.Data.vehicleProfile.plateNumber], contact:[$.Data.vehicleProfile.emergencyNumber]. please stop at gas station", [$.Data.vehicleProfile.plateNumber]  [$.Data.vehicleProfile.emergencyNumber] [$.Data.vehicleProfile.model]  low fuel 

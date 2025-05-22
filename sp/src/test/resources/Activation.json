@@ -1,0 +1,17 @@
+[
+  {
+    "EventID": "Activation",
+    "Version": "1.0",
+    "BenchMode": 1,
+    "Timestamp": 1486094503015,
+    "Timezone": 180,
+    "Data": {
+      "customExtension": null,
+      "serialNumber": "4532",
+      "imei": "353490069604532",
+      "tripid": null,
+      "id": "HU0SCIUKMYXFG9"
+    }
+  }
+]
+

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+Tow,Tow Notification,Tow Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,apiPush,subtitle,Tow Notification
+default,apiPush,title,Tow Notification
+default,email,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,email,from,no-reply@ahanet.net
+default,email,subject,Tow Notification
+default,ivm,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,ivm,title,Tow Notification
+default,portal,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,push,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."
+default,push,subtitle,Tow Notification
+default,push,title,Tow Notification
+default,sms,body,"Your vehicle is being towed.Current location is http://maps.google.com/maps?q=loc:[$.Data.latitude],[$.Data.longitude]."

@@ -1,0 +1,29 @@
+﻿{
+  "notificationId": "DTCStored_set",
+  "notificationShortName": "DTCStored_set Notification",
+  "notificationLongName": "DTCStored_set Notification",
+  "locale": "en_US",
+  "brand": "default",
+  "channelTemplates": {
+    "push": {
+      "title": "DTCStored_set",
+      "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST].",
+      "subtitle": "DTCStored_set Notification"
+    },
+    "email": {
+      "from": "no-reply@ahanet.net",
+      "subject": "DTCStored_set Notification",
+      "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+    },
+    "sms": {
+      "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+    },
+    "ivm": {
+      "title": "DTCStored_set Notification",
+      "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+    },
+    "portal": {
+      "body": "A problem has been detected with your vehicle. Identified as:[$.Data.DTC_LIST]."
+    }
+  }
+}

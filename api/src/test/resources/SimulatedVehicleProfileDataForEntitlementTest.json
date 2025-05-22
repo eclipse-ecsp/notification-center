@@ -1,0 +1,944 @@
+{
+  "message": "SUCCESS",
+  "data": {
+    "schemaVersion": "1.0",
+    "vin": "MOBILEVINTEST0004",
+    "vehicleId": "MOBILEVINTEST0004",
+    "createdOn": "2019-02-11T10:15:53.723+0000",
+    "updatedOn": "2019-02-24T19:26:40.545+0000",
+    "productionDate": "2018-07-17T20:17:13.711+0000",
+    "saleDate": "2018-07-17T20:17:13.711+0000",
+    "vehicleAttributes": {
+      "make": "Fita",
+      "model": "Punto",
+      "marketingColor": "Pearl White",
+      "baseColor": "White",
+      "modelYear": "2019",
+      "destinationCountry": "US",
+      "engineType": "G",
+      "bodyStyle": "Coupe",
+      "bodyType": null,
+      "name": null
+    },
+    "authorizedUsers": [
+      {
+        "userId": "8b8d667ce8bc4defaf2fe8117dce58f8",
+        "role": "VEHICLE_OWNER",
+        "status": "COMPLETED_STAGE_3",
+        "tc": [
+          {
+            "status": "AGREED",
+            "countryCode": "US",
+            "version": "v1.23",
+            "lastAcceptedOn": "2019-03-25T14:37:17.000+0000",
+            "offset": 0
+          }
+        ],
+        "createdOn": "2018-07-17T20:48:52.757+0000"
+      }
+    ],
+    "modemInfo": {
+      "eid": null,
+      "iccid": "123987456963",
+      "imei": "12484977388",
+      "msisdn": "9886145028",
+      "imsi": "7895412789321748"
+    },
+    "vehicleArchType": "hu",
+    "ecus": {
+      "hu": {
+        "swVersion": "1.58b",
+        "hwVersion": "1.54",
+        "partNumber": "187469231",
+        "os": "Android",
+        "screenSize": null,
+        "manufacturer": "Harman",
+        "ecuType": "VP4",
+        "serialNo": "33333333",
+        "clientId": "2b8287b2",
+        "capabilities": {
+          "services": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "STOLEN- VEHICLE"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            }
+          ],
+          "abcApplications": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "ROCRANKINHIBIT"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": " 1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            }
+          ]
+        },
+        "provisionedServices": {
+          "services": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "IVM"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": " ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": " RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": " RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            }
+          ],
+          "abcApplications": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": " Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            }
+          ]
+        },
+        "abcProvisionedState": {
+          "state": "PENDING",
+          "date": "2018-07-17T20:48:52.757+0000"
+        },
+        "abcDrm": {
+          "raw": "readable DRM file",
+          "signed": "you_cannot_read_this_bcz_it_is_signed",
+          "createdOn": "2018-07-17T20:48:52.757+0000"
+        },
+        "abcDrmType": "JAR",
+        "abcProductId": "signing_key",
+        "isNavigationPresent": null
+      },
+      "xyz": {
+        "swVersion": "1.58b",
+        "hwVersion": "1.50",
+        "partNumber": "4789635855",
+        "os": "QNX",
+        "screenSize": null,
+        "manufacturer": "Panasonic",
+        "ecuType": "VP4",
+        "serialNo": "33333333",
+        "clientId": "2b8287b2",
+        "capabilities": {
+          "services": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            },
+            {
+              "serviceId": "PARENT"
+            }
+          ],
+          "abcApplications": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "Abc Release Version R5 Region eu-west-1 (Ireland) 1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            },
+            {
+              "serviceId": "PARENT"
+            }
+          ]
+        },
+        "provisionedServices": {
+          "services": [
+            {
+              "serviceId": "VF"
+            },
+            {
+              "serviceId": "IVM"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "ROSECUREDELIVERY"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            },
+            {
+              "serviceId": "PARENT"
+            }
+          ],
+          "abcApplications": [
+            {
+              "serviceId": "LOCATION"
+            },
+            {
+              "serviceId": "HBLF"
+            },
+            {
+              "serviceId": "RDL"
+            },
+            {
+              "serviceId": "RDU"
+            },
+            {
+              "serviceId": "PRIVACY"
+            },
+            {
+              "serviceId": "FTD"
+            },
+            {
+              "serviceId": "DTC"
+            },
+            {
+              "serviceId": "VRC"
+            },
+            {
+              "serviceId": "REON"
+            },
+            {
+              "serviceId": "REOFF"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITON"
+            },
+            {
+              "serviceId": "ROCRANKINHIBITOFF"
+            },
+            {
+              "serviceId": "PHEV"
+            },
+            {
+              "serviceId": "UBI"
+            },
+            {
+              "serviceId": "SDV"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "TA"
+            },
+            {
+              "serviceId": "SOS"
+            },
+            {
+              "serviceId": "RO"
+            },
+            {
+              "serviceId": "ASSIST"
+            },
+            {
+              "serviceId": "ROAD"
+            },
+            {
+              "serviceId": "CARE"
+            },
+            {
+              "serviceId": "BRAND"
+            },
+            {
+              "serviceId": "SQDF"
+            },
+            {
+              "serviceId": "VFND"
+            },
+            {
+              "serviceId": "RSA"
+            },
+            {
+              "version": "1.1.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "version": "1.0.2",
+              "serviceId": "Navigation"
+            },
+            {
+              "serviceId": "SVLA"
+            },
+            {
+              "serviceId": "BCALL"
+            },
+            {
+              "serviceId": "CONCIERGE"
+            },
+            {
+              "serviceId": "PARENT"
+            },
+            {
+              "applicationId": "TestApp1",
+              "version": "1.0",
+              "serviceId": "ASSIST"
+            }
+          ]
+        },
+        "abcProvisionedState": {
+          "state": "PENDING",
+          "date": "2018-07-17T20:48:52.757+0000"
+        },
+        "abcDrm": {
+          "raw": "readable DRM file",
+          "signed": "you_cannot_read_this_bcz_it_is_signed",
+          "createdOn": "2018-07-17T20:48:52.757+0000"
+        },
+        "abcDrmType": "JAR",
+        "abcProductId": "signing_key",
+        "isNavigationPresent": null
+      }
+    },
+    "dummy": null,
+    "events": null,
+    "customParams": {
+      "sqdf": {
+        "vrcTime": "13",
+        "vrcDate": "22"
+      }
+    },
+    "abcFirstTrialDate": "2018-07-17T20:48:52.757+0000",
+    "abcVehicleType": "NON-RENTAL",
+    "abcSubscribedPackages": [
+      {
+        "packageName": "DEFAULT",
+        "startDate": "2018-07-17T20:17:13.711+0000",
+        "endDate": "2018-07-17T20:17:13.711+0000",
+        "subscriptionId": "1343251",
+        "state": "ACTIVE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+ServiceReminder_ReminderEngine,ServiceReminder_ReminderEngine Notification,ServiceReminder_ReminderEngine Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.
+default,apiPush,subtitle,ServiceReminder_ReminderEngine Notification
+default,apiPush,title,ServiceReminder_ReminderEngine Notification
+default,email,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.
+default,email,from,no-reply@ahanet.net
+default,email,subject,ServiceReminder_ReminderEngine Notification
+default,ivm,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.
+default,ivm,title,ServiceReminder_ReminderEngine Notification
+default,portal,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.
+default,push,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.
+default,push,subtitle,ServiceReminder_ReminderEngine Notification
+default,push,title,ServiceReminder_ReminderEngine Notification
+default,sms,body,Your service is due on [$.Data.reminderDate]. Please visit a service station.

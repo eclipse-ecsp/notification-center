@@ -1,0 +1,40 @@
+{
+  "EventID": "ScheduleOpStatusEvent",
+  "Version": "1.0",
+  "Timestamp": 1602492509723,
+  "Data": {
+    "scheduleId": "8c1ea6fc-e0b5-4a01-ab41-cb16233d4410",
+    "status": "CREATE",
+    "igniteEvent": {
+      "EventID": "CreateScheduleEvent",
+      "Version": "1.0",
+      "Timestamp": 1602491851146,
+      "Data": {
+        "initialDelayMs": 5000,
+        "recurrenceType": "CUSTOM_MS",
+        "recurrenceDelayMs": 0,
+        "firingCount": 1,
+        "notificationPayload": "eyJFdmVudElEIjoiR2VuZXJpY05vdGlmaWNhdGlvbkV2ZW50IiwiVmVyc2lvbiI6IjEuMCIsIlRpbWVzdGFtcCI6MTYwMjIyNDM1MzAsIkRhdGEiOnsiY3VzdG9tRXh0ZW5zaW9uIjpudWxsLCJzY2hlZHVsZSI6IjIwMjAtMTAtMTRUMDc6NTg6MzAuOTk2IiwiY2FtcGFpZ25JZCI6bnVsbCwiVXNlck5vdGlmaWNhdGlvbiI6ZmFsc2UsIm5hbWUiOiJtb3NoZSIsIm5vdGlmaWNhdGlvbklkIjoiYWFhMSIsInVzZXJJZCI6ImNvc3RhMSIsImFnZSI6IjQzIn0sIlJlcXVlc3RJZCI6Im1ha2UtY29zdGEtZ3JlYXQtYWdhaW4iLCJTb3VyY2VEZXZpY2VJZCI6bnVsbCwiVmVoaWNsZUlkIjoiSFU0Q09TVEEyMjE3MDEyMTg3Nzc4NDkyIiwidHJjQ3R4IjpudWxsLCJUaW1lem9uZSI6MzMwLCJERkZRdWFsaWZpZXIiOm51bGwsIk1lc3NhZ2VJZCI6bnVsbCwiQ29ycmVsYXRpb25JZCI6bnVsbCwiQml6VHJhbnNhY3Rpb25JZCI6Im1ha2UtY29zdGEtZ3JlYXQtYWdhaW4iLCJCZW5jaE1vZGUiOm51bGwsIlVzZXJDb250ZXh0IjpudWxsLCJlY3VUeXBlIjoiIiwibXF0dFRvcGljIjoiIiwiRGV2aWNlRGVsaXZlcnlDdXRvZmYiOi0xLCJEdXBsaWNhdGVNZXNzYWdlIjpmYWxzZX0=",
+        "notificationKey": {
+          "key": "HU4COSTA2217012187778492"
+        },
+        "notificationTopic": "scheduler-callback",
+        "serviceName": "my-notification"
+      },
+      "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+      "SourceDeviceId": "HU4COSTA2217012187778492",
+      "VehicleId": "HU4COSTA2217012187778492",
+      "Timezone": 0,
+      "MessageId": "5001",
+      "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+      "DeviceDeliveryCutoff": -1
+    },
+    "valid": true
+  },
+  "RequestId": "5dd6a4d3-1331-43bf-b291-20a3dbb80a01",
+  "VehicleId": "HU4COSTA2217012187778492",
+  "Timezone": 0,
+  "MessageId": "91351",
+  "BizTransactionId": "cd25bbe6-9f69-47e2-b854-42846049b579",
+  "DeviceDeliveryCutoff": -1
+}

@@ -1,0 +1,16 @@
+﻿Notification ID,Notification short name,Notification long name
+GeoFence_valet_in,GeoFence_valet_in Notification,GeoFence_valet_in Notification
+Brand,Channel,Attribute,en_US
+default,apiPush,body,Your vehicle is back inside the valet boundary.
+default,apiPush,subtitle,GeoFence_valet_in Notification
+default,apiPush,title,GeoFence_valet_in Notification
+default,email,body,Your vehicle is back inside the valet boundary.
+default,email,from,no-reply@ahanet.net
+default,email,subject,GeoFence_valet_in Notification
+default,ivm,body,Your vehicle is back inside the valet boundary.
+default,ivm,title,GeoFence_valet_in Notification
+default,portal,body,Your vehicle is back inside the valet boundary.
+default,push,body,Your vehicle is back inside the valet boundary.
+default,push,subtitle,GeoFence_valet_in Notification
+default,push,title,GeoFence_valet_in Notification
+default,sms,body,Your vehicle is back inside the valet boundary.
