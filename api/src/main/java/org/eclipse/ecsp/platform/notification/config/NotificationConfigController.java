@@ -145,18 +145,29 @@ public class NotificationConfigController {
     public static final String INVALID_CONTACT_ID = "Invalid contact id";
     public static final String REQUEST_ID = "RequestId";
 
-    @Setter(onMethod = @__({@Autowired}))
     NotificationConfigServiceV1_0 service;
 
-    @Setter(onMethod = @__({@Autowired}))
     NotificationConfigDAO configDao;
 
-    @Setter(onMethod = @__({@Autowired}))
     NotificationGroupingDAO notificationGroupingDao;
 
     @Value("${brand.default.value:default}")
     private String defaultBrand;
 
+    @Autowired
+    public void setService(NotificationConfigServiceV1_0 service) {
+        this.service = service;
+    }
+
+    @Autowired
+    public void setConfigDao(NotificationConfigDAO configDao) {
+        this.configDao = configDao;
+    }
+
+    @Autowired
+    public void setNotificationGroupingDao(NotificationGroupingDAO notificationGroupingDao) {
+        this.notificationGroupingDao = notificationGroupingDao;
+    }
 
     /**
      * API to update the notification config for a user-vehicle-contact.

@@ -66,7 +66,7 @@ public class UserManagementToUserProfileDAO implements UserProfileDAO {
     @Autowired
     IgniteCoreUserManagementClient igniteCoreUserManagementClient;
 
-    @Setter(onMethod_ = {@Value("${ignite_core_federated_prefix:}")})
+    @Value("${ignite_core_federated_prefix:}")
     String federatedPrefix;
 
     /**
@@ -79,6 +79,13 @@ public class UserManagementToUserProfileDAO implements UserProfileDAO {
             federatedPrefix += "_";
             log.debug("Following prefix will be added {}", federatedPrefix);
         }
+    }
+
+    /**
+     * @param federatedPrefix Prefix for federated user management.
+     */
+    public void setFederatedPrefix(String federatedPrefix) {
+        this.federatedPrefix = federatedPrefix;
     }
 
     /**

@@ -53,7 +53,6 @@ package org.eclipse.ecsp.security.utils;
  * <pre>
  *     throw new EncryptionDecryptionException(MessageEnum.WRONG_KMS_ARN.value());
  * </pre>
- * </p>
  *
  * @author ansarkar
  */

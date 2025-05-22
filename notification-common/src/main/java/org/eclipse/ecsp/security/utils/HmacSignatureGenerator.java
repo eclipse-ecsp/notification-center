@@ -62,7 +62,6 @@ import java.util.Base64;
  * <pre>
  *     String signature = hmacSignatureGenerator.getSignature(secretKey, content, "HmacSHA256");
  * </pre>
- * </p>
  *
  * @author pbehere
  */

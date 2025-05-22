@@ -40,7 +40,6 @@
 package org.eclipse.ecsp.notification.client;
 
 import lombok.AccessLevel;
-import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.ecsp.domain.notification.UserProfile;
@@ -88,20 +87,52 @@ import static org.springframework.http.HttpMethod.POST;
 @Profile("ignite-user-profile")
 public class IgniteCoreUserManagementClient {
 
-    @Setter(onMethod_ = {@Value("${ignite_user_management_url}")})
-    String uri;
+    @Value("${ignite_user_management_url}")
+    private String uri;
 
-    @Setter(onMethod_ = {@Value("${idam_server:" + IgniteCoreConstants.UIDAM + "}")})
-    String idamServer;
+    @Value("${idam_server:" + IgniteCoreConstants.UIDAM + "}")
+    private String idamServer;
 
-    @Setter(onMethod_ = {@Value("${locale_default_value:en-US}")})
-    String defaultLocale;
+    @Value("${locale_default_value:en-US}")
+    private String defaultLocale;
 
-    @Setter(onMethod_ = {@Value("${timezone_default_value:GMT}")})
-    String defaultTimezone;
+    @Value("${timezone_default_value:GMT}")
+    private String defaultTimezone;
 
-    @Setter(onMethod = @__({@Autowired, @Qualifier("servicesCommonRestTemplate")}))
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
+
+    @Autowired
+    public void setRestTemplate(@Qualifier("servicesCommonRestTemplate") RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    /**
+     * @param uri the uri to set
+     */
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
+    /**
+     * @param idamServer the idamServer to set
+     */
+    public void setIdamServer(String idamServer) {
+        this.idamServer = idamServer;
+    }
+
+    /**
+     * @param defaultLocale the defaultLocale to set
+     */
+    public void setDefaultLocale(String defaultLocale) {
+        this.defaultLocale = defaultLocale;
+    }
+
+    /**
+     * @param defaultTimezone the defaultTimezone to set
+     */
+    public void setDefaultTimezone(String defaultTimezone) {
+        this.defaultTimezone = defaultTimezone;
+    }
 
     /**
      * getUser from core user management.
