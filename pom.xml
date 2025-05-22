@@ -102,6 +102,9 @@
         <maven.dependency.plugin>2.10</maven.dependency.plugin>
         <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
         <cyclonedx-maven-plugin.version>2.7.10</cyclonedx-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
+        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <!-- Java compiler version-->
         <compiler.source.version>17</compiler.source.version>
         <compiler.target.version>17</compiler.target.version>
@@ -482,7 +485,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>${maven-source-plugin.version}</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
