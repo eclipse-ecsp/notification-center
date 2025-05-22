@@ -15,7 +15,8 @@ RUN echo $JAVA_HOME
 
 COPY target/dependencies /opt/notification/jar/lib
 RUN mkdir -p /opt/notification/jar/plugins
-ADD target/classes/notification-sp-${PROJECT_JAR_VERSION}-shaded.jar /opt/notification/jar/notification-sp.jar
+##ADD target/classes/notification-sp-${PROJECT_JAR_VERSION}-shaded.jar /opt/notification/jar/notification-sp.jar
+ADD ./target/notification-sp-shaded.jar /opt/notification/jar/notification-sp.jar
 ADD src/scripts/start.sh /opt/notification/bin/
 ADD src/main/resources/kafka.client.keystore.jks /kafka/ssl/kafka.client.keystore.jks
 ADD src/main/resources/kafka.client.truststore.jks /kafka/ssl/kafka.client.truststore.jks
