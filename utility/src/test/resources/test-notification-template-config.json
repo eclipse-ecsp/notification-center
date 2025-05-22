@@ -6152,7 +6152,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_LOCK_SUCCESS",
+    "notificationId": "S12_RO_TRUNK_BOX_LOCK_SUCCESS",
     "apiPush": {
       "criticality": "LOW",
       "staticConfig": {
@@ -6181,7 +6181,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_LOCK_FAILED_SPEED_LOCKOUT",
+    "notificationId": "S12_RO_TRUNK_BOX_LOCK_FAILED_SPEED_LOCKOUT",
     "apiPush": {
       "criticality": "NORMAL",
       "staticConfig": {
@@ -6210,7 +6210,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_LOCK_FAILED_DOOR_OPEN",
+    "notificationId": "S12_RO_TRUNK_BOX_LOCK_FAILED_DOOR_OPEN",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
@@ -6239,7 +6239,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_LOCK_FAILED",
+    "notificationId": "S12_RO_TRUNK_BOX_LOCK_FAILED",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
@@ -6268,7 +6268,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_LOCK_FAILED_TIMEOUT",
+    "notificationId": "S12_RO_TRUNK_BOX_LOCK_FAILED_TIMEOUT",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
@@ -6297,7 +6297,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_UNLOCK_SUCCESS",
+    "notificationId": "S12_RO_TRUNK_BOX_UNLOCK_SUCCESS",
     "apiPush": {
       "criticality": "LOW",
       "staticConfig": {
@@ -6326,7 +6326,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_UNLOCK_FAILED_SPEED_LOCKOUT",
+    "notificationId": "S12_RO_TRUNK_BOX_UNLOCK_FAILED_SPEED_LOCKOUT",
     "apiPush": {
       "criticality": "NORMAL",
       "staticConfig": {
@@ -6355,7 +6355,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_UNLOCK_FAILED",
+    "notificationId": "S12_RO_TRUNK_BOX_UNLOCK_FAILED",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
@@ -6384,7 +6384,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_UNLOCK_FAILED_DOOR_OPEN",
+    "notificationId": "S12_RO_TRUNK_BOX_UNLOCK_FAILED_DOOR_OPEN",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
@@ -6413,7 +6413,7 @@
     }
   },
   {
-    "notificationId": "S12_RO_CARGO_BOX_UNLOCK_FAILED_TIMEOUT",
+    "notificationId": "S12_RO_TRUNK_BOX_UNLOCK_FAILED_TIMEOUT",
     "apiPush": {
       "criticality": "HIGH",
       "staticConfig": {
