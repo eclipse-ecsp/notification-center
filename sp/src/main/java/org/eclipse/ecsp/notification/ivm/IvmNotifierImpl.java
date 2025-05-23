@@ -165,9 +165,6 @@ public class IvmNotifierImpl extends IvmNotifier {
     @Override
     protected ChannelResponse doPublish(AlertsInfo alertInfo) {
         boolean isCampaignMessage = VEHICLE_MESSAGE_PUBLISH.equals(alertInfo.getEventID());
-        String userId = alertInfo.getAlertsData().getUserProfile() != null
-            ?
-            alertInfo.getAlertsData().getUserProfile().getUserId() : null;
         LOGGER.debug("alertInfo.getIgniteEvent()  {}", alertInfo.getIgniteEvent());
         Map<String, Object> ivmRequestParams = alertInfo.getAlertsData().any();
         VehicleMessagePublishData publishData;
@@ -196,6 +193,8 @@ public class IvmNotifierImpl extends IvmNotifier {
             LOGGER.error("PathNotFoundException {} :: entitlementFlag = {}", pne, true);
         }
 
+        String userId = alertInfo.getAlertsData().getUserProfile() != null
+                ? alertInfo.getAlertsData().getUserProfile().getUserId() : null;
         IVMNotifierResponse ivmResponse = new IVMNotifierResponse(userId, alertInfo.getPdid());
         IgniteEventImpl igniteEvent = getIgniteEvent(alertInfo);
         if (entitlementFailed) {

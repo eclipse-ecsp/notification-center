@@ -54,7 +54,6 @@ package org.eclipse.ecsp.security.utils;
  *     String contextKey = SecurityConstants.KMS_CONTEXT_KEY;
  *     int keySize = SecurityConstants.RSA_KEY_GEN_KEY_SIZE;
  * </pre>
- * </p>
  *
  * @author ansarkar
  */

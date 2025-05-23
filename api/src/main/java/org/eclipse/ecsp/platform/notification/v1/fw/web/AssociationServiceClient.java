@@ -111,7 +111,8 @@ public class AssociationServiceClient {
      *
      * @return - List of Associated devices to a user
      *
-     * @throws Exception if failed to fetch devices
+     * @throws IOException if failed to fetch devices
+     * @throws UnknownError if failed in retrieving user associations
      */
     @SuppressWarnings("unchecked")
     public Optional<List<DeviceAssociation>> getDevices(String userId) throws IOException, UnknownError {

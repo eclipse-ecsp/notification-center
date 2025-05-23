@@ -98,7 +98,8 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 
 /**
- * AlertsController class with alerts history fetch APIs.
+ * REST controller providing APIs to fetch, update, and delete alert history for devices and users.
+ * Supports multiple API versions and alert filtering options.
  */
 @RestController
 @Validated
@@ -108,7 +109,7 @@ public class AlertsController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AlertsController.class);
     /**
-     * ALERTS_ARE_MARKED_READ_UNREAD_SUCCESSFULLY.
+     * Success message for marking alerts as read/unread.
      */
     public static final String
             ALERTS_ARE_MARKED_READ_UNREAD_SUCCESSFULLY =
@@ -117,8 +118,13 @@ public class AlertsController {
     private final AlertsServiceV2 alertServiceV2;
     private final AlertsServiceV3 alertServiceV3;
 
+
     /**
-     * Alerts controller constructor.
+     * Constructs an AlertsController with the required alert services.
+     *
+     * @param alertServiceV1 alert service v1
+     * @param alertServiceV2 alert service v2
+     * @param alertServiceV3 alert service v3
      */
     @Autowired
     public AlertsController(AlertsServiceV1 alertServiceV1, AlertsServiceV2 alertServiceV2,
@@ -129,12 +135,17 @@ public class AlertsController {
     }
 
     /**
-     * Method to get all alerts history specified in time limit.
-     * /v1/devices/{deviceId}/alerts?since={epoch_ms}&till={epoch_ms}
+     * Retrieves paginated alert history for a device within a time range (v3).
      *
-     * @throws Exception exception
+     * @param deviceId   device ID
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @return paginated alerts history
+     * @throws Exception if validation or data access fails
      */
-
     @RequestMapping(value = "/v3/devices/{deviceId}/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "AlertHistory Api allows to retrieve historical information",
@@ -162,7 +173,17 @@ public class AlertsController {
 
 
     /**
-     * Get alerts by deviceId and alertstype for a time range.
+     * Retrieves paginated alert history for a device and alert types within a time range (v3).
+     *
+     * @param deviceId   device ID
+     * @param alertTypes set of alert types
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @return paginated alerts history
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v3/devices/{deviceId}/alerts/{alertTypes}", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -195,9 +216,17 @@ public class AlertsController {
     }
 
     /**
-     * Get all alerts for a time range.
+     * Retrieves paginated alert history for all devices of a user within a time range (v3).
+     *
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param userId     user ID
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
-
     @RequestMapping(value = "/v3/devices/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "API to get historical information about Diagnostic Trouble Codes set by Vehicle ECUs",
@@ -224,8 +253,20 @@ public class AlertsController {
         return alertServiceV3.getAlertsByUserid(params);
     }
 
+
     /**
-     * Get alerts by alertstype for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param alertTypes set of alert types
+     * @param userId     user ID
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @GetMapping(value = "/v3/devices/alerts/{alertTypes}", produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "API to get information about Diagnostic Trouble Codes set by Vehicle ECUs",
@@ -256,7 +297,18 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by deviceId and alertstype for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param deviceId   device ID
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param alertTypes set of alert types
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v2/devices/{deviceId}/alerts/{alertTypes}", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -288,7 +340,17 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by deviceId for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param deviceId   device ID
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v2/devices/{deviceId}/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -316,7 +378,17 @@ public class AlertsController {
     }
 
     /**
-     * Get all alerts by a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param userId    user ID
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v2/devices/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -345,7 +417,17 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by alertstype for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param alertTypes set of alert types
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @GetMapping(value = "/v2/devices/alerts/{alertTypes}", produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "API to get information about Diagnostic Trouble Codes set by Vehicle ECUs",
@@ -376,7 +458,17 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by deviceId for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param deviceId   device ID
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v1/devices/{deviceId}/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -401,7 +493,18 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by deviceId and alertstype for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param deviceId   device ID
+     * @param alertTypes set of alert types
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v1/devices/{deviceId}/alerts/{alertTypes}", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -430,12 +533,17 @@ public class AlertsController {
     }
 
     /**
-     * Method to get all alerts history based on alertTypes ,specified in time
-     * limit. eg URL :
-     * /v1/devices/{device_id}/alerts/{alertType1,alertType2}?since={epoch_ms}&
-     * till={epoch_ms}
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
      *
-     * @throws Exception exception
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param userId    user ID
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v1/devices/alerts", method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
@@ -461,7 +569,18 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by alertstype for a time range.
+     * Retrieves paginated alert history for all devices of a user and alert
+     * types within a time range (v3).
+     *
+     * @param since      start timestamp (epoch ms)
+     * @param until      end timestamp (epoch ms)
+     * @param size       page size (optional)
+     * @param page       page number (optional)
+     * @param readStatus read status filter (optional)
+     * @param alertTypes set of alert types
+     * @param userId    user ID
+     * @return map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     @GetMapping(value = "/v1/devices/alerts/{alertTypes}", produces = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
@@ -489,7 +608,16 @@ public class AlertsController {
     }
 
     /**
-     * Get alerts by deviceId and alertstype for a time range.
+     * Retrieves the next set of alerts for a given device starting from a specific timestamp.
+     * Allows filtering by alert types and read status, and limits the number of results.
+     *
+     * @param since      start timestamp (epoch ms) to fetch alerts from
+     * @param count      number of alerts to retrieve
+     * @param deviceId   device ID for which alerts are fetched
+     * @param alertTypes optional set of alert types to filter results
+     * @param readStatus read status filter (optional, defaults to "all")
+     * @return list of alert history information objects
+     * @throws Exception if validation or data access fails
      */
     @RequestMapping(value = "/v3/nextalerts", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Next X api is to get the requested number of alerts for the requested device id",
@@ -517,7 +645,11 @@ public class AlertsController {
     }
 
     /**
-     * Update alerts by deviceId.
+     * Updates the read/unread status of alerts for a device (v3).
+     *
+     * @param deviceId    device ID
+     * @param alertNotify request body containing lists of alert IDs to mark as read or unread
+     * @throws IllegalArgumentException if the request body is invalid
      */
     @PutMapping(path = "/v3/devices/{deviceId}/alerts/readupdate", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
@@ -530,7 +662,11 @@ public class AlertsController {
     }
 
     /**
-     * Update alerts by deviceId.
+     * Updates the read/unread status of alerts for a device (v2).
+     *
+     * @param deviceId    device ID
+     * @param alertNotify request body containing lists of alert IDs to mark as read or unread
+     * @throws IllegalArgumentException if the request body is invalid
      */
     @PutMapping(path = "/v2/devices/{deviceId}/alerts/readupdate", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
@@ -543,7 +679,11 @@ public class AlertsController {
     }
 
     /**
-     * Update alerts by deviceId.
+     * Updates the read/unread status of alerts for a device (v1).
+     *
+     * @param deviceId    device ID
+     * @param alertNotify request body containing lists of alert IDs to mark as read or unread
+     * @throws IllegalArgumentException if the request body is invalid
      */
     @PutMapping(path = "/v1/devices/{deviceId}/alerts/readupdate", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Mark Alert Api is to mark the alerts read or unread",
@@ -559,10 +699,14 @@ public class AlertsController {
     }
 
     /**
-     * Get alert history.
+     * Retrieves alert history for a device between two timestamps.
      * Used by trip analysis.
      *
-     * @throws Exception exception
+     * @param deviceId device ID
+     * @param since    start timestamp (epoch ms)
+     * @param until    end timestamp (epoch ms)
+     * @return list of alert history information objects
+     * @throws Exception if validation or data access fails
      */
     @GetMapping(value = "/v1/devices/{deviceId}/alerthistory", produces = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
@@ -586,7 +730,12 @@ public class AlertsController {
     }
 
     /**
-     * Delete alerts by deviceId and delete Type.
+     * Deletes alerts for a device, supporting soft delete.
+     *
+     * @param deviceId   device ID
+     * @param deleteList optional list of alert IDs to delete
+     * @param deleteType type of delete operation (only "soft" is supported)
+     * @throws IllegalArgumentException if deleteType is not supported
      */
     @DeleteMapping(path = "/v1/devices/{deviceId}/alerts", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Delete alerts for a device", description = "Delete alerts for a device", responses = {
@@ -605,15 +754,23 @@ public class AlertsController {
     }
 
     /**
-     * This is a default method which will be called when there is no request
-     * mapping url found in other method. Using this to respond as invalid url
-     * request
+     * Handles requests to unmapped URLs and responds with an unsupported API version message.
+     *
+     * @throws NoSuchEntityException always thrown to indicate unsupported API version
      */
     @RequestMapping(method = RequestMethod.GET)
     public Object default1() {
         throw new NoSuchEntityException(ResponseMsgConstants.UNSUPPORTED_API_VERSION_MSG);
     }
 
+    /**
+     * Validates and parses the pagination parameters for page number and page size.
+     * If the provided values are not numeric, defaults are used.
+     *
+     * @param page page number as a string; defaults to 1 if not numeric
+     * @param size page size as a string; defaults to 10 if not numeric
+     * @return a {@link PaginationInfo} object containing the parsed page and size values
+     */
     private PaginationInfo validatePageAndSize(String page, String size) {
         if (!StringUtils.isNumeric(page)) {
             page = Utils.DEFAULT_PAGINATION_PAGE;

@@ -210,7 +210,8 @@ public class ClientChangeLog {
             for (Document document : notificationGroupingOriginalDocuments) {
                 document.put("notificationId", document.getString("_id"));
                 document.put("_id", document.getString("_id") + "_" + document.getString("group") + "_"
-                    + (org.apache.commons.lang3.StringUtils.isEmpty(document.getString("service")) ? "" : document.getString("service")));
+                    + (org.apache.commons.lang3.StringUtils.isEmpty(document.getString("service")) ? ""
+                        : document.getString("service")));
                 migratedList.add(document);
             }
 

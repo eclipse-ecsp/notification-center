@@ -289,18 +289,18 @@ public class IvmResponseHandlerFactoryTest {
             }
 
             @Override
+            public <A extends Annotation> A findAnnotationOnBean(String beanName, Class<A> annotationType)
+                    throws NoSuchBeanDefinitionException {
+
+                return null;
+            }
+
+            @Override
             public <A extends Annotation> Set<A> findAllAnnotationsOnBean(
                     String beanName, Class<A> annotationType,
                     boolean allowFactoryBeanInit) throws
                     NoSuchBeanDefinitionException {
                 return Set.of();
-            }
-
-            @Override
-            public <A extends Annotation> A findAnnotationOnBean(String beanName, Class<A> annotationType)
-                throws NoSuchBeanDefinitionException {
-
-                return null;
             }
 
             @Override

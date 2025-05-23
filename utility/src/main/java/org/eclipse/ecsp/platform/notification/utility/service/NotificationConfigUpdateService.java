@@ -402,7 +402,6 @@ public class NotificationConfigUpdateService {
      */
     private boolean deleteExistingNotificationTemplate(NotificationTemplate notificationTemplate,
                                                        String notificationConfigFileName) {
-        boolean deleted = false;
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set(Constants.REQUEST_ID, Constants.UTILITY_REQUEST_ID);
@@ -413,6 +412,7 @@ public class NotificationConfigUpdateService {
         String locale = notificationTemplate.getLocale().toString();
         LOGGER.info(" Delete existing NotificationTemplate before reimporting, notificationId {} brand {} locale {}",
             notificationId, notificationTemplate.getBrand(), locale);
+        boolean deleted = false;
         if (null != notificationTemplate.getBrand()
             && !Constants.DEFAULT_BRAND.equalsIgnoreCase(notificationTemplate.getBrand())) {
             String key = String.format("%s_%s_%s_%s_delete", notificationConfigFileName, notificationId,

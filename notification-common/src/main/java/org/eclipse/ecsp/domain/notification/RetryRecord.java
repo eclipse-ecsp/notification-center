@@ -44,12 +44,19 @@ import dev.morphia.annotations.Entity;
 import java.io.Serializable;
 
 /**
- * RetryRecord class.
+ * Represents a record for tracking retry attempts of a failed operation.
  *
- * @author AMuraleedhar.
+ * <p>
+ * Stores details about the exception that triggered the retry, the maximum number of allowed retries,
+ * the current retry count, and the interval (in milliseconds) between retries. This class is useful
+ * for managing and persisting retry logic for operations that may fail and require repeated attempts.
+ * </p>
  *
- *<p>This class to keep track of the exception that caused retry.It has
- *     retry attempts , max allowed retry and retry interval detail</p>
+ * <p>
+ * Used in notification workflows to ensure reliable processing by keeping track of retry metadata.
+ * </p>
+ *
+ * @author AMuraleedharan
  */
 @Entity(useDiscriminator = false)
 public class RetryRecord implements Serializable {

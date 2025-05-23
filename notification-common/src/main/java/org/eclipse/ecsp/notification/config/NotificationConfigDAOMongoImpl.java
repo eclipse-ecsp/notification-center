@@ -74,8 +74,19 @@ public class NotificationConfigDAOMongoImpl extends IgniteBaseDAOMongoImpl<Strin
 
     static final Logger LOGGER = LoggerFactory.getLogger(NotificationConfigDAO.class);
 
-    @Setter(onMethod = @__({@Autowired}))
+    @Autowired
     NotificationEncryptionServiceImpl encryptionDecryptionService;
+
+
+    /**
+     * Sets the encryption and decryption service used for notification configuration.
+     *
+     * @param encryptionDecryptionService the {@link NotificationEncryptionServiceImpl}
+     *                                    to use for encrypting and decrypting notification configs
+     */
+    public void setEncryptionDecryptionService(NotificationEncryptionServiceImpl encryptionDecryptionService) {
+        this.encryptionDecryptionService = encryptionDecryptionService;
+    }
 
     /**
      * find config by UserVehicleGroup.
@@ -267,5 +278,4 @@ public class NotificationConfigDAOMongoImpl extends IgniteBaseDAOMongoImpl<Strin
         int count = super.deleteByQuery(igQuery);
         return count != 0;
     }
-
 }

@@ -53,18 +53,28 @@ import java.util.concurrent.ExecutionException;
 
 
 /**
- * AbstractIVMResponseHandler class.
+ * Abstract base class for handling IVM (In-Vehicle Messaging) responses.
  *
- * @author AMuraleedhar
+ * <p>
+ * Provides a template for processing vehicle responses, converting them into {@link IgniteEvent} objects,
+ * and forwarding these events to a Kafka topic. Subclasses must implement the {@link #doProcess(IVMResponse)}
+ * method to define custom response processing logic.
+ * </p>
  *
- * <p>This abstract class processes the vehicle response and sends to the kafka topic.
- *     Also provides abstraction for response handling.</p>
+ * <p>
+ * This class manages Kafka integration and error handling for event forwarding.
+ * </p>
+ *
+ * @author AMuraleedharan
  */
 
 public abstract class AbstractIvmResponseHandler implements IvmResponseHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AbstractIvmResponseHandler.class);
 
+    /**
+     * Jackson ObjectMapper instance.
+     */
     protected static final ObjectMapper MAPPER = new ObjectMapper();
 
     @Autowired

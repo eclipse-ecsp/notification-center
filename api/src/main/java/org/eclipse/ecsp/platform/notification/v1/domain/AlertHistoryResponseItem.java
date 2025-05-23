@@ -51,12 +51,24 @@ public class AlertHistoryResponseItem {
     private Map<Object, Object> alertData;
 
     /**
-     * ALertnames enum.
+     * AlertNames enum.
      */
     public enum AlertNames {
+        /**
+         * Low fuel alert.
+         */
         LOWFUEL("LowFuel", "Low Fuel"),
+        /**
+         * Collision alert.
+         */
         COLLISION("Collision", "Collision"),
+        /**
+         * Geofence breach alert.
+         */
         GEOFENCE("GeoFence", "GeoFence Breach"),
+        /**
+         * Diagnostic trouble code stored alert.
+         */
         DTCSTORED("DTCStored", "DTC Set");
 
         @SuppressWarnings("checkstyle:AbbreviationAsWordInName")

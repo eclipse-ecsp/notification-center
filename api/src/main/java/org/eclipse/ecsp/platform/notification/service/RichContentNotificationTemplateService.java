@@ -182,15 +182,20 @@ public class RichContentNotificationTemplateService extends BaseNotificationTemp
     }
 
     /**
-     * <p>Save the data regarding a specific notification ID including the imported
-     * file itself (as zip file).</p>
+     * Imports a rich content notification template from a provided ZIP file.
      *
-     * @param file the zip file with all the notification data
+     * <p>
+     * The ZIP file must contain a CSV file and related resources (such as HTML and image files)
+     * describing the notification template. The method validates the contents, processes the template data,
+     * and saves or updates the template in the database. If the notification ID in the imported file does not
+     * exist in the notification center, a warning message is returned.
+     * </p>
      *
-     * @return warning message if the notification ID specified by the imported file does not exist as
-     *     notification template in the notification center
-     *
-     * @throws Exception validation exception or unexpected
+     * @param file the ZIP file containing the notification template data and resources
+     * @param isPatchUpdate whether to perform a patch update (true) or a full import (false)
+     * @return a warning message if the notification ID does not exist, or {@code null} if successful
+     * @throws IOException if an I/O error occurs during file processing or validation
+     * @throws InvalidInputFileException if the ZIP file or its contents are invalid
      */
     public String importNotificationTemplate(MultipartFile file, boolean isPatchUpdate) throws IOException {
         ZipFile zipFile = getZipContent(file);

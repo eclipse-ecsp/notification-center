@@ -136,8 +136,8 @@ public class NotificationServiceParameterizedTest {
 
         NotificationCenterExceptionBase thrown =
                 assertThrows(InvalidInputException.class,
-                        () -> notificationService.
-                                createNotificationForNonRegisteredUsers(
+                        () -> notificationService
+                                .createNotificationForNonRegisteredUsers(
                                         notificationNonRegisteredUser, "rId",
                                 "sId"),
                         "Expected to throw, but it didn't");

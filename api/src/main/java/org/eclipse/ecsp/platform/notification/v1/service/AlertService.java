@@ -65,7 +65,8 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * Alert service for alert history CRUD operations.
+ * Base service for alert history CRUD operations.
+ * Provides utility methods for alert data enrichment, user lookup, and status filtering.
  */
 public class AlertService {
     private static final Logger LOGGER = LoggerFactory.getLogger(AlertService.class);
@@ -80,7 +81,11 @@ public class AlertService {
     private final CoreVehicleProfileClient coreVehicleProfileClient;
 
     /**
-     * constructor.
+     * Constructs an AlertService.
+     *
+     * @param coreVehicleProfileClient the vehicle profile client
+     * @param alertsHistoryDao         the alerts history DAO
+     * @param dtcService               the DTC master service
      */
     public AlertService(CoreVehicleProfileClient coreVehicleProfileClient, AlertsHistoryDao alertsHistoryDao,
                         DTCMasterService dtcService) {
@@ -90,9 +95,10 @@ public class AlertService {
     }
 
     /**
-     * To fetch DTC details from DTC code.
+     * Populates DTC details in the provided map for a given DTC code.
      *
-     * @param dtcCode dtc code
+     * @param dtcCode           the DTC code
+     * @param dtcCurrentStateMap the map to populate with DTC details
      */
     @SuppressWarnings("checkstyle:AbbreviationAsWordInName")
     protected void setDTCDetails(String dtcCode, Map<String, Object> dtcCurrentStateMap) {
@@ -109,11 +115,10 @@ public class AlertService {
     }
 
     /**
-     * To get existing alertHistory object and add corresponding alertMessage.
-     * If alert type is DTC then fetch data contents from DTC code and append it
-     * with existing alert history object.
+     * Adds alert messages to each alert in the result list.
+     * For DTC alerts, enriches the payload with DTC details.
      *
-     * @param resultList List of AlertsHistoryInfo
+     * @param resultList the list of alert history info
      */
     protected void addAlertMessageToResponse(List<AlertsHistoryInfo> resultList) {
         resultList.forEach(alertData -> {
@@ -135,13 +140,10 @@ public class AlertService {
     }
 
     /**
-     * Get userId available in vehicleprofile.
+     * Retrieves the user ID associated with a given device (PDID) from the vehicle profile.
      *
-     * @param pdid pdid
-     *
-     * @return userId
-     *
-     * @throws Exception if failed to get VP
+     * @param pdid the device ID
+     * @return the user ID
      */
     public String getUserIdFromDevice(String pdid) {
         try {
@@ -166,7 +168,10 @@ public class AlertService {
     }
 
     /**
-     * Clean status history records before flushing history to consumer.
+     * Cleans the status history records in the alert list, removing records that do not contain the DONE status.
+     * Sets the status history list to null for each alert after filtering.
+     *
+     * @param alertList the list of alert history info
      */
     public void cleanStatusHistoryRecords(List<AlertsHistoryInfo> alertList) {
         if (!CollectionUtils.isEmpty(alertList)) {
@@ -177,11 +182,11 @@ public class AlertService {
     }
 
     /**
-     * containsStatus.
+     * Checks if the given status history list contains the specified status.
      *
-     * @param list list
-     * @param status   status
-     * @return  boolean
+     * @param list   the list of status history records
+     * @param status the status to check for
+     * @return true if the status is present, false otherwise
      */
     public boolean containsStatus(final List<StatusHistoryRecord> list, final AlertsHistoryInfo.Status status) {
         return list.stream().anyMatch(o -> o.getStatus().equals(status));

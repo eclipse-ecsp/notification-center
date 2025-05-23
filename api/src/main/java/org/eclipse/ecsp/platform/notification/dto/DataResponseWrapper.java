@@ -40,7 +40,6 @@
 package org.eclipse.ecsp.platform.notification.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -74,13 +73,20 @@ public class DataResponseWrapper<T> extends ResponseWrapper<T> {
     /**
      * DataResponseWrapper.
      */
-    @Builder(builderMethodName = "dataResponseWrapperBuilder")
     private DataResponseWrapper(int httpStatusCode, String requestId, Message rootResponseWrapperMessage,
                                 Collection<? extends Message> errors, Collection<Message> responseWrapperMessages,
                                 Long count, Collection<T> data) {
         super(httpStatusCode, requestId, rootResponseWrapperMessage, errors, responseWrapperMessages);
         this.count = toIntExact(count);
         this.data = data;
+    }
+
+    private DataResponseWrapper(DataResponseWrapperBuilder<T> dataResponseWrapperBuilder) {
+        super(dataResponseWrapperBuilder.httpStatusCode, dataResponseWrapperBuilder.requestId,
+                dataResponseWrapperBuilder.rootMessage, dataResponseWrapperBuilder.errors,
+                dataResponseWrapperBuilder.messageList);
+        this.count = dataResponseWrapperBuilder.count;
+        this.data = dataResponseWrapperBuilder.data;
     }
 
     /**
@@ -101,5 +107,74 @@ public class DataResponseWrapper<T> extends ResponseWrapper<T> {
             .httpStatusCode(HttpStatus.OK.value())
             .data(results)
             .count((long) results.size());
+    }
+
+    /**
+     * DataResponseWrapperBuilder for building the response object.
+     */
+    public static <T> DataResponseWrapperBuilder<T> dataResponseWrapperBuilder() {
+        return new DataResponseWrapperBuilder<>();
+    }
+
+    /**
+     * Builder class for constructing {@link DataResponseWrapper} instances.
+     * Allows step-by-step configuration of response fields such as HTTP status,
+     * request ID, messages, errors, count, and data.
+     *
+     * @param <T> the type of data contained in the response
+     */
+    public static class DataResponseWrapperBuilder<T> {
+        private int httpStatusCode;
+        private String requestId;
+        private Message rootMessage;
+        private Collection<? extends Message> errors;
+        private Collection<Message> messageList;
+        private Integer count;
+        private Collection<T> data;
+
+        public DataResponseWrapperBuilder<T> httpStatusCode(int httpStatusCode) {
+            this.httpStatusCode = httpStatusCode;
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> requestId(String requestId) {
+            this.requestId = requestId;
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> rootMessage(Message rootMessage) {
+            this.rootMessage = rootMessage;
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> errors(Collection<? extends Message> errors) {
+            this.errors = errors;
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> messageList(Collection<Message> messageList) {
+            this.messageList = messageList;
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> count(Long count) {
+            this.count = toIntExact(count);
+            return this;
+        }
+
+        public DataResponseWrapperBuilder<T> data(Collection<T> data) {
+            this.data = data;
+            return this;
+        }
+
+        // Custom-named builder method
+        public DataResponseWrapperBuilder<T> rootResponseWrapperMessage(Message rootMessage) {
+            this.rootMessage = rootMessage;
+            return this;
+        }
+
+        public DataResponseWrapper<T> build() {
+            return new DataResponseWrapper<>(this);
+        }
     }
 }
