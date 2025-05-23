@@ -474,10 +474,9 @@ public class NotificationHistoryController {
 
 
     /**
-     * [Story 503788] Updated T&C Consent Campaign Notification.
+     * Updated Terms and Condition Consent Campaign Notification.
      * This API is used to fetch a campaign's notification details
      */
-
     @GetMapping(value = "/v1/notification/campaign/{campaignId}", produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Notification center API is used to get notification history of a campaign",
         description = "Notification center API is used to get notification history of a campaign", responses = {

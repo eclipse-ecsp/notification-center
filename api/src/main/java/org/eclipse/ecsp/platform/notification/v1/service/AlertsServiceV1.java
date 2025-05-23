@@ -50,13 +50,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * alerts service.
+ * Service class for retrieving alert history for a specific device.
+ * Provides methods to fetch alert data within a given time range, optionally filtered by alert names.
  */
 @Service
 public class AlertsServiceV1 extends AlertService {
 
     /**
-     * AlertsServiceV1 constructor.
+     * Constructs an instance of AlertsServiceV1.
+     *
+     * @param coreVehicleProfileClient the core vehicle profile client
+     * @param alertsHistoryDao         the alerts history DAO
+     * @param dtcService               the DTC master service
      */
     public AlertsServiceV1(CoreVehicleProfileClient coreVehicleProfileClient, AlertsHistoryDao alertsHistoryDao,
                            DTCMasterService dtcService) {
@@ -64,12 +69,12 @@ public class AlertsServiceV1 extends AlertService {
     }
 
     /**
-     * To fetch alert history items based on time stamp provided and also with
-     * alertNames if provided. verifyLesserOfTwoNumber method is used to find
-     * whether until value is more then since value or not.
+     * Retrieves alert history items for a device within a specified time range.
+     * Optionally filters by alert names if provided in the request parameters.
      *
-     * @return List of AlertHistoryInfo object
-     * @throws Exception exception
+     * @param params the request parameters containing device ID, time interval, and alert names
+     * @return a list of alert history information objects
+     * @throws Exception if validation or data access fails
      */
     public List<AlertsHistoryInfo> getAlerts(AlertsHistoryRequestParams params) throws Exception {
 
@@ -82,7 +87,7 @@ public class AlertsServiceV1 extends AlertService {
             : alertsHistoryDao.findByPdidAndTimestampBetweenAndAlertTypeIn(params.getDeviceIdAsSingle(), userId,
             params.getTimeIntervalInfo().getSince(), params.getTimeIntervalInfo().getUntil(), params.getAlertNames());
         if (CollectionUtils.isEmpty(resultList)) {
-            return new ArrayList<AlertsHistoryInfo>();
+            return new ArrayList<>();
         }
         cleanStatusHistoryRecords(resultList);
         addAlertMessageToResponse(resultList);

@@ -60,8 +60,14 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 public class ExceptionsAdviser {
 
     /**
-     * To enable this exception, turn on the spring flag: spring.mvc.throw-exception-if-no-handler-found.
-     * And add to {@link Configurations confiurations} the @EnableWebMvc annotation
+     * Handles requests to unmapped endpoints (404 errors).
+     * <p>
+     * To enable this exception, set the Spring flag: <code>spring.mvc.throw-exception-if-no-handler-found=true</code>
+     * and add <code>@EnableWebMvc</code> to your configuration.
+     * </p>
+     *
+     * @param ex the exception thrown when no handler is found
+     * @return a response entity with a not found status and error message
      */
     @ExceptionHandler({NoHandlerFoundException.class})
     public ResponseEntity<Object> handleNotFoundError(NoHandlerFoundException ex) {

@@ -64,7 +64,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Alert service.
+ * Service class for managing alert history and read/unread status for devices and users.
+ * Provides methods to fetch, update, and organize alert data.
  */
 @Service
 public class AlertsServiceV2 extends AlertService {
@@ -75,7 +76,12 @@ public class AlertsServiceV2 extends AlertService {
     private final AssociationServiceClient associationServiceClient;
 
     /**
-     * AlertsServiceV2 constructor.
+     * Constructs an instance of AlertsServiceV2.
+     *
+     * @param coreVehicleProfileClient the core vehicle profile client
+     * @param alertsHistoryDao         the alerts history DAO
+     * @param associationServiceClient the association service client
+     * @param dtcService               the DTC master service
      */
     public AlertsServiceV2(CoreVehicleProfileClient coreVehicleProfileClient, AlertsHistoryDao alertsHistoryDao,
                            AssociationServiceClient associationServiceClient, DTCMasterService dtcService) {
@@ -87,6 +93,10 @@ public class AlertsServiceV2 extends AlertService {
      * To fetch alert history items based on time stamp provided and also with
      * alertNames if provided. verifyLesserOfTwoNumber method is used to find
      * whether until value is more then since value or not.
+     *
+     * @param params the request parameters containing device ID, time interval, and alert names
+     * @return a map containing total alerts and a list of alert details
+     * @throws Exception if validation or data access fails
      */
     public Map<String, Object> getAlertsByDeviceId(AlertsHistoryRequestParams params) throws Exception {
 
@@ -99,7 +109,7 @@ public class AlertsServiceV2 extends AlertService {
             params.getTimeIntervalInfo().getSince(), params.getTimeIntervalInfo().getUntil(), params.getAlertNames());
 
         if (CollectionUtils.isEmpty(resultList)) {
-            return new HashMap<String, Object>();
+            return new HashMap<>();
         }
 
         cleanStatusHistoryRecords(resultList);
@@ -121,7 +131,11 @@ public class AlertsServiceV2 extends AlertService {
     }
 
     /**
-     * To get alert data from user by fetching list of pdids.
+     * Retrieves alert history for all devices associated with a user within a time range.
+     *
+     * @param params the request parameters containing user ID, time interval, and alert names
+     * @return a map of device IDs to alert lists, including total alert count
+     * @throws Exception if validation or data access fails
      */
     public Map<String, Object> getAlertsByUserId(AlertsHistoryRequestParams params) throws Exception {
         List<DeviceAssociation> devices =
@@ -146,7 +160,7 @@ public class AlertsServiceV2 extends AlertService {
         }
 
         if (CollectionUtils.isEmpty(dataMap)) {
-            return new HashMap<String, Object>();
+            return new HashMap<>();
         }
 
         dataMap.put(TOTAL_ALERTS, totalNoOfAlerts);
@@ -154,11 +168,11 @@ public class AlertsServiceV2 extends AlertService {
     }
 
     /**
-     * Save data.
+     * Updates the read/unread status of alerts for a device.
      *
-     * @param deviceId deviceId
-     *
-     * @param reqdata regdata
+     * @param deviceId the device ID
+     * @param userId   the user ID
+     * @param reqdata  the read/unread update request
      */
     public void saveData(String deviceId, String userId, AlertReadUpdate reqdata) {
         LOGGER.info("Entered saveData method");
@@ -169,13 +183,13 @@ public class AlertsServiceV2 extends AlertService {
     }
 
     /**
-     * Validate and save data.
+     * Validates and updates the read/unread status of alerts for a device.
      *
-     * @param deviceId deviceId
-     *
-     * @param reqAlertIdlist alertList
-     *
-     * @param isRead boolean
+     * @param deviceId       the device ID
+     * @param userId         the user ID
+     * @param reqAlertIdlist list of alert IDs to update
+     * @param isRead         true to mark as read, false to mark as unread
+     * @throws NoSuchEntityException if alert IDs are invalid
      */
     private void validateAndSaveData(String deviceId, String userId, List<String> reqAlertIdlist, boolean isRead) {
         LOGGER.info("Entered validateAndSaveData method");

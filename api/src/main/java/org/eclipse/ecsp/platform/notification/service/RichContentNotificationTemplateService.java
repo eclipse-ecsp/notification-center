@@ -190,7 +190,7 @@ public class RichContentNotificationTemplateService extends BaseNotificationTemp
      * @return warning message if the notification ID specified by the imported file does not exist as
      *     notification template in the notification center
      *
-     * @throws Exception validation exception or unexpected
+     * @throws IOException validation exception or unexpected
      */
     public String importNotificationTemplate(MultipartFile file, boolean isPatchUpdate) throws IOException {
         ZipFile zipFile = getZipContent(file);

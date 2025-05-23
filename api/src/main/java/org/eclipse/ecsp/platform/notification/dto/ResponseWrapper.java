@@ -67,7 +67,6 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @JsonInclude(NON_EMPTY)
 public class ResponseWrapper<T> {
     // @ApiModelProperty(name = "Http status code", required = true, example = "200")
@@ -86,6 +85,14 @@ public class ResponseWrapper<T> {
 
     // @ApiModelProperty(name = "List of additional messages")
     Collection<Message> messageList;
+
+    ResponseWrapper(ResponseWrapperBuilder<T> responseWrapperBuilder) {
+        this.httpStatusCode = responseWrapperBuilder.httpStatusCode;
+        this.requestId = responseWrapperBuilder.requestId;
+        this.rootMessage = responseWrapperBuilder.rootMessage;
+        this.errors = responseWrapperBuilder.errors;
+        this.messageList = responseWrapperBuilder.messageList;
+    }
 
     /**
      * ResponseWrapperBuilder OK.
@@ -125,6 +132,56 @@ public class ResponseWrapper<T> {
     public static ResponseWrapperBuilder<Void> internalServerError() {
         return ResponseWrapper.<Void>builder()
             .httpStatusCode(INTERNAL_SERVER_ERROR.value());
+    }
+
+    /**
+     * ResponseWrapperBuilder for building the response object.
+     */
+    public static <T> ResponseWrapperBuilder<T> builder() {
+        return new ResponseWrapperBuilder<>();
+    }
+
+    /**
+     * Builder class for constructing {@link ResponseWrapper} instances.
+     * Allows step-by-step configuration of response fields such as HTTP status, request ID, messages, errors, and additional messages.
+     *
+     * @param <T> the type of data contained in the response
+     */
+    public static class ResponseWrapperBuilder<T> {
+        private int httpStatusCode;
+        private String requestId;
+        private Message rootMessage;
+        private Collection<? extends Message> errors;
+        private Collection<Message> messageList;
+
+        public ResponseWrapperBuilder<T> httpStatusCode(int httpStatusCode) {
+            this.httpStatusCode = httpStatusCode;
+            return this;
+        }
+
+        public ResponseWrapperBuilder<T> requestId(String requestId) {
+            this.requestId = requestId;
+            return this;
+        }
+
+        public ResponseWrapperBuilder<T> rootMessage(Message rootMessage) {
+            this.rootMessage = rootMessage;
+            return this;
+        }
+
+        public ResponseWrapperBuilder<T> errors(Collection<? extends Message> errors) {
+            this.errors = errors;
+            return this;
+        }
+
+        public ResponseWrapperBuilder<T> messageList(Collection<Message> messageList) {
+            this.messageList = messageList;
+            return this;
+        }
+
+        public ResponseWrapper<T> build() {
+            return new ResponseWrapper<>(this);
+        }
     }
 
     /**

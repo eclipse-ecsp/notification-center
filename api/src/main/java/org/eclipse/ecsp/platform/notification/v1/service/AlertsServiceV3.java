@@ -70,7 +70,8 @@ import java.util.Map;
 import static org.eclipse.ecsp.platform.notification.v1.common.Constants.ASSOCIATED;
 
 /**
- * alert services.
+ * Service class providing operations for alert history, read/unread status, and deletion.
+ * Handles alert retrieval by device or user, status updates, and pagination.
  */
 @Service
 public class AlertsServiceV3 extends AlertService {
@@ -85,7 +86,12 @@ public class AlertsServiceV3 extends AlertService {
     private final AssociationServiceClient associationServiceClient;
 
     /**
-     * AlertsServiceV3 constructor.
+     * Constructs an instance of AlertsServiceV3.
+     *
+     * @param associationServiceClient the association service client
+     * @param coreVehicleProfileClient the core vehicle profile client
+     * @param alertsHistoryDao         the alerts history DAO
+     * @param dtcService               the DTC master service
      */
     @Autowired
     public AlertsServiceV3(AssociationServiceClient associationServiceClient,
@@ -96,7 +102,11 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Get alerts by device ID.
+     * Retrieves paginated alerts for a specific device.
+     *
+     * @param params the request parameters containing device ID and filters
+     * @return paginated alerts history
+     * @throws Exception if validation or data access fails
      */
     public PaginatedAlertsHistory getAlertsByDeviceId(AlertsHistoryRequestParams params) throws Exception {
         params.getTimeIntervalInfo().validate();
@@ -109,7 +119,11 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * To get alert data from user by fetching list of pdids.
+     * Retrieves alerts for all devices associated with a user.
+     *
+     * @param params the request parameters containing user ID and filters
+     * @return a map containing pagination info and device-to-alerts mapping
+     * @throws Exception if validation or data access fails
      */
     public Map<String, Object> getAlertsByUserid(AlertsHistoryRequestParams params) throws Exception {
         List<DeviceAssociation> devices =
@@ -132,7 +146,11 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Get alerts by deviceId.
+     * Retrieves the next page of alerts for a specific device.
+     *
+     * @param params the request parameters containing device ID and filters
+     * @return list of alert history info
+     * @throws Exception if validation or data access fails
      */
     public List<AlertsHistoryInfo> getNextAlertsByDeviceId(AlertsHistoryRequestParams params) throws Exception {
 
@@ -148,16 +166,14 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
+     * Updates the read/unread status of alerts for a device.
+     * The request can specify lists of alert IDs to mark as read or unread, or use "all".
      * AlertReadUpdate request data can have three valid format. { "read" :
      * ["2000", "1000","300"], "unread" : ["2001", "1001","301"] }
      *
-     * <p>or { "read" : ["all"] }
-     *
-     * <p>or { "unread" : ["all"] }
-     *
-     * @param deviceId harmanId
-     *
-     * @param reqdata  AlertReadUpdate
+     * @param deviceId the device (Harman) ID
+     * @param reqdata  the read/unread update request
+     * @throws IllegalArgumentException if the request is invalid
      */
     public void saveData(String deviceId, AlertReadUpdate reqdata) {
 
@@ -180,13 +196,13 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Validate and save data.
+     * Validates and updates the read/unread status of alerts for a device.
      *
-     * @param deviceId       HarmanId
-     *
-     * @param reqAlertIdlist reqAlertIDlist
-     *
-     * @param isRead         boolean value
+     * @param deviceId       the device (Harman) ID
+     * @param reqAlertIdlist list of alert IDs to update
+     * @param isRead         true to mark as read, false to mark as unread
+     * @throws NoSuchEntityException   if no alerts are found for the device
+     * @throws IllegalArgumentException if alert IDs are invalid
      */
     private void validateAndSaveData(String deviceId, List<String> reqAlertIdlist, boolean isRead) {
 
@@ -226,7 +242,10 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Get alerts.
+     * Retrieves paginated alerts based on request parameters.
+     *
+     * @param params the request parameters
+     * @return paginated alerts history
      */
     private PaginatedAlertsHistory getAlerts(AlertsHistoryRequestParams params) {
         params.getTimeIntervalInfo().validate();
@@ -265,7 +284,12 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Get paginated results.
+     * Builds a paginated result from the query response.
+     *
+     * @param results  the query response
+     * @param page     the current page number
+     * @param pageSize the page size
+     * @return paginated alerts history
      */
     private PaginatedAlertsHistory getPaginatedResults(IgnitePagingInfoResponse<AlertsHistoryInfo> results, int page,
                                                        int pageSize) {
@@ -281,14 +305,22 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Calculate total pages.
+     * Calculates the total number of pages for pagination.
+     *
+     * @param totalRecords the total number of records
+     * @param pageSize     the page size
+     * @return total number of pages
      */
     private int calculateTotalPages(long totalRecords, int pageSize) {
         return ((int) totalRecords / pageSize) + (totalRecords % pageSize == 0 ? 0 : 1);
     }
 
+
     /**
-     * Prepare alerts by userId.
+     * Groups alerts by device ID for a user.
+     *
+     * @param alertList the list of alert history info
+     * @return a map of device ID to list of alerts
      */
     private Map<String, List<AlertsHistoryInfo>> prepareAlertsByUserId(List<AlertsHistoryInfo> alertList) {
         Map<String, List<AlertsHistoryInfo>> deviceIdToAlertListMap = new HashMap<>();
@@ -301,7 +333,12 @@ public class AlertsServiceV3 extends AlertService {
     }
 
     /**
-     * Delete alerts.
+     * Deletes alerts for a device, either soft or hard delete.
+     *
+     * @param deviceId    the device (Harman) ID
+     * @param softDelete  true for soft delete, false for hard delete
+     * @param alertsDelete the alert IDs to delete (optional)
+     * @throws IllegalArgumentException if no alerts are found or IDs are invalid
      */
     public void deleteAlerts(String deviceId, boolean softDelete, AlertIdDto alertsDelete) {
 
