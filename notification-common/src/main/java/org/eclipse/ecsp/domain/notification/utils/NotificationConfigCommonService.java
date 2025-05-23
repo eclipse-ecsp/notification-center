@@ -183,14 +183,16 @@ public class NotificationConfigCommonService {
     }
 
     /**
-     *<p>This method returns NotificationConfigs for primary and secondary contacts.
-     * API push default channel should be merged for only primary preference means contactId is self</p>
+     * Returns a list of {@link NotificationConfig} objects for the given user and vehicle,
+     * including both primary and secondary contacts. Merges the default channel configuration
+     * for the primary contact (contactId "self") and removes API_PUSH channel for secondary contacts.
+     * If no user profile is provided, returns a default configuration.
      *
-     * @param configs          config
-     * @param vehicleId        vehicle id
-     * @param alertUserProfile user profile
-     * @param brand            brand
-     * @return notification config list
+     * @param configs          the list of available notification configurations
+     * @param vehicleId        the vehicle ID to filter configurations
+     * @param alertUserProfile the user profile containing user and contact information
+     * @param brand            the brand to use for default configuration selection
+     * @return a list of selected {@link NotificationConfig} objects for the user and vehicle
      */
     public List<NotificationConfig> selectNotificationConfig(List<NotificationConfig> configs, String vehicleId,
                                                              UserProfile alertUserProfile,

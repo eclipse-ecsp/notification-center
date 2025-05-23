@@ -143,7 +143,8 @@ public class ResponseWrapper<T> {
 
     /**
      * Builder class for constructing {@link ResponseWrapper} instances.
-     * Allows step-by-step configuration of response fields such as HTTP status, request ID, messages, errors, and additional messages.
+     * Allows step-by-step configuration of response fields such as HTTP status,
+     * request ID, messages, errors, and additional messages.
      *
      * @param <T> the type of data contained in the response
      */

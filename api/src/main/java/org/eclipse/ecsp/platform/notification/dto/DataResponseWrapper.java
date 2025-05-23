@@ -118,7 +118,8 @@ public class DataResponseWrapper<T> extends ResponseWrapper<T> {
 
     /**
      * Builder class for constructing {@link DataResponseWrapper} instances.
-     * Allows step-by-step configuration of response fields such as HTTP status, request ID, messages, errors, count, and data.
+     * Allows step-by-step configuration of response fields such as HTTP status,
+     * request ID, messages, errors, count, and data.
      *
      * @param <T> the type of data contained in the response
      */

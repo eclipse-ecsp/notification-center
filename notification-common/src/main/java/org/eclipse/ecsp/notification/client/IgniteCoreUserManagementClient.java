@@ -107,28 +107,36 @@ public class IgniteCoreUserManagementClient {
     }
 
     /**
-     * @param uri the uri to set
+     * Sets the URI for the Ignite user management service.
+     *
+     * @param uri the URI to set
      */
     public void setUri(String uri) {
         this.uri = uri;
     }
 
     /**
-     * @param idamServer the idamServer to set
+     * Sets the IDAM server type (e.g., WSO2 or UIDAM).
+     *
+     * @param idamServer the IDAM server to set
      */
     public void setIdamServer(String idamServer) {
         this.idamServer = idamServer;
     }
 
     /**
-     * @param defaultLocale the defaultLocale to set
+     * Sets the default locale to use if none is provided.
+     *
+     * @param defaultLocale the default locale to set
      */
     public void setDefaultLocale(String defaultLocale) {
         this.defaultLocale = defaultLocale;
     }
 
     /**
-     * @param defaultTimezone the defaultTimezone to set
+     * Sets the default timezone to use if none is provided.
+     *
+     * @param defaultTimezone the default timezone to set
      */
     public void setDefaultTimezone(String defaultTimezone) {
         this.defaultTimezone = defaultTimezone;

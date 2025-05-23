@@ -61,6 +61,7 @@ public class ExceptionsAdviser {
 
     /**
      * Handles requests to unmapped endpoints (404 errors).
+     *
      * <p>
      * To enable this exception, set the Spring flag: <code>spring.mvc.throw-exception-if-no-handler-found=true</code>
      * and add <code>@EnableWebMvc</code> to your configuration.

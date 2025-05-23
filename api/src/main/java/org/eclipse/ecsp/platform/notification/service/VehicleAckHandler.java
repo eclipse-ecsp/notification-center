@@ -51,12 +51,21 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 /**
- * VehicleAckHandler class.
+ * Handles vehicle acknowledgement responses by converting them into {@link IgniteEvent} objects
+ * for further processing in the notification stream.
+ *
+ * <p>
+ * This service processes incoming {@link IVMAckResponse} messages, extracts relevant acknowledgement
+ * data, and maps it to an {@link IgniteEventImpl} instance. The resulting event is then forwarded
+ * to the stream processor for downstream handling.
+ * </p>
+ *
+ * <p>
+ * Used as part of the notification platform to ensure reliable tracking and processing of
+ * vehicle message acknowledgements.
+ * </p>
  *
  * @author AMuraleedhar
- *
- *     <p>This is a vehicle acknowledgement handler which process the ack and
- *     converts to ignite event to forward to the stream processor</p>
  */
 @Service
 public class VehicleAckHandler extends AbstractIvmResponseHandler {

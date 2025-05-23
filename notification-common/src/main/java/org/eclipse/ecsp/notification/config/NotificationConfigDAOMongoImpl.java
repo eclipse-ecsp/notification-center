@@ -79,7 +79,10 @@ public class NotificationConfigDAOMongoImpl extends IgniteBaseDAOMongoImpl<Strin
 
 
     /**
-     * @param encryptionDecryptionService the encryptionDecryptionService to set
+     * Sets the encryption and decryption service used for notification configuration.
+     *
+     * @param encryptionDecryptionService the {@link NotificationEncryptionServiceImpl}
+     *                                    to use for encrypting and decrypting notification configs
      */
     public void setEncryptionDecryptionService(NotificationEncryptionServiceImpl encryptionDecryptionService) {
         this.encryptionDecryptionService = encryptionDecryptionService;

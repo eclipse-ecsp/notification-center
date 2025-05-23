@@ -82,7 +82,9 @@ public class UserManagementToUserProfileDAO implements UserProfileDAO {
     }
 
     /**
-     * @param federatedPrefix Prefix for federated user management.
+     * Sets the prefix used for federated user management operations.
+     *
+     * @param federatedPrefix the prefix to be used for federated user management
      */
     public void setFederatedPrefix(String federatedPrefix) {
         this.federatedPrefix = federatedPrefix;
