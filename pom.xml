@@ -108,8 +108,6 @@
         <!-- Java compiler version-->
         <compiler.source.version>17</compiler.source.version>
         <compiler.target.version>17</compiler.target.version>
-        <!-- Artifactory path -->
-        <artifactory.repo>https://artifactory-fr.harman.com/artifactory</artifactory.repo>
         <!-- Jacoco Properties-->
         <jacoco.plugin.version>0.8.13</jacoco.plugin.version>
         <jacoco.plugin.outputDirectory>${project.basedir}/target/jacocoReport</jacoco.plugin.outputDirectory>
@@ -128,7 +126,7 @@
         <sonar.java.target>17</sonar.java.target>
         <!-- Checkstyle Properties -->
         <!--suppress UnresolvedMavenProperty -->
-        <checkstyle.config.location>${project.basedir}/../checkstyle.xml</checkstyle.config.location>
+        <checkstyle.config.location>${project.basedir}/checkstyle.xml</checkstyle.config.location>
         <sonar.java.checkstyle.reportPaths>${project.build.directory}/checkstyle-result.xml
         </sonar.java.checkstyle.reportPaths>
         <!--Spring, Boot Version-->
