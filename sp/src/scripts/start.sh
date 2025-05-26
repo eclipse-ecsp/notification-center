@@ -60,4 +60,4 @@ LOG_APPENDER="-DAPPENDER=""${APPENDER:-FILE}"
 
 echo "Log Appender used:" "${LOG_APPENDER}"
 
-exec java ${JVM_OPTS} ${LOG_FILE_LOCATION} ${LOG_APPENDER} -cp /opt/notification/jar/notification-sp.jar:/shared/libs/${API_PUSH_NOTIFICATION_JAR} org.eclipse.ecsp.stream.base.Launcher
+exec java ${JVM_OPTS} ${LOG_FILE_LOCATION} ${LOG_APPENDER} -cp /opt/notification/jar/notification-sp.jar:/shared/libs/${API_PUSH_NOTIFICATION_JAR} org.eclipse.ecsp.analytics.stream.base.Launcher
