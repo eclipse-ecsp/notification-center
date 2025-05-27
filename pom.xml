@@ -572,8 +572,7 @@
                     <argLine>${surefireArgLine} ${java.17.options}</argLine>
                     <forkMode>pertest</forkMode>
                     <childDelegation>true</childDelegation>
-                    <!-- TODO: Change this skip-test configuration to "false" for final release -->
-                    <skipTests>true</skipTests>
+                    <skipTests>false</skipTests>
                 </configuration>
             </plugin>
             <plugin>
