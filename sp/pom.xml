@@ -36,7 +36,7 @@
         <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
         <log4j-1.2.version>2.13.3</log4j-1.2.version>
         <hivemq.test.container>1.21.0</hivemq.test.container>
-        <start-class>org.eclipse.ecsp.stream.base.Launcher</start-class>
+        <start-class>org.eclipse.ecsp.analytics.stream.base.Launcher</start-class>
         <maven.shade.plugin>2.1</maven.shade.plugin>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>

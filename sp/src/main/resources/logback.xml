@@ -169,15 +169,15 @@
         <appender-ref ref="ASYNC-GELF"/>
         <appender-ref ref="STDOUT"/>
     </logger>
-    <logger name="org.eclipse.ecsp.stream.base.utils.MqttDispatcher"
+    <logger name="org.eclipse.ecsp.analytics.stream.base.utils.MqttDispatcher"
             level="${MQTT_DISPATCHER_LOG_LEVEL}" additivity="false">
         <appender-ref ref="ASYNC-GELF"/>
     </logger>
-    <logger name="org.eclipse.ecsp.stream.base.utils.PahoMqttDispatcher"
+    <logger name="org.eclipse.ecsp.analytics.stream.base.utils.PahoMqttDispatcher"
             level="${MQTT_DISPATCHER_LOG_LEVEL}" additivity="false">
         <appender-ref ref="ASYNC-GELF"/>
     </logger>
-    <logger name="org.eclipse.ecsp.stream.base.utils.HiveMqMqttDispatcher"
+    <logger name="org.eclipse.ecsp.analytics.stream.base.utils.HiveMqMqttDispatcher"
             level="${MQTT_DISPATCHER_LOG_LEVEL}" additivity="false">
         <appender-ref ref="ASYNC-GELF"/>
     </logger>
