@@ -68,11 +68,11 @@ import org.eclipse.ecsp.platform.notification.v1.fw.web.NotificationGroupingNotF
 import org.eclipse.ecsp.platform.notification.v1.utils.Utils;
 import org.eclipse.ecsp.security.Security;
 import org.eclipse.ecsp.utils.ApiUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONException;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
