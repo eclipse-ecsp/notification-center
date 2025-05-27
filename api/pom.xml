@@ -399,6 +399,12 @@
             <groupId>org.eclipse.ecsp</groupId>
             <artifactId>utils</artifactId>
             <version>${utils.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.javassist</groupId>
+                    <artifactId>javassist</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.eclipse.ecsp</groupId>
@@ -412,6 +418,10 @@
                 <exclusion>
                     <groupId>org.eclipse.ecsp</groupId>
                     <artifactId>utils</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.javassist</groupId>
+                    <artifactId>javassist</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
