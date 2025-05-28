@@ -791,6 +791,28 @@ public class IgniteCoreUserManagementClientTest {
         when(mockResponseEntity.getBody()).thenReturn(responseList);
         when(mockResponseEntity.getStatusCode()).thenReturn(HttpStatus.OK);
 
-        // Rest of the test remains unchanged...
+        // Set client properties with UIDAM server type
+        String customDefaultTimezone = "America/New_York";
+        igniteCoreUserManagementClient.setUri("test-uri.com");
+        igniteCoreUserManagementClient.setIdamServer(IgniteCoreConstants.UIDAM);
+        igniteCoreUserManagementClient.setDefaultLocale("en-US");
+        igniteCoreUserManagementClient.setDefaultTimezone(customDefaultTimezone);
+
+        // Call method under test
+        Optional<UserProfile> userProfileOptional = igniteCoreUserManagementClient.getUser("test-user", "");
+
+        // Verify result
+        Assert.assertTrue("Should return a user profile", userProfileOptional.isPresent());
+        UserProfile userProfile = userProfileOptional.get();
+        Assert.assertEquals("Default timezone should be used when timezone is null",
+                customDefaultTimezone,
+                userProfile.getTimeZone());
+
+        // Verify the exchange method was called with expected parameters
+        verify(restTemplate).exchange(
+                contains("test-uri.com"),
+                eq(HttpMethod.POST),
+                any(HttpEntity.class),
+                any(ParameterizedTypeReference.class));
     }
 }
