@@ -124,10 +124,6 @@
         <sonar.scm.provider>git</sonar.scm.provider>
         <sonar.java.source>17</sonar.java.source>
         <sonar.java.target>17</sonar.java.target>
-        <sonar.exclusions>
-            **/dto/ResponseWrapper.java
-            **/dto/DataResponseWrapper.java
-        </sonar.exclusions>
         <!-- Checkstyle Properties -->
         <!--suppress UnresolvedMavenProperty -->
         <checkstyle.config.location>${project.basedir}/checkstyle.xml</checkstyle.config.location>
