@@ -175,6 +175,7 @@ public class IgniteCoreUserManagementClient {
                     return Optional.of(userProfile);
                 }
             } else if (idamServer.equalsIgnoreCase(IgniteCoreConstants.UIDAM)) {
+                requestBodyWithUserName = String.format("{\"ids\":[\"%s\"]}", prefix + userName);
                 ResponseEntity<ArrayList<LinkedHashMap>> usersListRepresentation = restTemplate
                         .exchange(uri + FILTER_BY_SINGLE_USERNAME_URI,
                                 POST,
