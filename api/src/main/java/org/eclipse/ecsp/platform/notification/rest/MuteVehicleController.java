@@ -157,7 +157,7 @@ public class MuteVehicleController {
           String sessionId,
           @RequestHeader(value = "ClientRequestId", required = false)
           String clientRequestId,
-          @PathVariable String vehicleId) {
+          @PathVariable("vehicleId") String vehicleId) {
         log.info("## findMuteConfig - requestId: {}, sessionId: {},  clientRequestId: {}, muteVehicleDto: {}",
             StringUtils.normalizeSpace(requestId), StringUtils.normalizeSpace(sessionId),
             StringUtils.normalizeSpace(clientRequestId), StringUtils.normalizeSpace(vehicleId));
@@ -188,7 +188,7 @@ public class MuteVehicleController {
                                                   String sessionId,
                                                   @RequestHeader(value = "ClientRequestId", required = false)
                                                   String clientRequestId,
-                                                  @PathVariable String vehicleId) {
+                                                  @PathVariable("vehicleId") String vehicleId) {
         log.info("## deleteMuteConfig - requestId: {}, sessionId: {},  clientRequestId: {}, vehicleId: {}",
             StringUtils.normalizeSpace(requestId), StringUtils.normalizeSpace(sessionId),
             StringUtils.normalizeSpace(clientRequestId), StringUtils.normalizeSpace(vehicleId));

@@ -625,6 +625,9 @@
                     <source>${compiler.source.version}</source>
                     <target>${compiler.target.version}</target>
                     <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                    <!-- After spring-boot 3.2, API parameter names information not available via reflection,
+                    so setting "parameters" to "true" -->
+                    <parameters>true</parameters>
                     <compilerArgs>
                         <arg>--add-opens=java.base/java.io=ALL-UNNAMED</arg>
                         <arg>--add-opens=java.base/java.lang=ALL-UNNAMED</arg>
