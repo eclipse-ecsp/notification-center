@@ -153,7 +153,7 @@ public class AlertsController {
         responses = {@ApiResponse(responseCode = "200", description = "Success")})
     @SecurityRequirement(name = Security.JWT_AUTH_VALIDATOR, scopes = {"SelfManage,AssociateMyselfToVehicle"})
     public PaginatedAlertsHistory getAllAlertsBetweenSinceAndUntilV3(
-        @ValidDeviceID @PathVariable String deviceId,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "until")
@@ -192,8 +192,8 @@ public class AlertsController {
         responses = {@ApiResponse(responseCode = "200", description = "Success")})
     @SecurityRequirement(name = Security.JWT_AUTH_VALIDATOR, scopes = {"SelfManage,AssociateMyselfToVehicle"})
     public PaginatedAlertsHistory getSpecificAlertBetweenSinceAndUntilV3(
-        @ValidDeviceID @PathVariable String deviceId,
-        @PathVariable Set<String> alertTypes,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
+        @PathVariable("alertTypes") Set<String> alertTypes,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "until")
@@ -281,7 +281,7 @@ public class AlertsController {
         @RequestParam(value = "size", required = false) String size,
         @RequestParam(value = "page", required = false) String page,
         @RequestParam(value = "readstatus", defaultValue = "all", required = false) String readStatus,
-        @PathVariable Set<String> alertTypes,
+        @PathVariable("alertTypes") Set<String> alertTypes,
         @RequestHeader(Constants.USER_ID) String userId)
         throws Exception {
 
@@ -317,8 +317,8 @@ public class AlertsController {
           @ApiResponse(responseCode = "200", description = "Success")})
     @SecurityRequirement(name = Security.JWT_AUTH_VALIDATOR, scopes = {"SelfManage,AssociateMyselfToVehicle"})
     public Map<String, Object> getSpecificAlertBetweenSinceAndUntilV2(
-        @ValidDeviceID @PathVariable String deviceId,
-        @Valid @PathVariable Set<String> alertTypes,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
+        @Valid @PathVariable("alertTypes") Set<String> alertTypes,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "till")
@@ -359,7 +359,7 @@ public class AlertsController {
           @ApiResponse(responseCode = "200", description = "Success")})
     @SecurityRequirement(name = Security.JWT_AUTH_VALIDATOR, scopes = {"SelfManage,AssociateMyselfToVehicle"})
     public Map<String, Object> getAllAlertsBetweenSinceAndUntilV2(
-        @ValidDeviceID @PathVariable String deviceId,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "till")
@@ -442,7 +442,7 @@ public class AlertsController {
         @RequestParam(value = "size", required = false) String size,
         @RequestParam(value = "page", required = false) String page,
         @RequestParam(value = "readstatus", defaultValue = "all", required = false) String readStatus,
-        @PathVariable Set<String> alertTypes,
+        @PathVariable("alertTypes") Set<String> alertTypes,
         @RequestHeader(Constants.USER_ID) String userId)
         throws Exception {
 
@@ -474,7 +474,7 @@ public class AlertsController {
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
     public List<AlertsHistoryInfo> getAllAlertsBetweenSinceAndUntilV1(
-        @ValidDeviceID @PathVariable String deviceId,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "till")
@@ -510,8 +510,8 @@ public class AlertsController {
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
     public List<AlertsHistoryInfo> getSpecificAlertBetweenSinceAndUntilV1(
-        @ValidDeviceID @PathVariable String deviceId,
-        @Valid @PathVariable Set<String> alertTypes,
+        @ValidDeviceID @PathVariable("deviceId") String deviceId,
+        @Valid @PathVariable("alertTypes") Set<String> alertTypes,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_SINCE_MSG) @RequestParam(value = "since")
         String since,
         @Valid @Range(min = 0, message = ResponseMsgConstants.INVALID_ALERT_UNTIL_MSG) @RequestParam(value = "till")
@@ -592,7 +592,7 @@ public class AlertsController {
         @RequestParam(value = "size", required = false) String size,
         @RequestParam(value = "page", required = false) String page,
         @RequestParam(value = "readstatus", defaultValue = "all", required = false) String readStatus,
-        @PathVariable Set<String> alertTypes,
+        @PathVariable("alertTypes") Set<String> alertTypes,
         @RequestHeader(Constants.USER_ID) String userId)
         throws Exception {
 
@@ -653,7 +653,8 @@ public class AlertsController {
      */
     @PutMapping(path = "/v3/devices/{deviceId}/alerts/readupdate", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
-    public void saveV3(@ValidDeviceID @PathVariable String deviceId, @RequestBody AlertReadUpdate alertNotify) {
+    public void saveV3(@ValidDeviceID @PathVariable("deviceId") String deviceId,
+                       @RequestBody AlertReadUpdate alertNotify) {
         if (alertNotify == null || (alertNotify.getUnreadList() == null && alertNotify.getReadList() == null)) {
             throw new IllegalArgumentException(AlertsConstants.ALERTS_NULL_BODY_INVALID_REQUEST);
         }
@@ -670,7 +671,8 @@ public class AlertsController {
      */
     @PutMapping(path = "/v2/devices/{deviceId}/alerts/readupdate", consumes = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
-    public void saveV2(@ValidDeviceID @PathVariable String deviceId, @RequestBody AlertReadUpdate alertNotify) {
+    public void saveV2(@ValidDeviceID @PathVariable("deviceId") String deviceId,
+                       @RequestBody AlertReadUpdate alertNotify) {
         if (alertNotify == null || (alertNotify.getReadList() == null && alertNotify.getUnreadList() == null)) {
             throw new IllegalArgumentException(AlertsConstants.ALERTS_NULL_BODY_INVALID_REQUEST);
         }
@@ -690,7 +692,8 @@ public class AlertsController {
         description = "Mark Alert Api is to mark the alerts read or unread", responses = {
           @ApiResponse(responseCode = "200", description = "Success")})
     @SecurityRequirement(name = Security.JWT_AUTH_VALIDATOR, scopes = {"SelfManage,AssociateMyselfToVehicle"})
-    public void saveV1(@ValidDeviceID @PathVariable String deviceId, @RequestBody AlertReadUpdate alertNotify) {
+    public void saveV1(@ValidDeviceID @PathVariable("deviceId") String deviceId,
+                       @RequestBody AlertReadUpdate alertNotify) {
         if (alertNotify == null || (alertNotify.getReadList() == null && alertNotify.getUnreadList() == null)) {
             throw new IllegalArgumentException(AlertsConstants.ALERTS_NULL_BODY_INVALID_REQUEST);
         }
@@ -710,7 +713,7 @@ public class AlertsController {
      */
     @GetMapping(value = "/v1/devices/{deviceId}/alerthistory", produces = MediaType.APPLICATION_JSON_VALUE)
     @Hidden
-    public List<AlertsHistoryInfo> getAlertHistoryBetweenSinceAndUntil(@PathVariable String deviceId,
+    public List<AlertsHistoryInfo> getAlertHistoryBetweenSinceAndUntil(@PathVariable("deviceId") String deviceId,
                                                                        @RequestParam(value = "since") String since,
                                                                        @RequestParam(value = "till") String until)
         throws Exception {
