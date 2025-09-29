@@ -82,7 +82,10 @@ To run a method from within a test
 ### Deployment
 
 The component can be deployed as a Kubernetes pod by installing Notification Center charts.
-Link: [Charts](../../../ecsp-helm-charts/tree/main/notification-center)
+
+Links: 
+[Notification-Api Charts](../../../ecsp-helm-charts/tree/main/notification-api)
+[Notification-Sp Charts](../../../ecsp-helm-charts/tree/main/notification-sp)
 
 ## Architecture
 
